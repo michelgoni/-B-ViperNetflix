@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-//        let mainVC = MainViewController()
-//        
-//       self.window?.rootViewController = mainVC.createMainViewController()
+        let mainVC = MainViewController()
+        
+       self.window?.rootViewController = mainVC.createMainViewController()
         
         NotificationCenter.default.addObserver(self, selector: #selector(updateFavoritesBadgeNotification), name: Notification.Name("updateFavoritesBadgeNotification"), object: nil)
         

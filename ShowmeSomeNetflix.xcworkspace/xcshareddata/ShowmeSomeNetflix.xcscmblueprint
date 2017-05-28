@@ -1,18 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3850CFA6CF32D04EBB6F291692CB7815FC306FC7",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B9AE9FFD3CA0C1B00324A06545C8AAF0302E7A7B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807,
     "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 9223372036854775807,
-    "3850CFA6CF32D04EBB6F291692CB7815FC306FC7" : 9223372036854775807
+    "B9AE9FFD3CA0C1B00324A06545C8AAF0302E7A7B" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA86DE2B-0944-4EA8-9C79-146FDB966236",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "67620B5EFA902936DF04070AF595B76AB0333747" : "ShowmeSomeNetflix\/Alamofire\/",
     "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "ShowmeSomeNetflix\/Kingfisher\/",
-    "3850CFA6CF32D04EBB6F291692CB7815FC306FC7" : "ShowmeSomeNetflix\/"
+    "B9AE9FFD3CA0C1B00324A06545C8AAF0302E7A7B" : "ShowmeSomeNetflix\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "ShowmeSomeNetflix",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -24,14 +24,14 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/michelgoni\/showmesomenetflix",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3850CFA6CF32D04EBB6F291692CB7815FC306FC7"
-    },
-    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/michelgoni\/showmesomenetflix",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9AE9FFD3CA0C1B00324A06545C8AAF0302E7A7B"
     }
   ]
 }

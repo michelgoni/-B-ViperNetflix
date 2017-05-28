@@ -46,7 +46,7 @@ class SeriesListDefaultPresenter {
 extension SeriesListDefaultPresenter: SeriesListPresenter {
     
     func loadSeries() {
-        
+        self.interactorManager.getSeriesList()
     }
     
     func presentSerieDetail(withSerieId: SeriesList) {
