@@ -15,25 +15,25 @@ class SeriesListDefaultInteractorManager {
       let dataProvider = LocalCoreDataService()
     
     let parameters = "q=%7Bquery%7D-!1900,2017-!4,5-!8,10-!0-!Series-!Any-!Any-!gt100-!%7Bdownloadable%7D&t=ns&cl=all&st=adv&ob=Rating&p=1"
+    
+
+
    
     
 }
 
 extension SeriesListDefaultInteractorManager: SeriesListInteractorManager {
     
-    func getSeriesList() -> [Movie]? {
+    func getSeriesList(completionHandler: @escaping ([Movie]?) -> Void) {
         
         dataProvider.getTopMovies(arguments: parameters, localHandler: { movie in
             
-            print(movie!)
-            
-           
-            
+            //returning data from local core data
+            completionHandler(movie)
         }) { movie in
             
-             print(movie!)
+            //returning data from remote
+            completionHandler(movie)
         }
-        
-        return nil
     }
 }

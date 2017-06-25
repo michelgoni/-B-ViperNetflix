@@ -32,6 +32,8 @@ class SeriesListDefaultPresenter {
     fileprivate let interactorManager: SeriesListInteractorManager
     fileprivate let router: SeriesListRouter
     fileprivate weak var view: SeriesListView?
+    fileprivate let serieModelBuilder = SerieListViewModelBuilder()
+    
     
     init(interactorManager: SeriesListInteractorManager, router: SeriesListRouter, view: SeriesListView) {
         
@@ -46,10 +48,37 @@ class SeriesListDefaultPresenter {
 extension SeriesListDefaultPresenter: SeriesListPresenter {
     
     func loadSeries() {
-        self.interactorManager.getSeriesList()
+        self.interactorManager.getSeriesList { movie in
+            
+            if let weatherViewModelToBuild = movie {
+            
+                let serieViewModel = self.serieModelBuilder.buildSerieListViewModel(withModel: weatherViewModelToBuild)
+                self.view?.displaySeriesList(withSeriesListViewModel: serieViewModel)
+            }else{
+                self.view?.displayError()
+            }
+            
+        }
     }
     
     func presentSerieDetail(withSerieId: SeriesList) {
         
+    }
+}
+
+
+fileprivate class SerieListViewModelBuilder {
+    
+    func buildSerieListViewModel(withModel serieModel: [Movie]) -> SeriesListViewModel {
+        
+        var serieListViewModel: [SeriesList] = []
+        
+        for serieObject in serieModel {
+            
+            let serieModel = SeriesList(id: serieObject.id, image: serieObject.image)
+            serieListViewModel.append(serieModel)
+        }
+        
+        return SeriesListViewModel(seriesListViewModel: serieListViewModel)
     }
 }

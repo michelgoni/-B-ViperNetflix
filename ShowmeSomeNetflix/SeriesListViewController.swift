@@ -26,8 +26,9 @@ class SeriesListViewController: UIViewController {
 
 extension SeriesListViewController: SeriesListView {
     
-    func displaySeriesList(withSeriesListViewModel: SeriesListViewModel) {
-        
+   func displaySeriesList(withSeriesListViewModel serieListViewModel: SeriesListViewModel) {
+    
+        print(serieListViewModel)
     }
     
     func displayError() {

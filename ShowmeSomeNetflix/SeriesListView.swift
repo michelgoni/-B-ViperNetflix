@@ -10,7 +10,7 @@ import Foundation
 
 protocol SeriesListView: class {
     
-    func displaySeriesList(withSeriesListViewModel: SeriesListViewModel)
+    func displaySeriesList(withSeriesListViewModel serieListViewModel: SeriesListViewModel)
     func displayError()
     
 }

@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShowmeSomeNetflix/SeriesListDefaultInteractorManager.swift"
-            timestampString = "517678663.132079"
+            filePath = "ShowmeSomeNetflix/SeriesListViewController.swift"
+            timestampString = "520110567.22984"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "getSeriesList()"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "displaySeriesList(withSeriesListViewModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -72,8 +72,6 @@ class LocalCoreDataService {
         
         localHandler(self.queryTopMovies())
         
-    
-        
         remoteService.getTopSeries(arguments: arguments) { movies in
             
             if let movies = movies {

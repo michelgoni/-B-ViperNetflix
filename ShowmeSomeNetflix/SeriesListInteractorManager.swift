@@ -10,6 +10,6 @@ import Foundation
 
 protocol SeriesListInteractorManager {
     
-    func getSeriesList() -> [Movie]?
+    func getSeriesList(completionHandler: @escaping ([Movie]?) -> Void)
 
 }
