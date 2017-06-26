@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SerieCell" id="bLV-Az-Ier" customClass="MovieCell" customModule="ShowmeSomeNetflix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-loading" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-Qx-JHS">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oiU-Qx-JHS" firstAttribute="top" secondItem="bLV-Az-Ier" secondAttribute="top" id="DPA-YH-bB4"/>
+                <constraint firstItem="oiU-Qx-JHS" firstAttribute="leading" secondItem="bLV-Az-Ier" secondAttribute="leading" id="l3V-FQ-HyW"/>
+                <constraint firstAttribute="trailing" secondItem="oiU-Qx-JHS" secondAttribute="trailing" id="mI7-yC-kpt"/>
+                <constraint firstAttribute="bottom" secondItem="oiU-Qx-JHS" secondAttribute="bottom" id="qYh-nl-5EF"/>
+            </constraints>
+            <connections>
+                <outlet property="movieImage" destination="oiU-Qx-JHS" id="4xX-jf-H46"/>
+            </connections>
+            <point key="canvasLocation" x="-34.5" y="56"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img-loading" width="113" height="170"/>
+    </resources>
+</document>

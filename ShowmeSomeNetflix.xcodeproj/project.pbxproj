@@ -36,6 +36,7 @@
 		2D545B7F1E3527A1007BAC95 /* RemoteNetflixMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B7E1E3527A1007BAC95 /* RemoteNetflixMovieService.swift */; };
 		2D545B811E3527B3007BAC95 /* LocalCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B801E3527B3007BAC95 /* LocalCoreDataService.swift */; };
 		2D545B851E3529F7007BAC95 /* NetflixMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B831E3529F7007BAC95 /* NetflixMovie.xcdatamodeld */; };
+		2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */; };
 		2D7ABB6F1E3BB1BE00755EC4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ABB521E3BB18000755EC4 /* Kingfisher.framework */; };
 		2D918B2B1E7C3A3600B7F4AD /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */; };
 		2D918B461E7C422B00B7F4AD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */; };
@@ -301,6 +302,7 @@
 		2D545B7E1E3527A1007BAC95 /* RemoteNetflixMovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNetflixMovieService.swift; sourceTree = "<group>"; };
 		2D545B801E3527B3007BAC95 /* LocalCoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCoreDataService.swift; sourceTree = "<group>"; };
 		2D545B841E3529F7007BAC95 /* NetflixMovie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetflixMovie.xcdatamodel; sourceTree = "<group>"; };
+		2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieListCollectionViewCell.xib; sourceTree = "<group>"; };
 		2D7ABB3B1E3BB18000755EC4 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = SOURCE_ROOT; };
 		2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 				2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */,
 				2DA2BAB21ECF44EA00B6ADC4 /* SeriesListViewController.swift */,
 				2DB7B76C1ED9DD73006DA9C0 /* SeriesListView.xib */,
+				2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -887,6 +890,7 @@
 				2D545B0B1E351E2C007BAC95 /* Assets.xcassets in Resources */,
 				2D545B091E351E2C007BAC95 /* Main.storyboard in Resources */,
 				2DB7B76D1ED9DD73006DA9C0 /* SeriesListView.xib in Resources */,
+				2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
