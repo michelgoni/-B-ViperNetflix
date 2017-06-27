@@ -109,6 +109,7 @@ extension SeriesListViewController: SeriesListView {
     
         self.viewModel = serieListViewModel
         self.collectionViewItems.reloadData()
+        self.refresh.endRefreshing()
     }
     
     func displayError() {
