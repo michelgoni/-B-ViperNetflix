@@ -22,6 +22,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     //MARK: Collection view items
     @IBOutlet weak var collectionViewItems: UICollectionView!
      var collectionViewPadding : CGFloat = 0
+    let insetCollection : CGFloat = 5
     let refresh = UIRefreshControl()
 
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     //MARK: Collection view methods
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: collectionViewPadding, left: collectionViewPadding, bottom: collectionViewPadding, right: collectionViewPadding)
+        return UIEdgeInsets(top: insetCollection, left: insetCollection, bottom: insetCollection, right: insetCollection)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
