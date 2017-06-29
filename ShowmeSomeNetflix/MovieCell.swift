@@ -12,6 +12,14 @@ class MovieCell: UICollectionViewCell {
     
     
     @IBOutlet weak var movieImage: UIImageView!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        self.layer.cornerRadius = self.frame.size.width * 0.125
+        self.layer.borderWidth = 1
+       
+    }
 
     
 }

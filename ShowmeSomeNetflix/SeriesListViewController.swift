@@ -32,25 +32,26 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         self.setUpCollectionView()
         self.setCollectionViewPadding()
         
+        
     }
     
     
     //MARK: Collection view methods
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: insetCollection, left: insetCollection, bottom: insetCollection, right: insetCollection)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: 113, height: 170)
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return collectionViewPadding
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        
+//        return UIEdgeInsets(top: insetCollection, left: insetCollection, bottom: insetCollection, right: insetCollection)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        return CGSize(width: 113, height: 170)
+//    }
+//    
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        
+//        return collectionViewPadding
+//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.seriesListViewModel.count ?? 0
@@ -89,6 +90,10 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         
         collectionViewItems.delegate = self
         collectionViewItems.dataSource = self
+        
+        let layouyt = CustomViewLayOut()
+        layouyt.numberOfColumns = 3
+        collectionViewItems.collectionViewLayout = layouyt
         collectionViewItems.register(UINib(nibName: "SerieListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SerieCell")
         
         refresh.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)

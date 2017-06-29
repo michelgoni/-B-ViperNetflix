@@ -55,6 +55,7 @@
 		2DC25ED71ECCD38700940EDF /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC25ED61ECCD38700940EDF /* Container.swift */; };
 		2DC25EDA1ECCD3FE00940EDF /* SeriesListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC25ED91ECCD3FE00940EDF /* SeriesListBuilder.swift */; };
 		2DC25EDC1ECCD40B00940EDF /* SeriesListDefaultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC25EDB1ECCD40B00940EDF /* SeriesListDefaultBuilder.swift */; };
+		2DEAC1911F057C9B00F3E72B /* CustomViewLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEAC1901F057C9B00F3E72B /* CustomViewLayOut.swift */; };
 		2DFD2E321E6F4E860012D3B2 /* StrimgExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD2E311E6F4E860012D3B2 /* StrimgExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -321,6 +322,7 @@
 		2DC25ED61ECCD38700940EDF /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		2DC25ED91ECCD3FE00940EDF /* SeriesListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListBuilder.swift; sourceTree = "<group>"; };
 		2DC25EDB1ECCD40B00940EDF /* SeriesListDefaultBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListDefaultBuilder.swift; sourceTree = "<group>"; };
+		2DEAC1901F057C9B00F3E72B /* CustomViewLayOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayOut.swift; sourceTree = "<group>"; };
 		2DFD2E311E6F4E860012D3B2 /* StrimgExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrimgExtension.swift; sourceTree = "<group>"; };
 		4BD3D158C78EC2CBADE719FA /* Pods_ShowmeSomeNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowmeSomeNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBA3D1216A44FE8B97874B8 /* Pods-ShowmeSomeNetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowmeSomeNetflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix.release.xcconfig"; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				2DA2BAB21ECF44EA00B6ADC4 /* SeriesListViewController.swift */,
 				2DB7B76C1ED9DD73006DA9C0 /* SeriesListView.xib */,
 				2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */,
+				2DEAC1901F057C9B00F3E72B /* CustomViewLayOut.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -972,6 +975,7 @@
 				2DA2BAB81ECF461900B6ADC4 /* SerieListDefaultRouter.swift in Sources */,
 				2DC25ED71ECCD38700940EDF /* Container.swift in Sources */,
 				2DA2BAB31ECF44EA00B6ADC4 /* SeriesListViewController.swift in Sources */,
+				2DEAC1911F057C9B00F3E72B /* CustomViewLayOut.swift in Sources */,
 				2D51FF5E1E7C75BA001A4C89 /* TransitionFromSecondToFirst.swift in Sources */,
 				2D4929FF1E7DC0BE00CB9F96 /* TransitionFroMoviesToSelected.swift in Sources */,
 				2D254D6E1E6C7462001407A6 /* CountriesVC.swift in Sources */,
