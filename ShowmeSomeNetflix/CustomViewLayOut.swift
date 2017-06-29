@@ -17,12 +17,14 @@ class CustomViewLayOut: UICollectionViewLayout {
 
     var numberOfColumns = 0
     var cache = [UICollectionViewLayoutAttributes]()
+    var cellPadding: CGFloat = 0
     fileprivate var contentHeight: CGFloat = 0
     fileprivate let cellHeight: CGFloat = 170.0
     var delegate: RandomSizeCellsDelegate!
     fileprivate var width: CGFloat {
         get {
-            return collectionView!.bounds.width
+            let insets = collectionView!.contentInset
+            return collectionView!.bounds.width - (insets.left + insets.right)
         }
     }
     
@@ -45,15 +47,14 @@ class CustomViewLayOut: UICollectionViewLayout {
             var column = 0
             for item in 0..<collectionView!.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: item, section: 0)
-              
                 let height = delegate.collectionView(collectionView!, heightForItemAtIndexPath: indexPath)
                 let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
+                let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding) 
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-                attributes.frame = frame
+                attributes.frame = insetFrame
                 cache.append(attributes)
-                
                 contentHeight = max(contentHeight, frame.maxY)
-                yOffsets[column] = yOffsets[column] + cellHeight
+                yOffsets[column] = yOffsets[column] + height
                 column = column >= (numberOfColumns - 1) ? 0 : column + 1
             }
         }
