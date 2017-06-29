@@ -91,9 +91,10 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionViewItems.delegate = self
         collectionViewItems.dataSource = self
         
-        let layouyt = CustomViewLayOut()
-        layouyt.numberOfColumns = 3
-        collectionViewItems.collectionViewLayout = layouyt
+        let layout = CustomViewLayOut()
+        layout.numberOfColumns = 3
+        collectionViewItems.collectionViewLayout = layout
+        layout.delegate = self
         collectionViewItems.register(UINib(nibName: "SerieListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SerieCell")
         
         refresh.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)
@@ -120,4 +121,14 @@ extension SeriesListViewController: SeriesListView {
     func displayError() {
         
     }
+}
+
+extension SeriesListViewController: RandomSizeCellsDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
+        let random = arc4random_uniform(4) + 1
+        return CGFloat(random * 100)
+    }
+
+    
 }

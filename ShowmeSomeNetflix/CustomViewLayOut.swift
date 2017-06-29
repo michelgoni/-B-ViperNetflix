@@ -8,12 +8,18 @@
 
 import UIKit
 
+
+protocol RandomSizeCellsDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat
+}
+
 class CustomViewLayOut: UICollectionViewLayout {
 
     var numberOfColumns = 0
     var cache = [UICollectionViewLayoutAttributes]()
     fileprivate var contentHeight: CGFloat = 0
     fileprivate let cellHeight: CGFloat = 170.0
+    var delegate: RandomSizeCellsDelegate!
     fileprivate var width: CGFloat {
         get {
             return collectionView!.bounds.width
@@ -39,8 +45,9 @@ class CustomViewLayOut: UICollectionViewLayout {
             var column = 0
             for item in 0..<collectionView!.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: item, section: 0)
-                let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: cellHeight)
-                
+              
+                let height = delegate.collectionView(collectionView!, heightForItemAtIndexPath: indexPath)
+                let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
                 attributes.frame = frame
                 cache.append(attributes)
