@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 import GoogleMobileAds
 import SwiftSpinner
+import AVFoundation
 
 
 class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -24,42 +25,23 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
      var collectionViewPadding : CGFloat = 0
     let insetCollection : CGFloat = 5
     let refresh = UIRefreshControl()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Series"
         self.loadData()
         self.setUpCollectionView()
-        self.setCollectionViewPadding()
-        
-        
     }
     
     
     //MARK: Collection view methods
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//        
-//        return UIEdgeInsets(top: insetCollection, left: insetCollection, bottom: insetCollection, right: insetCollection)
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        return CGSize(width: 113, height: 170)
-//    }
-//    
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        
-//        return collectionViewPadding
-//    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.seriesListViewModel.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let serieModel = viewModel?.seriesListViewModel[indexPath.row]
+         let serieModel = viewModel?.seriesListViewModel[indexPath.row]
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SerieCell", for: indexPath) as! MovieCell
         
@@ -76,15 +58,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
             cell.movieImage.kf.setImage(with: ImageResource(downloadURL: URL(string: image)!), placeholder: #imageLiteral(resourceName: "img-loading"), options: nil, progressBlock: nil, completionHandler: nil)
         }
     }
-    
-    //MARK: Private methods
 
-    fileprivate func setCollectionViewPadding() {
-        
-        let screenWidth = self.view.frame.width
-        collectionViewPadding = (screenWidth - (3 * 113)) / 4
-        
-    }
     
     fileprivate func setUpCollectionView () {
         
@@ -94,6 +68,8 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         let layout = CustomViewLayOut()
         layout.numberOfColumns = 3
         collectionViewItems.collectionViewLayout = layout
+        collectionViewItems!.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
+        layout.cellPadding = 5
         layout.delegate = self
         collectionViewItems.register(UINib(nibName: "SerieListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SerieCell")
         
@@ -125,9 +101,16 @@ extension SeriesListViewController: SeriesListView {
 
 extension SeriesListViewController: RandomSizeCellsDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat {
-        let random = arc4random_uniform(4) + 1
-        return CGFloat(random * 100)
+    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        
+        let data = try! Data(contentsOf: URL(string: (viewModel?.seriesListViewModel[indexPath.row].image)!)!)
+        let image = UIImage(data: data)
+        let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+        let rect = AVMakeRect(aspectRatio: (image?.size)!, insideRect: boundingRect)
+       
+        
+        return rect.height
+
     }
 
     

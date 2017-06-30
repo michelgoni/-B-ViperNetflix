@@ -18,8 +18,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-loading" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-Qx-JHS">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-loading" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-Qx-JHS">
                         <rect key="frame" x="0.0" y="0.0" width="113" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="170" id="NFz-EQ-A7a"/>
+                        </constraints>
                     </imageView>
                 </subviews>
             </view>
@@ -30,6 +33,7 @@
                 <constraint firstAttribute="bottom" secondItem="oiU-Qx-JHS" secondAttribute="bottom" id="qYh-nl-5EF"/>
             </constraints>
             <connections>
+                <outlet property="imageHeightConstraint" destination="NFz-EQ-A7a" id="Wwj-Al-Mfg"/>
                 <outlet property="movieImage" destination="oiU-Qx-JHS" id="4xX-jf-H46"/>
             </connections>
             <point key="canvasLocation" x="-34.5" y="56"/>

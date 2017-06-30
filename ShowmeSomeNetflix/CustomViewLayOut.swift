@@ -10,13 +10,35 @@ import UIKit
 
 
 protocol RandomSizeCellsDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForItemAtIndexPath indexPath: IndexPath) -> CGFloat
+    
+    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
+}
+
+class CustomLayoutAttributes: UICollectionViewLayoutAttributes {
+    
+    var imageHeight: CGFloat = 0
+    
+    override func copy(with zone: NSZone? = nil) -> Any {
+        let copy = super.copy(with: zone) as! CustomLayoutAttributes
+        copy.imageHeight = imageHeight
+        
+        return copy
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        if let attributes = object as? CustomLayoutAttributes {
+            if attributes.imageHeight == imageHeight {
+                return super.isEqual(object)
+            }
+        }
+        return false
+    }
 }
 
 class CustomViewLayOut: UICollectionViewLayout {
 
     var numberOfColumns = 0
-    var cache = [UICollectionViewLayoutAttributes]()
+    var cache = [CustomLayoutAttributes]()
     var cellPadding: CGFloat = 0
     fileprivate var contentHeight: CGFloat = 0
     fileprivate let cellHeight: CGFloat = 170.0
@@ -26,6 +48,10 @@ class CustomViewLayOut: UICollectionViewLayout {
             let insets = collectionView!.contentInset
             return collectionView!.bounds.width - (insets.left + insets.right)
         }
+    }
+    
+    override class var layoutAttributesClass : AnyClass {
+        return CustomLayoutAttributes.self
     }
     
     override var collectionViewContentSize : CGSize {
@@ -47,11 +73,14 @@ class CustomViewLayOut: UICollectionViewLayout {
             var column = 0
             for item in 0..<collectionView!.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: item, section: 0)
-                let height = delegate.collectionView(collectionView!, heightForItemAtIndexPath: indexPath)
+                let width = columnWidth - (cellPadding * 2)
+                let imageHeight = delegate.collectionView(collectionView!, heightForImageAtIndexPath: indexPath, withWidth: width)
+                let height = cellPadding + imageHeight  + cellPadding
                 let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
                 let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding) 
-                let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+                let attributes = CustomLayoutAttributes(forCellWith: indexPath)
                 attributes.frame = insetFrame
+                attributes.imageHeight = height
                 cache.append(attributes)
                 contentHeight = max(contentHeight, frame.maxY)
                 yOffsets[column] = yOffsets[column] + height

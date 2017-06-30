@@ -12,6 +12,7 @@ class MovieCell: UICollectionViewCell {
     
     
     @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -19,6 +20,12 @@ class MovieCell: UICollectionViewCell {
         self.layer.cornerRadius = self.frame.size.width * 0.125
         self.layer.borderWidth = 1
        
+    }
+    
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        let attributes = layoutAttributes as! CustomLayoutAttributes
+        imageHeightConstraint.constant = attributes.imageHeight
     }
 
     
