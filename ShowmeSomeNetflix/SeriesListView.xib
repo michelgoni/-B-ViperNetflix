@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeriesListViewController" customModule="ShowmeSomeNetflix" customModuleProvider="target">
             <connections>
                 <outlet property="collectionViewItems" destination="iTV-oP-7Gv" id="l9w-uS-hgw"/>
+                <outlet property="searchBar" destination="frl-Wf-IEh" id="mZ6-Yh-7NB"/>
                 <outlet property="view" destination="iN0-l3-epB" id="PNj-Nr-MJI"/>
             </connections>
         </placeholder>

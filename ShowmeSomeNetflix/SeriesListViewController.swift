@@ -13,7 +13,7 @@ import SwiftSpinner
 import AVFoundation
 
 
-class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     //MARK: (B)Viper items
     var presenter: SeriesListPresenter?
@@ -27,11 +27,16 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     let insetCollection : CGFloat = 5
     let refresh = UIRefreshControl()
     
+    //MARK: SearchBar items
+    @IBOutlet weak var searchBar: UISearchBar!
+    var tapGesture : UIGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Series"
         self.loadData()
         self.setUpCollectionView()
+        self.setUpSearchBar()
     }
     
     
@@ -60,7 +65,35 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         }
     }
 
+    func loadData() {
+        
+        self.presenter?.loadSeries()
+    }
     
+    //MARK: SearchBar delegate
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let term = searchBar.text {
+           self.presenter?.searchSeries(withTerm: term)
+            
+        }
+        
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchText == "" {
+            
+            self.loadData()
+        }
+    }
+    
+    //MARK: fileprivate implementations
     fileprivate func setUpCollectionView () {
         
         collectionViewItems.delegate = self
@@ -79,10 +112,21 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionViewItems.refreshControl = refresh
     }
     
-    func loadData() {
+    fileprivate func setUpSearchBar() {
         
-        self.presenter?.loadSeries()
+        searchBar.delegate = self
+        searchBar.textColor = .black
+        searchBar.setMagnifyingGlassColorTo(color: .black)
+        searchBar.setPlaceholderTextColor(color: .darkGray)
+        searchBar.setTextFieldClearButtonColor(color: .darkGray)
+        self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
     }
+    
+    fileprivate func hideKeyboard()  {
+        self.searchBar.resignFirstResponder()
+        self.view.removeGestureRecognizer(tapGesture)
+    }
+
 }
 
 extension SeriesListViewController: SeriesListView {
