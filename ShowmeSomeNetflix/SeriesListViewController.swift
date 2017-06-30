@@ -119,10 +119,10 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         searchBar.setMagnifyingGlassColorTo(color: .black)
         searchBar.setPlaceholderTextColor(color: .darkGray)
         searchBar.setTextFieldClearButtonColor(color: .darkGray)
-        self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        self.tapGesture = UITapGestureRecognizer(target: self, action: #selector(SeriesListViewController.hideKeyboard))
     }
     
-    fileprivate func hideKeyboard()  {
+    @objc fileprivate func hideKeyboard()  {
         self.searchBar.resignFirstResponder()
         self.view.removeGestureRecognizer(tapGesture)
     }
