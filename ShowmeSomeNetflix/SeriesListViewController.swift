@@ -23,6 +23,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     //MARK: Collection view items
     @IBOutlet weak var collectionViewItems: UICollectionView!
      var collectionViewPadding : CGFloat = 0
+    let heightForImage: CGFloat = 156
     let insetCollection : CGFloat = 5
     let refresh = UIRefreshControl()
     
@@ -82,7 +83,6 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         
         self.presenter?.loadSeries()
     }
-    
 }
 
 extension SeriesListViewController: SeriesListView {
@@ -103,15 +103,12 @@ extension SeriesListViewController: RandomSizeCellsDelegate {
     
     func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
         
-        let data = try! Data(contentsOf: URL(string: (viewModel?.seriesListViewModel[indexPath.row].image)!)!)
-        let image = UIImage(data: data)
-        let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
-        let rect = AVMakeRect(aspectRatio: (image?.size)!, insideRect: boundingRect)
-       
+        //In case we should hace dynamic images. But since all images share same size, retuning a constant so far is ok
+//        let data = try! Data(contentsOf: URL(string: (viewModel?.seriesListViewModel[indexPath.row].image)!)!)
+//        let image = UIImage(data: data)
+//        let boundingRect = CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+//        let rect = AVMakeRect(aspectRatio: (image?.size)! , insideRect: boundingRect)
         
-        return rect.height
-
+        return heightForImage
     }
-
-    
 }
