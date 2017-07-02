@@ -12,6 +12,6 @@ protocol SeriesListPresenter {
     
     func loadSeries()
     func searchSeries(withTerm term: String)
-    func presentSerieDetail(withSerieId: SeriesList)
+    func presentSerieDetail(withSerieId: String)
     
 }
