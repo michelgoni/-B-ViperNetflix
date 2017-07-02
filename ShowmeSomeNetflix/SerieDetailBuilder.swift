@@ -10,5 +10,5 @@ import UIKit
 
 protocol SerieDetailBuilder {
     
-    func buildSerieDetailModeule(withSerieid serieId: String) ->UIViewController?
+    func buildSerieDetailModule(withSerieid serieId: String) ->UIViewController?
 }
