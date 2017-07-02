@@ -154,6 +154,7 @@ class ListViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 DispatchQueue.main.async {
                     SwiftSpinner.hide()
                     self.collectionViewItems.reloadData()
+                    
                     searchBar.resignFirstResponder()
                     }
                 }

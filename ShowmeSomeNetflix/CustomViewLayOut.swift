@@ -60,6 +60,8 @@ class CustomViewLayOut: UICollectionViewLayout {
     
     
     override func prepare() {
+        
+        cache.removeAll()
         if cache.isEmpty {
             let columnWidth = width / CGFloat(numberOfColumns)
             
@@ -91,6 +93,8 @@ class CustomViewLayOut: UICollectionViewLayout {
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var layoutAttributes = [UICollectionViewLayoutAttributes]()
+        
+       
         for attributes in cache {
             if attributes.frame.intersects(rect) {
                 layoutAttributes.append(attributes)

@@ -1,3 +1,4 @@
+
 //
 //  SeriesListViewController.swift
 //  ShowmeSomeNetflix
@@ -30,6 +31,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     //MARK: SearchBar items
     @IBOutlet weak var searchBar: UISearchBar!
     var tapGesture : UIGestureRecognizer!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         self.loadData()
         self.setUpCollectionView()
         self.setUpSearchBar()
+        self.setUpCustomLayout()
     }
     
     
@@ -76,6 +79,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         if let term = searchBar.text {
            self.presenter?.searchSeries(withTerm: term)
             
+            
         }
         
     }
@@ -98,18 +102,21 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         
         collectionViewItems.delegate = self
         collectionViewItems.dataSource = self
-        
-        let layout = CustomViewLayOut()
-        layout.numberOfColumns = 3
-        collectionViewItems.collectionViewLayout = layout
         collectionViewItems!.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 10, right: 5)
-        layout.cellPadding = 5
-        layout.delegate = self
         collectionViewItems.register(UINib(nibName: "SerieListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SerieCell")
         
         refresh.addTarget(self, action: #selector(loadData), for: UIControlEvents.valueChanged)
         collectionViewItems.refreshControl?.tintColor = UIColor.white
         collectionViewItems.refreshControl = refresh
+    }
+    
+    fileprivate func setUpCustomLayout () {
+        
+        let layout = CustomViewLayOut()
+        layout.numberOfColumns = 3
+        collectionViewItems.collectionViewLayout = layout
+        layout.cellPadding = 5
+        layout.delegate = self
     }
     
     fileprivate func setUpSearchBar() {
@@ -134,8 +141,12 @@ extension SeriesListViewController: SeriesListView {
    func displaySeriesList(withSeriesListViewModel serieListViewModel: SeriesListViewModel) {
     
         self.viewModel = serieListViewModel
+        DispatchQueue.main.async {
         self.collectionViewItems.reloadData()
+        self.collectionViewItems.collectionViewLayout.invalidateLayout()
         self.refresh.endRefreshing()
+    }
+    
     }
     
     func displayError() {

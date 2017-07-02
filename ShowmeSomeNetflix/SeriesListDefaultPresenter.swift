@@ -63,7 +63,15 @@ extension SeriesListDefaultPresenter: SeriesListPresenter {
     
     func searchSeries(withTerm term: String) {
         
-        
+        self.interactorManager.getSeries(withTerm: term) { movie in
+            
+            if let serieModelToBuild = movie {
+                let serieViewModel = self.serieModelBuilder.buildSerieListViewModel(withModel: serieModelToBuild)
+                self.view?.displaySeriesList(withSeriesListViewModel: serieViewModel)
+            }else{
+                self.view?.displayError()
+            }
+        }
     }
     
     func presentSerieDetail(withSerieId: SeriesList) {

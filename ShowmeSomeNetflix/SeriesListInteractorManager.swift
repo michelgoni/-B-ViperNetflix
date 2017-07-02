@@ -11,5 +11,7 @@ import Foundation
 protocol SeriesListInteractorManager {
     
     func getSeriesList(completionHandler: @escaping ([Movie]?) -> Void)
+    
+    func getSeries(withTerm term: String, completionHandler: @escaping ([Movie]?) -> Void)
 
 }

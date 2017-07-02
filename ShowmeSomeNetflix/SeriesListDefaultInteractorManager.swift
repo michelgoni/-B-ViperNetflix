@@ -36,4 +36,12 @@ extension SeriesListDefaultInteractorManager: SeriesListInteractorManager {
             completionHandler(movie)
         }
     }
+    
+    func getSeries(withTerm term: String, completionHandler: @escaping ([Movie]?) -> Void) {
+        
+       dataProvider.searchMovies(byTerm: term) { movie in
+        
+            completionHandler(movie)
+        }
+    }
 }
