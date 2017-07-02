@@ -19,8 +19,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     //MARK: (B)Viper items
     var presenter: SeriesListPresenter?
     fileprivate var viewModel: SeriesListViewModel?
-    
-    
+
     //MARK: Collection view items
     @IBOutlet weak var collectionViewItems: UICollectionView!
      var collectionViewPadding : CGFloat = 0
@@ -32,7 +31,6 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     @IBOutlet weak var searchBar: UISearchBar!
     var tapGesture : UIGestureRecognizer!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Series"
@@ -65,6 +63,15 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         if let image = serie.image {
             
             cell.movieImage.kf.setImage(with: ImageResource(downloadURL: URL(string: image)!), placeholder: #imageLiteral(resourceName: "img-loading"), options: nil, progressBlock: nil, completionHandler: nil)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+        if let serieId = self.viewModel?.seriesListViewModel[indexPath.row].id {
+         
+            self.presenter?.presentSerieDetail(withSerieId: serieId)
+           
         }
     }
 

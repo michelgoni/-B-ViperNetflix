@@ -74,8 +74,9 @@ extension SeriesListDefaultPresenter: SeriesListPresenter {
         }
     }
     
-    func presentSerieDetail(withSerieId: SeriesList) {
+    func presentSerieDetail(withSerieId: String) {
         
+        self.router.navigateToSerieDetail(withSerieId: withSerieId)
     }
 }
 
