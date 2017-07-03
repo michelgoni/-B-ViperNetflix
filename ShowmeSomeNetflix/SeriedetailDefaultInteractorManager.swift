@@ -10,6 +10,11 @@ import Foundation
 
 class SerieDetailDefaultInteractorManager: SerieDetailInteractorManager {
     
+    let serieId: String
+    
+    init(serieId: String) {
+        self.serieId = serieId
+    }
     
     func getSerieDetailModel() -> Movie? {
         

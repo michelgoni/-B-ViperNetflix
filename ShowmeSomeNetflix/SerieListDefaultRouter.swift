@@ -26,9 +26,8 @@ extension SerieListDefaultRouter: SeriesListRouter {
     
     func navigateToSerieDetail(withSerieId serieId: String) {
         
-        if let serieDetailViewController : SerieDetailDefaultViewController = self.serieDetailBuilder().buildSerieDetailModule(withSerieid: serieId) as! SerieDetailDefaultViewController? {
+        if let serieDetailViewController  = self.serieDetailBuilder().buildSerieDetailModule(withSerieid: serieId)  {
            
-            serieDetailViewController.serieId = serieId
             self.viewController?.navigationController?.pushViewController(serieDetailViewController, animated: true)
         }
     }

@@ -19,7 +19,7 @@ class SerieDetailDefaultBuilder: SerieDetailBuilder {
         
         self.buildView()
         self.buildRouter()
-        self.buildInteractorManager()
+        self.buildInteractorManager(withSerieId: serieId)
         self.buildPresenter()
         self.buildCircularDependencies()
         
@@ -39,9 +39,9 @@ class SerieDetailDefaultBuilder: SerieDetailBuilder {
         }
         self.router = SerieDetailDefaultRouter(viewController: view)
     }
-    func buildInteractorManager() {
+    func buildInteractorManager(withSerieId serieId: String) {
         
-        self.interactorManager = SerieDetailDefaultInteractorManager()
+        self.interactorManager = SerieDetailDefaultInteractorManager(serieId: serieId)
     }
     
     func buildPresenter() {

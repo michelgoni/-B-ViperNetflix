@@ -48,7 +48,7 @@
 		2D6E5C001F09699F00925780 /* SerieDetailDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E5BFF1F09699F00925780 /* SerieDetailDefaultRouter.swift */; };
 		2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */; };
 		2D7ABB6F1E3BB1BE00755EC4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ABB521E3BB18000755EC4 /* Kingfisher.framework */; };
-		2D890F0E1F0A923F00BDE6A5 /* SerieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D890F0D1F0A923F00BDE6A5 /* SerieDetailViewController.xib */; };
+		2D890F291F0A96EC00BDE6A5 /* SerieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D890F281F0A96EC00BDE6A5 /* SerieDetailViewController.xib */; };
 		2D918B2B1E7C3A3600B7F4AD /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */; };
 		2D918B461E7C422B00B7F4AD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */; };
 		2DA2BA911ECF3D1200B6ADC4 /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */; };
@@ -326,7 +326,7 @@
 		2D6E5BFF1F09699F00925780 /* SerieDetailDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieDetailDefaultRouter.swift; sourceTree = "<group>"; };
 		2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieListCollectionViewCell.xib; sourceTree = "<group>"; };
 		2D7ABB3B1E3BB18000755EC4 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = SOURCE_ROOT; };
-		2D890F0D1F0A923F00BDE6A5 /* SerieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieDetailViewController.xib; sourceTree = "<group>"; };
+		2D890F281F0A96EC00BDE6A5 /* SerieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieDetailViewController.xib; sourceTree = "<group>"; };
 		2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
@@ -517,7 +517,7 @@
 			children = (
 				2D6E5BEC1F09626D00925780 /* SerieDetailView.swift */,
 				2D6E5BF41F0965C800925780 /* SerieDetailDefaultViewController.swift */,
-				2D890F0D1F0A923F00BDE6A5 /* SerieDetailViewController.xib */,
+				2D890F281F0A96EC00BDE6A5 /* SerieDetailViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -982,7 +982,7 @@
 				2D545B0B1E351E2C007BAC95 /* Assets.xcassets in Resources */,
 				2D545B091E351E2C007BAC95 /* Main.storyboard in Resources */,
 				2DB7B76D1ED9DD73006DA9C0 /* SeriesListView.xib in Resources */,
-				2D890F0E1F0A923F00BDE6A5 /* SerieDetailViewController.xib in Resources */,
+				2D890F291F0A96EC00BDE6A5 /* SerieDetailViewController.xib in Resources */,
 				2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
