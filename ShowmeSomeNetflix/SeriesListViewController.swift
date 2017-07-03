@@ -71,7 +71,6 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         if let serieId = self.viewModel?.seriesListViewModel[indexPath.row].id {
          
             self.presenter?.presentSerieDetail(withSerieId: serieId)
-           
         }
     }
 
@@ -85,10 +84,7 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let term = searchBar.text {
            self.presenter?.searchSeries(withTerm: term)
-            
-            
         }
-        
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {

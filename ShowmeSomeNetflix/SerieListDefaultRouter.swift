@@ -16,12 +16,21 @@ class SerieListDefaultRouter {
         self.viewController = viewController
     }
     
-    
+    fileprivate func serieDetailBuilder() ->SerieDetailBuilder {
+        
+        return Container.shared.serieDetailBuilder()
+    }
 }
 
 extension SerieListDefaultRouter: SeriesListRouter {
     
     func navigateToSerieDetail(withSerieId serieId: String) {
         
+        if let serieDetailViewController : SerieDetailDefaultViewController = self.serieDetailBuilder().buildSerieDetailModule(withSerieid: serieId) as! SerieDetailDefaultViewController? {
+           
+            serieDetailViewController.serieId = serieId
+            self.viewController?.navigationController?.pushViewController(serieDetailViewController, animated: true)
+        }
     }
 }
+

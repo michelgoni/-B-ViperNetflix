@@ -12,6 +12,11 @@ class SerieDetailDefaultViewController: UIViewController {
     
     
     var presenter: SerieDetailPresenter?
+    var serieId: String?
+    
+    override func viewDidLoad() {
+        print(serieId ?? "")
+    }
 }
 
 extension SerieDetailDefaultViewController: SerieDetailView {

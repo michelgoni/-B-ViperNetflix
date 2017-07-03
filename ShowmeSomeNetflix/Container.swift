@@ -16,5 +16,10 @@ class Container {
         
         return SeriesListDefaultBuilder()
     }
+    
+    func serieDetailBuilder() -> SerieDetailBuilder {
+        
+        return SerieDetailDefaultBuilder()
+    }
 }
 
