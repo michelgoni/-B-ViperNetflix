@@ -12,11 +12,16 @@ class SerieDetailDefaultViewController: UIViewController {
     
 
     var presenter: SerieDetailPresenter?
-    var serieId: String?
+  
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.presenter?.loadData()
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(serieId ?? "")
         
       
     }

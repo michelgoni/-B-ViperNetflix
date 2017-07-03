@@ -10,5 +10,5 @@ import Foundation
 
 protocol SerieDetailInteractorManager {
     
-    func getSerieDetailModel() -> Movie?
+    func getSerieDetailModel(completionHandler: @escaping (Movie?) -> Void)
 }

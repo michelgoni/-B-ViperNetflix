@@ -11,13 +11,20 @@ import Foundation
 class SerieDetailDefaultInteractorManager: SerieDetailInteractorManager {
     
     let serieId: String
+    let dataProvider = LocalCoreDataService()
     
     init(serieId: String) {
         self.serieId = serieId
     }
     
-    func getSerieDetailModel() -> Movie? {
+    func getSerieDetailModel(completionHandler: @escaping (Movie?) -> Void) {
         
-        return nil
+        dataProvider.searchCountryAndSubtitleForMovieByTerm(byTerm: serieId) { serieDetail in
+          
+            if let serieDetail = serieDetail?.first {
+                completionHandler(serieDetail)
+            }
+        }
+        
     }
 }

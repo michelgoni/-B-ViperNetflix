@@ -39,7 +39,10 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
     var arrayLanguages = [NSArray]()
     
     func loadData() {
-        
+        self.interactorManager.getSerieDetailModel { serieDetail in
+            
+            
+        }
     }
 }
 
