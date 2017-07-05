@@ -14,7 +14,9 @@ struct SerieDetailViewModel {
     let summary: String
     let imdbRating: String
     let country: String
-    let arrayCountries: [String]
+    let arrayCountries: [[String]]
+    
+    fileprivate let serieDetailModelBuilder = SerieDetailViewModelBuilder()
     
     
 }
@@ -39,14 +41,26 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
     var arrayLanguages = [NSArray]()
     
     func loadData() {
+        
         self.interactorManager.getSerieDetailModel { serieDetail in
             
-            
+            if let serieDetail = serieDetail {
+             
+                let serieDetailViewModel = self.serieDetailModelBuilder.buildSerieDetailWithSerieModel(serieDetail: serieDetail)
+                self.view?.displaySerieDetail(withSerieDetailViewmodel: serieDetailViewModel!)
+            }
         }
     }
 }
 
 fileprivate class SerieDetailViewModelBuilder {
     
+    func buildSerieDetailWithSerieModel(serieDetail: Movie) -> SerieDetailViewModel? {
+        print(NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String])
+        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String]])
+       
+        
+        return nil
     
+    }
 }
