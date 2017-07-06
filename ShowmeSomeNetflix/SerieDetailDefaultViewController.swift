@@ -29,9 +29,9 @@ class SerieDetailDefaultViewController: UIViewController {
 
 extension SerieDetailDefaultViewController: SerieDetailView {
     
-    func displaySerieDetail(withSerieDetailViewmodel seriedetail: SerieDetailViewModel) {
+    func displaySerieDetail(withSerieDetailViewmodel serieDetail: SerieDetailViewModel) {
         
-        
+        print(serieDetail)
     }
     
     func displayErrorScreen() {

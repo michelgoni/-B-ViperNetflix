@@ -14,7 +14,7 @@ struct SerieDetailViewModel {
     let summary: String
     let imdbRating: String
     let country: String
-    let arrayCountries: [[String]]
+    let arrayCountries: [[Any]]
     
     fileprivate let serieDetailModelBuilder = SerieDetailViewModelBuilder()
     
@@ -47,7 +47,7 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
             if let serieDetail = serieDetail {
              
                 let serieDetailViewModel = self.serieDetailModelBuilder.buildSerieDetailWithSerieModel(serieDetail: serieDetail)
-                self.view?.displaySerieDetail(withSerieDetailViewmodel: serieDetailViewModel!)
+                self.view?.displaySerieDetail(withSerieDetailViewmodel: serieDetailViewModel)
             }
         }
     }
@@ -55,12 +55,19 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
 
 fileprivate class SerieDetailViewModelBuilder {
     
-    func buildSerieDetailWithSerieModel(serieDetail: Movie) -> SerieDetailViewModel? {
-        print(NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String])
-        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String]])
+    func buildSerieDetailWithSerieModel(serieDetail: Movie) -> SerieDetailViewModel {
+        
+        let emission = [NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String],
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.flagCountries!) as! [String],
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.subtitles!) as! [Array<String>],
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!) as! [Array<String>]] as [Any]
+
+        
+        
+        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [emission])
        
         
-        return nil
+       
     
     }
 }
