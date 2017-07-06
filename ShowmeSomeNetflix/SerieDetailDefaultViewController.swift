@@ -11,6 +11,9 @@ import UIKit
 class SerieDetailDefaultViewController: UIViewController {
     
 
+    @IBOutlet weak var testLabel: UILabel!
+   
+    
     var presenter: SerieDetailPresenter?
   
     
@@ -31,7 +34,8 @@ extension SerieDetailDefaultViewController: SerieDetailView {
     
     func displaySerieDetail(withSerieDetailViewmodel serieDetail: SerieDetailViewModel) {
         
-        print(serieDetail)
+       
+        
     }
     
     func displayErrorScreen() {

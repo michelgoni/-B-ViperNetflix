@@ -48,7 +48,6 @@
 		2D6E5C001F09699F00925780 /* SerieDetailDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E5BFF1F09699F00925780 /* SerieDetailDefaultRouter.swift */; };
 		2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */; };
 		2D7ABB6F1E3BB1BE00755EC4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ABB521E3BB18000755EC4 /* Kingfisher.framework */; };
-		2D890F291F0A96EC00BDE6A5 /* SerieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D890F281F0A96EC00BDE6A5 /* SerieDetailViewController.xib */; };
 		2D918B2B1E7C3A3600B7F4AD /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */; };
 		2D918B461E7C422B00B7F4AD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */; };
 		2DA2BA911ECF3D1200B6ADC4 /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */; };
@@ -66,6 +65,7 @@
 		2DC25ED71ECCD38700940EDF /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC25ED61ECCD38700940EDF /* Container.swift */; };
 		2DC25EDA1ECCD3FE00940EDF /* SeriesListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC25ED91ECCD3FE00940EDF /* SeriesListBuilder.swift */; };
 		2DC25EDC1ECCD40B00940EDF /* SeriesListDefaultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC25EDB1ECCD40B00940EDF /* SeriesListDefaultBuilder.swift */; };
+		2DD94EC01F0EB25300F44A45 /* SerieDetailDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD94EBF1F0EB25300F44A45 /* SerieDetailDefaultViewController.xib */; };
 		2DEAC1911F057C9B00F3E72B /* CustomViewLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEAC1901F057C9B00F3E72B /* CustomViewLayOut.swift */; };
 		2DFD2E321E6F4E860012D3B2 /* StrimgExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD2E311E6F4E860012D3B2 /* StrimgExtension.swift */; };
 /* End PBXBuildFile section */
@@ -326,7 +326,6 @@
 		2D6E5BFF1F09699F00925780 /* SerieDetailDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieDetailDefaultRouter.swift; sourceTree = "<group>"; };
 		2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieListCollectionViewCell.xib; sourceTree = "<group>"; };
 		2D7ABB3B1E3BB18000755EC4 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = SOURCE_ROOT; };
-		2D890F281F0A96EC00BDE6A5 /* SerieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieDetailViewController.xib; sourceTree = "<group>"; };
 		2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
@@ -344,6 +343,7 @@
 		2DC25ED61ECCD38700940EDF /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		2DC25ED91ECCD3FE00940EDF /* SeriesListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListBuilder.swift; sourceTree = "<group>"; };
 		2DC25EDB1ECCD40B00940EDF /* SeriesListDefaultBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListDefaultBuilder.swift; sourceTree = "<group>"; };
+		2DD94EBF1F0EB25300F44A45 /* SerieDetailDefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieDetailDefaultViewController.xib; sourceTree = "<group>"; };
 		2DEAC1901F057C9B00F3E72B /* CustomViewLayOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayOut.swift; sourceTree = "<group>"; };
 		2DFD2E311E6F4E860012D3B2 /* StrimgExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrimgExtension.swift; sourceTree = "<group>"; };
 		4BD3D158C78EC2CBADE719FA /* Pods_ShowmeSomeNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowmeSomeNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -517,7 +517,7 @@
 			children = (
 				2D6E5BEC1F09626D00925780 /* SerieDetailView.swift */,
 				2D6E5BF41F0965C800925780 /* SerieDetailDefaultViewController.swift */,
-				2D890F281F0A96EC00BDE6A5 /* SerieDetailViewController.xib */,
+				2DD94EBF1F0EB25300F44A45 /* SerieDetailDefaultViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -981,8 +981,8 @@
 				2DA2BAC11ECF5DBC00B6ADC4 /* MoviesListView.xib in Resources */,
 				2D545B0B1E351E2C007BAC95 /* Assets.xcassets in Resources */,
 				2D545B091E351E2C007BAC95 /* Main.storyboard in Resources */,
+				2DD94EC01F0EB25300F44A45 /* SerieDetailDefaultViewController.xib in Resources */,
 				2DB7B76D1ED9DD73006DA9C0 /* SeriesListView.xib in Resources */,
-				2D890F291F0A96EC00BDE6A5 /* SerieDetailViewController.xib in Resources */,
 				2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
