@@ -9,17 +9,19 @@
 import UIKit
 
 class SerieDetailDefaultViewController: UIViewController {
-    
 
-    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var serieTitleLabel: UILabel!
+    @IBOutlet weak var imdbLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UITextView!
+    @IBOutlet weak var btnFavorite: RoundButton!
    
-    
     var presenter: SerieDetailPresenter?
-  
-    
+ 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.presenter?.loadData()
+        self.configureButton()
 
     }
     
@@ -28,6 +30,15 @@ class SerieDetailDefaultViewController: UIViewController {
         
       
     }
+    
+    //MARK: Private
+    func configureButton() {
+        
+        
+
+    }
+    
+    
 }
 
 extension SerieDetailDefaultViewController: SerieDetailView {
