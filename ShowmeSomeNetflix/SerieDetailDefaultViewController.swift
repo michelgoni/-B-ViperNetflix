@@ -17,6 +17,7 @@ class SerieDetailDefaultViewController: UIViewController {
     @IBOutlet weak var btnFavorite: RoundButton!
    
     var presenter: SerieDetailPresenter?
+    var serieDetailModel : SerieDetailViewModel?
  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,7 +46,8 @@ extension SerieDetailDefaultViewController: SerieDetailView {
     
     func displaySerieDetail(withSerieDetailViewmodel serieDetail: SerieDetailViewModel) {
         
-       
+       self.serieDetailModel = serieDetail
+        
         
     }
     
