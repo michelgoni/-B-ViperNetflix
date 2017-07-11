@@ -14,6 +14,7 @@
                 <outlet property="btnFavorite" destination="OD5-Sc-ko8" id="RNA-NV-Rka"/>
                 <outlet property="countryLabel" destination="ntK-lf-lCw" id="R2F-f0-Whv"/>
                 <outlet property="imdbLabel" destination="gVJ-f0-rUe" id="oDZ-VB-lRG"/>
+                <outlet property="serieImage" destination="JwR-rW-kVN" id="Y9z-5G-ykh"/>
                 <outlet property="serieTitleLabel" destination="h2f-rV-f2i" id="oAh-3Y-n9D"/>
                 <outlet property="summaryLabel" destination="fS3-wS-AnS" id="fqH-yi-fRh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Wga-KD-U8A"/>

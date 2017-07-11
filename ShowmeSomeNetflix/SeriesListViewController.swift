@@ -136,7 +136,6 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
         self.searchBar.resignFirstResponder()
         self.view.removeGestureRecognizer(tapGesture)
     }
-
 }
 
 extension SeriesListViewController: SeriesListView {
@@ -148,8 +147,7 @@ extension SeriesListViewController: SeriesListView {
         self.collectionViewItems.reloadData()
         self.collectionViewItems.collectionViewLayout.invalidateLayout()
         self.refresh.endRefreshing()
-    }
-    
+        }
     }
     
     func displayError() {

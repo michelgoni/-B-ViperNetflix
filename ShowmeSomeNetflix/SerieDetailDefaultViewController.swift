@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SerieDetailDefaultViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class SerieDetailDefaultViewController: UIViewController {
     @IBOutlet weak var imdbLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var summaryLabel: UITextView!
+    @IBOutlet weak var serieImage: UIImageView!
     @IBOutlet weak var btnFavorite: RoundButton!
    
     var presenter: SerieDetailPresenter?
@@ -35,7 +37,7 @@ class SerieDetailDefaultViewController: UIViewController {
     //MARK: Private
     func configureButton() {
         
-        
+        //TODO: -- button config should be in some kind of factory
 
     }
     
@@ -46,9 +48,14 @@ extension SerieDetailDefaultViewController: SerieDetailView {
     
     func displaySerieDetail(withSerieDetailViewmodel serieDetail: SerieDetailViewModel) {
         
-       self.serieDetailModel = serieDetail
+      // self.serieDetailModel = serieDetail
         
-        
+        self.serieTitleLabel.text = serieDetail.title
+        self.imdbLabel.text = serieDetail.imdbRating
+        self.countryLabel.text = serieDetail.country
+        self.summaryLabel.text = serieDetail.summary
+        self.serieImage.kf.setImage(with: ImageResource(downloadURL: URL(string: serieDetail.image)!))
+      
     }
     
     func displayErrorScreen() {

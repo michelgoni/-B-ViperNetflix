@@ -12,6 +12,7 @@ struct SerieDetailViewModel {
     
     let title: String
     let summary: String
+    let image: String
     let imdbRating: String
     let country: String
     let arrayCountries: [[Any]]
@@ -64,7 +65,7 @@ fileprivate class SerieDetailViewModelBuilder {
 
         
         
-        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [emission])
+        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [emission])
        
         
        
