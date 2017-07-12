@@ -142,6 +142,9 @@
                             <real key="value" value="20"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showCountries:" destination="-1" eventType="touchUpInside" id="b6c-dq-ftS"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.96470588235294119" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

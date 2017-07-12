@@ -48,6 +48,8 @@
 		2D6E5C001F09699F00925780 /* SerieDetailDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E5BFF1F09699F00925780 /* SerieDetailDefaultRouter.swift */; };
 		2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */; };
 		2D7ABB6F1E3BB1BE00755EC4 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7ABB521E3BB18000755EC4 /* Kingfisher.framework */; };
+		2D808A251F16790F003B43FA /* DetailViewCountries.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D808A241F16790F003B43FA /* DetailViewCountries.xib */; };
+		2D808A4A1F167E28003B43FA /* CountriesDetailDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D808A491F167E28003B43FA /* CountriesDetailDefaultViewController.swift */; };
 		2D918B2B1E7C3A3600B7F4AD /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */; };
 		2D918B461E7C422B00B7F4AD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */; };
 		2DA2BA911ECF3D1200B6ADC4 /* SeriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */; };
@@ -326,6 +328,8 @@
 		2D6E5BFF1F09699F00925780 /* SerieDetailDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieDetailDefaultRouter.swift; sourceTree = "<group>"; };
 		2D701F551F01880A007115C2 /* SerieListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SerieListCollectionViewCell.xib; sourceTree = "<group>"; };
 		2D7ABB3B1E3BB18000755EC4 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Kingfisher/Kingfisher.xcodeproj; sourceTree = SOURCE_ROOT; };
+		2D808A241F16790F003B43FA /* DetailViewCountries.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewCountries.xib; sourceTree = "<group>"; };
+		2D808A491F167E28003B43FA /* CountriesDetailDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesDetailDefaultViewController.swift; sourceTree = "<group>"; };
 		2D918B2A1E7C3A3600B7F4AD /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2D918B451E7C422B00B7F4AD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2DA2BA901ECF3D1200B6ADC4 /* SeriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListView.swift; sourceTree = "<group>"; };
@@ -518,6 +522,8 @@
 				2D6E5BEC1F09626D00925780 /* SerieDetailView.swift */,
 				2D6E5BF41F0965C800925780 /* SerieDetailDefaultViewController.swift */,
 				2DD94EBF1F0EB25300F44A45 /* SerieDetailDefaultViewController.xib */,
+				2D808A241F16790F003B43FA /* DetailViewCountries.xib */,
+				2D808A491F167E28003B43FA /* CountriesDetailDefaultViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -979,6 +985,7 @@
 			files = (
 				2D545B0E1E351E2C007BAC95 /* LaunchScreen.storyboard in Resources */,
 				2DA2BAC11ECF5DBC00B6ADC4 /* MoviesListView.xib in Resources */,
+				2D808A251F16790F003B43FA /* DetailViewCountries.xib in Resources */,
 				2D545B0B1E351E2C007BAC95 /* Assets.xcassets in Resources */,
 				2D545B091E351E2C007BAC95 /* Main.storyboard in Resources */,
 				2DD94EC01F0EB25300F44A45 /* SerieDetailDefaultViewController.xib in Resources */,
@@ -1082,6 +1089,7 @@
 				2D4929FC1E7DBD7D00CB9F96 /* MoviesViewController.swift in Sources */,
 				2D6E5BF31F09631500925780 /* SerieDetaildefaultPresenter.swift in Sources */,
 				2D545B741E35271A007BAC95 /* MovieCell.swift in Sources */,
+				2D808A4A1F167E28003B43FA /* CountriesDetailDefaultViewController.swift in Sources */,
 				2DA2BAAE1ECF3D7000B6ADC4 /* SeriesListPresenter.swift in Sources */,
 				2D545B041E351E2C007BAC95 /* AppDelegate.swift in Sources */,
 				2D545B781E35274A007BAC95 /* ListViewController.swift in Sources */,
