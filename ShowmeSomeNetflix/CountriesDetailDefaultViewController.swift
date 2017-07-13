@@ -34,7 +34,7 @@ class CountriesDetailDefaultViewController: UIViewController, UICollectionViewDe
         self.popUpView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "SerieListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "SerieCell")
+        collectionView.register(UINib(nibName: "CountryDetailCell", bundle: nil), forCellWithReuseIdentifier: "CountryCell")
         setCollectionViewPadding()
         self.setUpCustomLayout()
     }
@@ -108,9 +108,8 @@ class CountriesDetailDefaultViewController: UIViewController, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SerieCell", for: indexPath) as! MovieCell
-        
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CountryCell", for: indexPath) as! CountryCollectionViewCell
+       
         return cell
         
     }
