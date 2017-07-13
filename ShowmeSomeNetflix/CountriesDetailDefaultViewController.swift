@@ -66,6 +66,18 @@ class CountriesDetailDefaultViewController: UIViewController, UICollectionViewDe
         });
     }
     
+    @IBAction func closePopUpView(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.view.alpha = 0.0;
+        }, completion:{(finished : Bool)  in
+            if (finished){
+                self.view.removeFromSuperview()
+            }
+        });
+    }
+    
+    
     func setCollectionViewPadding() {
         
         let screenWidth = self.view.frame.width
