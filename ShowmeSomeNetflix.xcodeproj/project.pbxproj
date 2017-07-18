@@ -38,6 +38,9 @@
 		2D545B7F1E3527A1007BAC95 /* RemoteNetflixMovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B7E1E3527A1007BAC95 /* RemoteNetflixMovieService.swift */; };
 		2D545B811E3527B3007BAC95 /* LocalCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B801E3527B3007BAC95 /* LocalCoreDataService.swift */; };
 		2D545B851E3529F7007BAC95 /* NetflixMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B831E3529F7007BAC95 /* NetflixMovie.xcdatamodeld */; };
+		2D55F1121F17DEBB005458AC /* CountryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */; };
+		2D55F12D1F17E04F005458AC /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */; };
+		2D64A5501F1E6BB100F1F18E /* ContryFlagsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A54F1F1E6BB100F1F18E /* ContryFlagsLayout.swift */; };
 		2D6E5BED1F09626D00925780 /* SerieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E5BEC1F09626D00925780 /* SerieDetailView.swift */; };
 		2D6E5BEF1F0962CC00925780 /* SerieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E5BEE1F0962CC00925780 /* SerieDetailPresenter.swift */; };
 		2D6E5BF31F09631500925780 /* SerieDetaildefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E5BF21F09631500925780 /* SerieDetaildefaultPresenter.swift */; };
@@ -318,6 +321,9 @@
 		2D545B7E1E3527A1007BAC95 /* RemoteNetflixMovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNetflixMovieService.swift; sourceTree = "<group>"; };
 		2D545B801E3527B3007BAC95 /* LocalCoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCoreDataService.swift; sourceTree = "<group>"; };
 		2D545B841E3529F7007BAC95 /* NetflixMovie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetflixMovie.xcdatamodel; sourceTree = "<group>"; };
+		2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryDetailCell.xib; sourceTree = "<group>"; };
+		2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D64A54F1F1E6BB100F1F18E /* ContryFlagsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContryFlagsLayout.swift; sourceTree = "<group>"; };
 		2D6E5BEC1F09626D00925780 /* SerieDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieDetailView.swift; sourceTree = "<group>"; };
 		2D6E5BEE1F0962CC00925780 /* SerieDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieDetailPresenter.swift; sourceTree = "<group>"; };
 		2D6E5BF21F09631500925780 /* SerieDetaildefaultPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieDetaildefaultPresenter.swift; sourceTree = "<group>"; };
@@ -524,6 +530,9 @@
 				2DD94EBF1F0EB25300F44A45 /* SerieDetailDefaultViewController.xib */,
 				2D808A241F16790F003B43FA /* DetailViewCountries.xib */,
 				2D808A491F167E28003B43FA /* CountriesDetailDefaultViewController.swift */,
+				2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */,
+				2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */,
+				2D64A54F1F1E6BB100F1F18E /* ContryFlagsLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -991,6 +1000,7 @@
 				2DD94EC01F0EB25300F44A45 /* SerieDetailDefaultViewController.xib in Resources */,
 				2DB7B76D1ED9DD73006DA9C0 /* SeriesListView.xib in Resources */,
 				2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */,
+				2D55F1121F17DEBB005458AC /* CountryDetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,6 +1059,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D64A5501F1E6BB100F1F18E /* ContryFlagsLayout.swift in Sources */,
 				2D545B7A1E352769007BAC95 /* FavoritesViewController.swift in Sources */,
 				2DFD2E321E6F4E860012D3B2 /* StrimgExtension.swift in Sources */,
 				2D2CF1321E9161BB00CDE89D /* UIImageExtension.swift in Sources */,
@@ -1093,6 +1104,7 @@
 				2DA2BAAE1ECF3D7000B6ADC4 /* SeriesListPresenter.swift in Sources */,
 				2D545B041E351E2C007BAC95 /* AppDelegate.swift in Sources */,
 				2D545B781E35274A007BAC95 /* ListViewController.swift in Sources */,
+				2D55F12D1F17E04F005458AC /* CountryCollectionViewCell.swift in Sources */,
 				2D6E5BFA1F0966B500925780 /* SeriedetailDefaultInteractorManager.swift in Sources */,
 				2D545B851E3529F7007BAC95 /* NetflixMovie.xcdatamodeld in Sources */,
 				2D51FF5C1E7C6C97001A4C89 /* TransitionFromFirstToSecond.swift in Sources */,

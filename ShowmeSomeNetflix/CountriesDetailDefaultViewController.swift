@@ -15,7 +15,7 @@ class CountriesDetailDefaultViewController: UIViewController, UICollectionViewDe
     @IBOutlet weak var collectionView: UICollectionView!
     
     var collectionViewPadding : CGFloat = 0
-    let heightForImage: CGFloat = 156
+    let heightForImage: CGFloat = 113
     let insetCollection : CGFloat = 5
     
     required public init?(coder aDecoder: NSCoder) {
@@ -41,7 +41,7 @@ class CountriesDetailDefaultViewController: UIViewController, UICollectionViewDe
     
     fileprivate func setUpCustomLayout () {
         
-        let layout = CustomViewLayOut()
+        let layout = ContryFlagsLayout()
         layout.numberOfColumns = 3
         collectionView.collectionViewLayout = layout
         layout.cellPadding = 5
@@ -93,7 +93,7 @@ class CountriesDetailDefaultViewController: UIViewController, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 113, height: 170)
+        return CGSize(width: 113, height: 113)
     }
     
     

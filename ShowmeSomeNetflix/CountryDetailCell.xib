@@ -20,6 +20,9 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad" translatesAutoresizingMaskIntoConstraints="NO" id="qAZ-Ur-BWv">
                         <rect key="frame" x="0.0" y="0.0" width="113" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="113" id="vWY-xh-tgQ"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andorra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK2-JA-voV">
                         <rect key="frame" x="8" y="83" width="97" height="24"/>
@@ -42,8 +45,9 @@
             <connections>
                 <outlet property="countryImage" destination="qAZ-Ur-BWv" id="X8U-4Y-SaC"/>
                 <outlet property="countryLabel" destination="IK2-JA-voV" id="jt4-fv-0SI"/>
+                <outlet property="imageHeightConstraint" destination="vWY-xh-tgQ" id="m8j-IT-Ml3"/>
             </connections>
-            <point key="canvasLocation" x="14.5" y="85"/>
+            <point key="canvasLocation" x="-61" y="87"/>
         </collectionViewCell>
     </objects>
     <resources>
