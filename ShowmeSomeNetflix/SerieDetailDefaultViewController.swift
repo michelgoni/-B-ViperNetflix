@@ -9,6 +9,8 @@
 import UIKit
 import Kingfisher
 
+
+
 class SerieDetailDefaultViewController: UIViewController {
 
     @IBOutlet weak var serieTitleLabel: UILabel!
