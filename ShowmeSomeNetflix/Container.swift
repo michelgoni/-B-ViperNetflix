@@ -21,5 +21,10 @@ class Container {
         
         return SerieDetailDefaultBuilder()
     }
+    
+    func countryFlagsBuilder() -> CountryFlagsModuleBuilder {
+        
+        return CountryFlagsModuleDefaultBuilder()
+    }
 }
 

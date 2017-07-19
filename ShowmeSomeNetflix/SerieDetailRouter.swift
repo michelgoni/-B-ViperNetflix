@@ -10,5 +10,5 @@ import Foundation
 
 protocol SerieDetailRouter {
     
-    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], andMovieTitle title: String)
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>])
 }

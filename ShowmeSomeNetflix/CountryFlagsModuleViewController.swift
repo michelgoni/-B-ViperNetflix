@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CountryFlagsModuleViewController: BaseViewController {
+class CountryFlagsModuleViewController: UIViewController {
     var presenter: CountryFlagsModulePresenter?
 
     override func viewDidLoad() {

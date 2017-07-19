@@ -41,7 +41,6 @@ class SeriesListViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     
-    
     //MARK: Collection view methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.seriesListViewModel.count ?? 0

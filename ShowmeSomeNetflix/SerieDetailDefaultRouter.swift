@@ -16,7 +16,17 @@ class SerieDetailDefaultRouter: SerieDetailRouter {
         self.viewController = viewController
     }
     
-    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], andMovieTitle title: String) {
+    fileprivate func countryFlagsBuilder() ->CountryFlagsModuleBuilder {
         
+        return Container.shared.countryFlagsBuilder()
+    }
+    
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>]) {
+     
+        if let countryFlagsViewController = self.countryFlagsBuilder().buildCountryFlagsModuleModule(with: arrayOfCountries) {
+          
+            self.viewController?.navigationController?.pushViewController(countryFlagsViewController, animated: true)
+            
+        }
     }
 }

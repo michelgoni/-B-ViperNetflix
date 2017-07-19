@@ -46,21 +46,20 @@ class SerieDetailDefaultViewController: UIViewController {
     }
     
     @IBAction func showCountries(_ sender: Any) {
+        
+      self.presenter?.presentCountryFlagsForSerie(array: (self.serieDetailModel?.arrayCountries)!)
+
         self.popViewController = CountriesDetailDefaultViewController(nibName: "DetailViewCountries", bundle: nil)
         self.popViewController?.showInView(self.view, withImage: nil, withMessage: nil, animated: true)
     }
-    
-   
-    
-    
+
 }
 
 extension SerieDetailDefaultViewController: SerieDetailView {
     
     func displaySerieDetail(withSerieDetailViewmodel serieDetail: SerieDetailViewModel) {
         
-      // self.serieDetailModel = serieDetail
-        
+        self.serieDetailModel = serieDetail
         self.serieTitleLabel.text = serieDetail.title
         self.imdbLabel.text = serieDetail.imdbRating
         self.countryLabel.text = serieDetail.country

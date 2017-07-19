@@ -15,10 +15,10 @@ class CountryFlagsModuleDefaultBuilder: CountryFlagsModuleBuilder {
     var view: CountryFlagsModuleView?
 
     // MARK: - CountryFlagsModuleBuilder protocol
-    func buildCountryFlagsModuleModule() -> UIViewController? {
+     func buildCountryFlagsModuleModule(with flagsArray: [Array<Any>]) -> UIViewController?{
         buildView()
         buildRouter()
-        buildInteractor()
+        buildInteractor(with: flagsArray)
         buildPresenter()
         buildCircularDependencies()
         return view as? UIViewController
@@ -37,8 +37,8 @@ class CountryFlagsModuleDefaultBuilder: CountryFlagsModuleBuilder {
         self.router = CountryFlagsModuleDefaultRouter(viewController: view)
     }
 
-    fileprivate func buildInteractor() {
-        self.interactorManager = CountryFlagsModuleDefaultInteractorManager() // TODO: set dependencies in init (use case/s, services...)
+    fileprivate func buildInteractor(with flagsArray: [Array<Any>]) {
+        self.interactorManager = CountryFlagsModuleDefaultInteractorManager(flagsArray: flagsArray)
     }
 
     fileprivate func buildPresenter() {

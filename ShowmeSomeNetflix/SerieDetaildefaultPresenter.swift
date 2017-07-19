@@ -52,6 +52,11 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
             }
         }
     }
+    
+    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>]) {
+        
+        self.router.navigateToCountriesForSerie(withArrayofCountries: flagsArray)
+    }
 }
 
 fileprivate class SerieDetailViewModelBuilder {
