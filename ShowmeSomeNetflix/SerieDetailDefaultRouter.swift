@@ -26,10 +26,12 @@ class SerieDetailDefaultRouter: SerieDetailRouter {
      
         if let countryFlagsViewController = self.countryFlagsBuilder().buildCountryFlagsModuleModule(with: arrayOfCountries) {
             
-//            self.popViewController = CountriesDetailDefaultViewController(nibName: "DetailViewCountries", bundle: nil)
-//            self.popViewController?.showInView(self.view, withImage: nil, withMessage: nil, animated: true)
+            self.popViewController = CountriesDetailDefaultViewController(nibName: "DetailViewCountries", bundle: nil)
+            self.popViewController?.showInView(view, withImage: nil, withMessage: nil, animated: true)
+            
+            
+           
           
-            self.viewController?.navigationController?.pushViewController(countryFlagsViewController, animated: true)
             
         }
     }

@@ -69,8 +69,6 @@ fileprivate class SerieDetailViewModelBuilder {
                         NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!)!]
        
         
-        
-        
         return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [emission])
 
         
