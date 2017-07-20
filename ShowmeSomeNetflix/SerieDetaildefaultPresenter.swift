@@ -6,7 +6,7 @@
 //  Copyright © 2017 Michel Goñi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct SerieDetailViewModel {
     
@@ -48,29 +48,26 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
             if let serieDetail = serieDetail {
              
                 let serieDetailViewModel = self.serieDetailModelBuilder.buildSerieDetailWithSerieModel(serieDetail: serieDetail)
-                self.view?.displaySerieDetail(withSerieDetailViewmodel: serieDetailViewModel)
+                self.view?.displaySerieDetail(withSerieDetailViewmodel: serieDetailViewModel!)
             }
         }
     }
     
-    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>]) {
+    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>], and view: UIView){
         
-        self.router.navigateToCountriesForSerie(withArrayofCountries: flagsArray)
+        self.router.navigateToCountriesForSerie(withArrayofCountries: flagsArray, and: view)
     }
 }
 
 fileprivate class SerieDetailViewModelBuilder {
     
-    func buildSerieDetailWithSerieModel(serieDetail: Movie) -> SerieDetailViewModel {
+    func buildSerieDetailWithSerieModel(serieDetail: Movie) -> SerieDetailViewModel? {
         
-        let emission = [NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String],
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.flagCountries!) as! [String],
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.subtitles!) as! [Array<String>],
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!) as! [Array<String>]] as [Any]
+       print(serieDetail)
 
         
         
-        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [emission])
+        return nil
        
         
        

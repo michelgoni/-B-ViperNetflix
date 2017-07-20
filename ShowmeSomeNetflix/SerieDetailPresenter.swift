@@ -6,11 +6,11 @@
 //  Copyright © 2017 Michel Goñi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol SerieDetailPresenter {
     
     func loadData()
     
-    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>])
+    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>], and view: UIView)
 }

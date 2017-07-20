@@ -47,7 +47,7 @@ class SerieDetailDefaultViewController: UIViewController {
     
     @IBAction func showCountries(_ sender: Any) {
         
-      self.presenter?.presentCountryFlagsForSerie(array: (self.serieDetailModel?.arrayCountries)!)
+      self.presenter?.presentCountryFlagsForSerie(array: (self.serieDetailModel?.arrayCountries)!, and: self.view)
 
         self.popViewController = CountriesDetailDefaultViewController(nibName: "DetailViewCountries", bundle: nil)
         self.popViewController?.showInView(self.view, withImage: nil, withMessage: nil, animated: true)

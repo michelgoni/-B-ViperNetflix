@@ -6,9 +6,9 @@
 //  Copyright © 2017 Michel Goñi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol SerieDetailRouter {
     
-    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>])
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], and view: UIView)
 }

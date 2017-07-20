@@ -11,6 +11,7 @@ import UIKit
 class SerieDetailDefaultRouter: SerieDetailRouter {
     
     weak var viewController: UIViewController?
+     var popViewController : CountriesDetailDefaultViewController?
     
     init(viewController: UIViewController) {
         self.viewController = viewController
@@ -21,9 +22,12 @@ class SerieDetailDefaultRouter: SerieDetailRouter {
         return Container.shared.countryFlagsBuilder()
     }
     
-    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>]) {
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], and view: UIView) {
      
         if let countryFlagsViewController = self.countryFlagsBuilder().buildCountryFlagsModuleModule(with: arrayOfCountries) {
+            
+//            self.popViewController = CountriesDetailDefaultViewController(nibName: "DetailViewCountries", bundle: nil)
+//            self.popViewController?.showInView(self.view, withImage: nil, withMessage: nil, animated: true)
           
             self.viewController?.navigationController?.pushViewController(countryFlagsViewController, animated: true)
             
