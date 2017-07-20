@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShowmeSomeNetflix/CustomViewLayOut.swift"
-            timestampString = "520686142.65586"
+            filePath = "ShowmeSomeNetflix/RemoteNetflixMovieService.swift"
+            timestampString = "520792742.700733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "prepare()"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "searchMovies(byTerm:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShowmeSomeNetflix/CustomViewLayOut.swift"
-            timestampString = "520686142.65586"
+            filePath = "ShowmeSomeNetflix/CellControllerFactory.swift"
+            timestampString = "522176254.57817"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "layoutAttributesForElements(in:)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "cellControllers(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,14 +41,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShowmeSomeNetflix/SeriesListViewController.swift"
-            timestampString = "520685783.04649"
+            filePath = "ShowmeSomeNetflix/MovieViewController.swift"
+            timestampString = "522262162.211256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "displaySeriesList(withSeriesListViewModel:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShowmeSomeNetflix.MovieViewController.(viewWillAppear (Swift.Bool) -&gt; ()).(closure #1)"
+                  moduleName = "ShowmeSomeNetflix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/xCodeFiles/SwiftProjects/ShowmeSomeNetflix/ShowmeSomeNetflix/MovieViewController.swift"
+                  timestampString = "522265519.343022"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShowmeSomeNetflix.MovieViewController.(viewWillAppear (Swift.Bool) -&gt; ()).(closure #1)"
+                  moduleName = "ShowmeSomeNetflix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Sin%20ti%CC%81tulo/xCodeFiles/SwiftProjects/ShowmeSomeNetflix/ShowmeSomeNetflix/MovieViewController.swift"
+                  timestampString = "522265519.345707"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "2045">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

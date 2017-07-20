@@ -15,13 +15,13 @@ class CountryFlagsModuleDefaultBuilder: CountryFlagsModuleBuilder {
     var view: CountryFlagsModuleView?
 
     // MARK: - CountryFlagsModuleBuilder protocol
-     func buildCountryFlagsModuleModule(with flagsArray: [Array<Any>]) -> UIViewController?{
+     func buildCountryFlagsModuleModule(with flagsArray: [Array<Any>]) -> CountryFlagsModuleViewController?{
         buildView()
         buildRouter()
         buildInteractor(with: flagsArray)
         buildPresenter()
         buildCircularDependencies()
-        return view as? UIViewController
+        return view as? CountryFlagsModuleViewController
     }
 
     // MARK: - Private

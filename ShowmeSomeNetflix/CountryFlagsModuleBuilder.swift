@@ -9,5 +9,5 @@
 import UIKit
 
 protocol CountryFlagsModuleBuilder {
-    func buildCountryFlagsModuleModule(with flagsArray: [Array<Any>]) -> UIViewController?
+    func buildCountryFlagsModuleModule(with flagsArray: [Array<Any>]) -> CountryFlagsModuleViewController?
 }

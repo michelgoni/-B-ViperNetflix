@@ -20,8 +20,6 @@ class SerieDetailDefaultViewController: UIViewController {
     @IBOutlet weak var serieImage: UIImageView!
     @IBOutlet weak var btnFavorite: RoundButton!
     
-    
-    var popViewController : CountriesDetailDefaultViewController?
     var presenter: SerieDetailPresenter?
     var serieDetailModel : SerieDetailViewModel?
  
