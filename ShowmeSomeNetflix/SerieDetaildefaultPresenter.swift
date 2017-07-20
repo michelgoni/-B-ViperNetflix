@@ -65,8 +65,8 @@ fileprivate class SerieDetailViewModelBuilder {
         
         let emission = [NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String],
                         NSKeyedUnarchiver.unarchiveObject(with: serieDetail.flagCountries!) as! [String],
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.subtitles!) as! [Array<String>],
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!) as! [Array<String>]] as [Any]
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.subtitles!)!,
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!)!]
        
         
         
