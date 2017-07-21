@@ -15,6 +15,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
     let heightForImage: CGFloat = 113
     let insetCollection : CGFloat = 5
@@ -35,7 +36,6 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         self.popUpView.layer.cornerRadius = 25
         self.popUpView.layer.shadowOpacity = 0.8
@@ -43,7 +43,6 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CountryDetailCell", bundle: nil), forCellWithReuseIdentifier: "CountryCell")
-        //setCollectionViewPadding()
         self.setUpCustomLayout()
     }
     
@@ -89,15 +88,25 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     //MARK:--Collection view delegates
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 55
+        return self.viewModel?.countriesArray.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CountryCell", for: indexPath) as! CountryCollectionViewCell
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CountryCell", for: indexPath) as! CountryCollectionViewCell
         
+        if let countryName = self.viewModel?.countriesArray[indexPath.row], let countryAcronym = self.viewModel?.flagsAcronyms[indexPath.row] {
+            self.configureCell(cell: cell, country: countryName, acronym: countryAcronym)
+        }
+       
         return cell
         
+    }
+    
+    private func configureCell(cell: CountryCollectionViewCell, country: String, acronym: String) {
+        
+        cell.countryImage.image = UIImage(named: acronym + ".png")
+        cell.countryLabel.text = country
     }
 }
 
@@ -115,6 +124,6 @@ extension CountryFlagsModuleViewController: CountryFlagsModuleView {
     
     func displayCountryFlags(withCountryFlagsModuleViewModel countryFlags: CountryFlagsModuleViewModel) {
         
-        print(countryFlags)
+        self.viewModel = countryFlags
     }
 }
