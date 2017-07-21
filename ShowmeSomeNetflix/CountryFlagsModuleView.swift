@@ -9,5 +9,6 @@
 import Foundation
 
 protocol CountryFlagsModuleView: class {
-
+    
+    func displayCountryFlags(withCountryFlagsModuleViewModel countryFlags: CountryFlagsModuleViewModel)
 }

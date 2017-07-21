@@ -9,5 +9,7 @@
 import Foundation
 
 protocol CountryFlagsModulePresenter {
+    
+    func loadCountryFlagsItems()
 
 }

@@ -9,5 +9,6 @@
 import Foundation
 
 protocol CountryFlagsModuleInteractorManager {
-
+    
+    func getFlagsItems(completionHandletr: @escaping (([Array<Any>]) ->Void))
 }

@@ -27,8 +27,15 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        self.presenter?.loadCountryFlagsItems()
+    }
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
         self.popUpView.layer.cornerRadius = 25
         self.popUpView.layer.shadowOpacity = 0.8
@@ -36,7 +43,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CountryDetailCell", bundle: nil), forCellWithReuseIdentifier: "CountryCell")
-        setCollectionViewPadding()
+        //setCollectionViewPadding()
         self.setUpCustomLayout()
     }
     
@@ -49,6 +56,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         layout.delegate = self
     }
     
+    //MARK:-View and animations items
     open func showInView(_ aView: UIView!, withImage image : UIImage?, withMessage message: String?, animated: Bool) {
         
         aView.addSubview(self.view)
@@ -78,31 +86,8 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         });
     }
     
-    
-    func setCollectionViewPadding() {
-        
-        let screenWidth = self.view.frame.width
-        collectionViewPadding = (screenWidth - (3 * 113)) / 4
-        
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: collectionViewPadding, left: collectionViewPadding, bottom: collectionViewPadding, right: collectionViewPadding)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: 113, height: 113)
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return collectionViewPadding
-    }
-    
+    //MARK:--Collection view delegates
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 55
     }
@@ -114,9 +99,6 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         return cell
         
     }
-    
-    
-    
 }
 
 extension CountryFlagsModuleViewController: RandomSizeCellsDelegate {
@@ -130,5 +112,9 @@ extension CountryFlagsModuleViewController: RandomSizeCellsDelegate {
 
 // MARK: - CountryFlagsModuleView
 extension CountryFlagsModuleViewController: CountryFlagsModuleView {
-
+    
+    func displayCountryFlags(withCountryFlagsModuleViewModel countryFlags: CountryFlagsModuleViewModel) {
+        
+        print(countryFlags)
+    }
 }

@@ -15,4 +15,9 @@ class CountryFlagsModuleDefaultInteractorManager: CountryFlagsModuleInteractorMa
     init(flagsArray: [Array<Any>]) {
         self.flagsArray = flagsArray
     }
+    
+    func getFlagsItems(completionHandletr: @escaping (([Array<Any>]) ->Void)) {
+        
+        completionHandletr(self.flagsArray)
+    }
 }

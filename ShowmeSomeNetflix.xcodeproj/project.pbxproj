@@ -406,6 +406,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		2D3CA0DE1F22622100B5EBD2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */,
+				2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		2D4929FD1E7DC08A00CB9F96 /* Animators */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,8 +552,8 @@
 		2D64A5891F1E7A2000F1F18E /* InteractorManager */ = {
 			isa = PBXGroup;
 			children = (
-				2D64A5741F1E79FA00F1F18E /* CountryFlagsModuleDefaultInteractorManager.swift */,
 				2D64A5771F1E79FA00F1F18E /* CountryFlagsModuleInteractorManager.swift */,
+				2D64A5741F1E79FA00F1F18E /* CountryFlagsModuleDefaultInteractorManager.swift */,
 			);
 			name = InteractorManager;
 			sourceTree = "<group>";
@@ -552,8 +561,8 @@
 		2D64A58A1F1E7A2A00F1F18E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				2D64A5751F1E79FA00F1F18E /* CountryFlagsModuleDefaultPresenter.swift */,
 				2D64A5781F1E79FA00F1F18E /* CountryFlagsModulePresenter.swift */,
+				2D64A5751F1E79FA00F1F18E /* CountryFlagsModuleDefaultPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -570,9 +579,8 @@
 		2D64A58C1F1E7A3B00F1F18E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */,
+				2D3CA0DE1F22622100B5EBD2 /* Cell */,
 				2D64A54F1F1E6BB100F1F18E /* ContryFlagsLayout.swift */,
-				2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */,
 				2D64A57A1F1E79FA00F1F18E /* CountryFlagsModuleView.swift */,
 				2D64A57B1F1E79FA00F1F18E /* CountryFlagsModuleViewController.swift */,
 				2D64A57C1F1E79FA00F1F18E /* CountryFlagsModuleViewController.xib */,
