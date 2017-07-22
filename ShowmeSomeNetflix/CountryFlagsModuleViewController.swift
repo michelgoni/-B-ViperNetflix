@@ -39,6 +39,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CountryDetailCell", bundle: nil), forCellWithReuseIdentifier: "CountryCell")
         self.setUpCustomLayout()
+        self.title = "Countries"
     }
     
     fileprivate func setUpCustomLayout () {

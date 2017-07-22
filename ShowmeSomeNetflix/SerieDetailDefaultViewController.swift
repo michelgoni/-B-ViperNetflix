@@ -59,7 +59,6 @@ extension SerieDetailDefaultViewController: SerieDetailView {
         self.countryLabel.text = serieDetail.country
         self.summaryLabel.text = serieDetail.summary
         self.serieImage.kf.setImage(with: ImageResource(downloadURL: URL(string: serieDetail.image)!))
-      
     }
     
     func displayErrorScreen() {
