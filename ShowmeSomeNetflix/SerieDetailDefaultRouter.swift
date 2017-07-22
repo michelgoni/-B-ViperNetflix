@@ -21,7 +21,7 @@ class SerieDetailDefaultRouter: SerieDetailRouter {
         return Container.shared.countryFlagsBuilder()
     }
     
-    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], and view: UIView) {
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>]) {
      
         if let countryFlagsViewController = self.countryFlagsBuilder().buildCountryFlagsModuleModule(with: arrayOfCountries) {
 

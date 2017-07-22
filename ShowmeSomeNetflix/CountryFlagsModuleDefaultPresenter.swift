@@ -12,6 +12,9 @@ struct CountryFlagsModuleViewModel {
     
     let countriesArray: [String]
     let flagsAcronyms: [String]
+    let languages: [Array<Any>]
+    let subtitles: [Array<Any>]
+    
 }
 
 // MARK: - Main Class
@@ -37,11 +40,16 @@ class CountryFlagsModuleDefaultPresenter: CountryFlagsModulePresenter {
            self.view?.displayCountryFlags(withCountryFlagsModuleViewModel: countryFlagsViewModel)
         }
     }
+    
+    func presentLanguagesForSerie() {
+        
+        
+    }
 }
 
 // MARK: - Model Builder
 class CountryFlagsModuleViewModelBuilder {
     func buildViewModel(countryFlagsItems: [Array<Any>]) -> CountryFlagsModuleViewModel {
-        return CountryFlagsModuleViewModel(countriesArray: countryFlagsItems[0][0] as! [String], flagsAcronyms: countryFlagsItems[0][1] as! [String])
+        return CountryFlagsModuleViewModel(countriesArray: countryFlagsItems[0][0] as! [String], flagsAcronyms: countryFlagsItems[0][1] as! [String], languages: countryFlagsItems[0][2] as! [Array<Any>], subtitles: countryFlagsItems[0][3] as! [Array<Any>])
     }
 }

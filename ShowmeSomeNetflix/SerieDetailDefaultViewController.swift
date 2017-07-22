@@ -45,7 +45,7 @@ class SerieDetailDefaultViewController: UIViewController {
     
     @IBAction func showCountries(_ sender: Any) {
         
-      self.presenter?.presentCountryFlagsForSerie(array: (self.serieDetailModel?.arrayCountries)!, and: self.view)
+      self.presenter?.presentCountryFlagsForSerie(array: (self.serieDetailModel?.arrayCountries)!)
     }
 }
 

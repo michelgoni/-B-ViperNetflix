@@ -12,5 +12,5 @@ protocol SerieDetailPresenter {
     
     func loadData()
     
-    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>], and view: UIView)
+    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>])
 }

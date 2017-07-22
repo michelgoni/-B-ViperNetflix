@@ -16,5 +16,8 @@ class CountryFlagsModuleDefaultRouter: CountryFlagsModuleRouter {
     }
 
     // MARK - Navigation funcions
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], and view: UIView) {
+        
+    }
 
 }

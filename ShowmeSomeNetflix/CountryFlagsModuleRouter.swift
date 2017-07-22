@@ -6,8 +6,9 @@
 //  Copyright (c) 2016, Personal. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CountryFlagsModuleRouter {
-
+    
+    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], and view: UIView)
 }

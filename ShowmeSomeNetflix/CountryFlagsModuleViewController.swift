@@ -75,6 +75,10 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         cell.countryImage.image = UIImage(named: acronym + ".png")
         cell.countryLabel.text = country
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
 }
 
 extension CountryFlagsModuleViewController: RandomSizeCellsDelegate {

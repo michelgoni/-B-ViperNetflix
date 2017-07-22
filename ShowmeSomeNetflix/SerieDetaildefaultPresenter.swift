@@ -53,9 +53,9 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
         }
     }
     
-    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>], and view: UIView){
+    func presentCountryFlagsForSerie(array flagsArray: [Array<Any>]){
         
-        self.router.navigateToCountriesForSerie(withArrayofCountries: flagsArray, and: view)
+        self.router.navigateToCountriesForSerie(withArrayofCountries: flagsArray)
     }
 }
 
