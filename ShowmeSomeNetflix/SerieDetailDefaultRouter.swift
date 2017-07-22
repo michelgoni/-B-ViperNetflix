@@ -25,8 +25,7 @@ class SerieDetailDefaultRouter: SerieDetailRouter {
      
         if let countryFlagsViewController = self.countryFlagsBuilder().buildCountryFlagsModuleModule(with: arrayOfCountries) {
 
-            countryFlagsViewController.showInView(view, withImage: nil, withMessage: nil, animated: true)
-            
+            self.viewController?.navigationController?.pushViewController(countryFlagsViewController, animated: true)
         }
     }
 }
