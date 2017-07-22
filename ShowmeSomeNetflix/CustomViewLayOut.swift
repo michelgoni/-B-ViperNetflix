@@ -12,6 +12,7 @@ import UIKit
 protocol RandomSizeCellsDelegate {
     
     func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
+    func collectionView(_ collectionView: UICollectionView, heightForTitleAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat?
 }
 
 class CustomLayoutAttributes: UICollectionViewLayoutAttributes {

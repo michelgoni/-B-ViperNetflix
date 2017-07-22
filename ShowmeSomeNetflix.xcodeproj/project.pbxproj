@@ -40,6 +40,7 @@
 		2D545B851E3529F7007BAC95 /* NetflixMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D545B831E3529F7007BAC95 /* NetflixMovie.xcdatamodeld */; };
 		2D55F1121F17DEBB005458AC /* CountryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */; };
 		2D55F12D1F17E04F005458AC /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */; };
+		2D6184C91F23B27B00D5FAAD /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6184C81F23B27B00D5FAAD /* RoundedCornerView.swift */; };
 		2D64A5501F1E6BB100F1F18E /* ContryFlagsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A54F1F1E6BB100F1F18E /* ContryFlagsLayout.swift */; };
 		2D64A57D1F1E79FA00F1F18E /* CountryFlagsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A5721F1E79FA00F1F18E /* CountryFlagsModuleBuilder.swift */; };
 		2D64A57E1F1E79FA00F1F18E /* CountryFlagsModuleDefaultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A5731F1E79FA00F1F18E /* CountryFlagsModuleDefaultBuilder.swift */; };
@@ -332,6 +333,7 @@
 		2D545B841E3529F7007BAC95 /* NetflixMovie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetflixMovie.xcdatamodel; sourceTree = "<group>"; };
 		2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryDetailCell.xib; sourceTree = "<group>"; };
 		2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2D6184C81F23B27B00D5FAAD /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		2D64A54F1F1E6BB100F1F18E /* ContryFlagsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContryFlagsLayout.swift; sourceTree = "<group>"; };
 		2D64A5721F1E79FA00F1F18E /* CountryFlagsModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryFlagsModuleBuilder.swift; sourceTree = "<group>"; };
 		2D64A5731F1E79FA00F1F18E /* CountryFlagsModuleDefaultBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryFlagsModuleDefaultBuilder.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 			children = (
 				2D55F12C1F17E04F005458AC /* CountryCollectionViewCell.swift */,
 				2D55F1111F17DEBB005458AC /* CountryDetailCell.xib */,
+				2D6184C81F23B27B00D5FAAD /* RoundedCornerView.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -1177,6 +1180,7 @@
 				2DA2BAB81ECF461900B6ADC4 /* SerieListDefaultRouter.swift in Sources */,
 				2DC25ED71ECCD38700940EDF /* Container.swift in Sources */,
 				2DA2BAB31ECF44EA00B6ADC4 /* SeriesListViewController.swift in Sources */,
+				2D6184C91F23B27B00D5FAAD /* RoundedCornerView.swift in Sources */,
 				2D64A5811F1E79FA00F1F18E /* CountryFlagsModuleDefaultRouter.swift in Sources */,
 				2D64A5801F1E79FA00F1F18E /* CountryFlagsModuleDefaultPresenter.swift in Sources */,
 				2D6E5BF51F0965C800925780 /* SerieDetailDefaultViewController.swift in Sources */,

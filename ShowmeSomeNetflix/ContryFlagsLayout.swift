@@ -51,7 +51,9 @@ class ContryFlagsLayout: UICollectionViewLayout {
                 let indexPath = IndexPath(item: item, section: 0)
                 let width = columnWidth - (cellPadding * 2)
                 let imageHeight = delegate.collectionView(collectionView!, heightForImageAtIndexPath: indexPath, withWidth: width)
-                let height = cellPadding + imageHeight  + cellPadding
+                let titleHeight = delegate.collectionView(collectionView!, heightForTitleAtIndexPath: indexPath, withWidth: width)
+                let height = cellPadding + imageHeight + titleHeight! + cellPadding
+              
                 let frame = CGRect(x: xOffsets[column], y: yOffsets[column], width: columnWidth, height: height)
                 let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
                 let attributes = CustomLayoutAttributes(forCellWith: indexPath)

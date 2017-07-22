@@ -157,7 +157,9 @@ extension SeriesListViewController: SeriesListView {
 
 extension SeriesListViewController: RandomSizeCellsDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+
+    
+   func collectionView(_ collectionView: UICollectionView, heightForImageAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
         
         //In case we should hace dynamic images. But since all images share same size, retuning a constant so far is ok
 //        let data = try! Data(contentsOf: URL(string: (viewModel?.seriesListViewModel[indexPath.row].image)!)!)
@@ -166,5 +168,10 @@ extension SeriesListViewController: RandomSizeCellsDelegate {
 //        let rect = AVMakeRect(aspectRatio: (image?.size)! , insideRect: boundingRect)
         
         return heightForImage
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, heightForTitleAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat? {
+        
+        return nil
     }
 }

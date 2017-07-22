@@ -16,7 +16,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
-    let heightForImage: CGFloat = 113
+    let heightForImage: CGFloat = 87
     let insetCollection : CGFloat = 5
     
     required public init?(coder aDecoder: NSCoder) {
@@ -82,6 +82,11 @@ extension CountryFlagsModuleViewController: RandomSizeCellsDelegate {
         
         return heightForImage
     }
+    func collectionView(_ collectionView: UICollectionView, heightForTitleAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat? {
+        
+        return 23
+    }
+    
 }
 
 
