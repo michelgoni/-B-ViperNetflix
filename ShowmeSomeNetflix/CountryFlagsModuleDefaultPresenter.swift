@@ -22,8 +22,8 @@ class CountryFlagsModuleDefaultPresenter: CountryFlagsModulePresenter {
     fileprivate let interactorManager: CountryFlagsModuleInteractorManager
     fileprivate let router: CountryFlagsModuleRouter
     fileprivate weak var view: CountryFlagsModuleView?
-
     fileprivate let viewModelBuilder = CountryFlagsModuleViewModelBuilder()
+    fileprivate var languagesAndSubtitlesArray = [Array<Any>]()
 
     init(interactorManager: CountryFlagsModuleInteractorManager, router: CountryFlagsModuleRouter, view: CountryFlagsModuleView) {
         self.interactorManager = interactorManager
@@ -35,15 +35,15 @@ class CountryFlagsModuleDefaultPresenter: CountryFlagsModulePresenter {
     func loadCountryFlagsItems() {
         self.interactorManager.getFlagsItems { flagsArray in
             
-          
             let countryFlagsViewModel = self.viewModelBuilder.buildViewModel(countryFlagsItems: flagsArray)
-           self.view?.displayCountryFlags(withCountryFlagsModuleViewModel: countryFlagsViewModel)
+            self.languagesAndSubtitlesArray += [[flagsArray[0][2]],[flagsArray[0][3]]]
+            self.view?.displayCountryFlags(withCountryFlagsModuleViewModel: countryFlagsViewModel)
         }
     }
     
     func presentLanguagesForSerie() {
         
-        
+       self.router.navigateToCountriesForSerie(withArrayofCountries: self.languagesAndSubtitlesArray)
     }
 }
 
