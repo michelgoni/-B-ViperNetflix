@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguagesModuleViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguagesModuleViewController" customModule="ShowmeSomeNetflix" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="popUpView" destination="Zqk-c3-hc5" id="9AR-DS-ZMh"/>
+                <outlet property="view" destination="yVZ-cu-EUj" id="arK-KS-BoN"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="yVZ-cu-EUj">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqk-c3-hc5" userLabel="PopUpView">
+                    <rect key="frame" x="19" y="73" width="337" height="521"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xdx-mf-nDx">
+                            <rect key="frame" x="0.0" y="0.0" width="337" height="471"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnT-Gh-Uyb">
+                            <rect key="frame" x="153" y="471" width="30" height="50"/>
+                            <state key="normal" image="cancel"/>
+                            <connections>
+                                <action selector="closePopUpView:" destination="-1" eventType="touchUpInside" id="znl-3h-bxP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.73489459180000005" blue="0.13652613499999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SnT-Gh-Uyb" secondAttribute="trailing" constant="154" id="9ht-lb-kBH"/>
+                        <constraint firstItem="SnT-Gh-Uyb" firstAttribute="leading" secondItem="Zqk-c3-hc5" secondAttribute="leading" constant="153" id="hvk-rf-e1R"/>
+                        <constraint firstAttribute="bottom" secondItem="SnT-Gh-Uyb" secondAttribute="bottom" id="sOR-gG-YRz"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zqk-c3-hc5" secondAttribute="trailing" constant="19" id="1Nm-qo-cJu"/>
+                <constraint firstItem="Zqk-c3-hc5" firstAttribute="top" secondItem="yVZ-cu-EUj" secondAttribute="top" constant="73" id="F0X-qF-0J7"/>
+                <constraint firstItem="Zqk-c3-hc5" firstAttribute="leading" secondItem="yVZ-cu-EUj" secondAttribute="leading" constant="19" id="KPE-Hg-6wX"/>
+                <constraint firstItem="Zqk-c3-hc5" firstAttribute="centerY" secondItem="yVZ-cu-EUj" secondAttribute="centerY" id="SgA-cl-lUK"/>
+                <constraint firstItem="Zqk-c3-hc5" firstAttribute="centerX" secondItem="yVZ-cu-EUj" secondAttribute="centerX" id="s3T-7a-c9g"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="97.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="cancel" width="50" height="50"/>
+    </resources>
 </document>
