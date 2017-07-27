@@ -20,7 +20,7 @@ class LanguagesModuleViewController: UIViewController {
     }
     
     //MARK:-View and animations items
-    open func showInView(_ aView: UIView!, withImage image : UIImage?, withMessage message: String?, animated: Bool) {
+    open func showInView(_ aView: UIView!, animated: Bool) {
         
         aView.addSubview(self.view)
         

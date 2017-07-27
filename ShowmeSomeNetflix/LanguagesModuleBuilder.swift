@@ -10,5 +10,5 @@ import UIKit
 
 protocol LanguagesModuleBuilder {
     
-    func buildLanguagesModuleModule() -> UIViewController?
+    func buildLanguagesModuleModule() -> LanguagesModuleViewController?
 }

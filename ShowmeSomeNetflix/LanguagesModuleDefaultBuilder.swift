@@ -15,13 +15,13 @@ class LanguagesModuleDefaultBuilder: LanguagesModuleBuilder {
     var view: LanguagesModuleView?
 
     // MARK: - LanguagesModuleBuilder protocol
-    func buildLanguagesModuleModule() -> UIViewController? {
+    func buildLanguagesModuleModule() -> LanguagesModuleViewController? {
         buildView()
         buildRouter()
         buildInteractor()
         buildPresenter()
         buildCircularDependencies()
-        return view as? UIViewController
+        return view as? LanguagesModuleViewController
     }
 
     // MARK: - Private

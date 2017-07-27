@@ -6,7 +6,7 @@
 //  Copyright (c) 2016, Personal. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct CountryFlagsModuleViewModel {
     
@@ -43,7 +43,7 @@ class CountryFlagsModuleDefaultPresenter: CountryFlagsModulePresenter {
     
     func presentLanguagesForSerie() {
         
-       self.router.navigateToCountriesForSerie(withArrayofCountries: self.languagesAndSubtitlesArray)
+       self.router.navigateToCountriesForSerie(withArrayofCountries: self.languagesAndSubtitlesArray, andView: self.view as! UIView)
     }
 }
 
