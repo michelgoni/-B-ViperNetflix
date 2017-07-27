@@ -6,11 +6,11 @@
 //  Copyright (c) 2016, Personal. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CountryFlagsModulePresenter {
     
     func loadCountryFlagsItems()
-    func presentLanguagesForSerie()
+    func presentLanguagesForSerie(withView view: UIView)
 
 }

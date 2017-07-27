@@ -78,7 +78,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        self.presenter?.presentLanguagesForSerie()
+        self.presenter?.presentLanguagesForSerie(withView: self.view)
     }
 }
 

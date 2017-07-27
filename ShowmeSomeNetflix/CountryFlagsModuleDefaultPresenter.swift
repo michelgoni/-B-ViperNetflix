@@ -41,9 +41,9 @@ class CountryFlagsModuleDefaultPresenter: CountryFlagsModulePresenter {
         }
     }
     
-    func presentLanguagesForSerie() {
+    func presentLanguagesForSerie(withView view: UIView) {
         
-       self.router.navigateToCountriesForSerie(withArrayofCountries: self.languagesAndSubtitlesArray, andView: self.view as! UIView)
+       self.router.navigateToCountriesForSerie(withArrayofCountries: self.languagesAndSubtitlesArray, andView: view)
     }
 }
 
