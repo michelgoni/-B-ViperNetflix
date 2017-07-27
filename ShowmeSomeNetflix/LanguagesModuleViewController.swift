@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LanguagesModuleViewController: BaseViewController {
+class LanguagesModuleViewController: UIViewController {
     var presenter: LanguagesModulePresenter?
 
     override func viewDidLoad() {

@@ -6,12 +6,12 @@
 //  Copyright (c) 2016, Personal. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class LanguagesModuleDefaultRouter: LanguagesModuleRouter {
-    weak var viewController: BaseViewController?
+    weak var viewController: UIViewController?
 
-    init(viewController: BaseViewController) {
+    init(viewController: UIViewController) {
         self.viewController = viewController
     }
 

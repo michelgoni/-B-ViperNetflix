@@ -15,13 +15,13 @@ class LanguagesModuleDefaultBuilder: LanguagesModuleBuilder {
     var view: LanguagesModuleView?
 
     // MARK: - LanguagesModuleBuilder protocol
-    func buildLanguagesModuleModule() -> BaseViewController? {
+    func buildLanguagesModuleModule() -> UIViewController? {
         buildView()
         buildRouter()
         buildInteractor()
         buildPresenter()
         buildCircularDependencies()
-        return view as? BaseViewController
+        return view as? UIViewController
     }
 
     // MARK: - Private
@@ -30,8 +30,8 @@ class LanguagesModuleDefaultBuilder: LanguagesModuleBuilder {
     }
 
     fileprivate func buildRouter() {
-        guard let view = self.view as? BaseViewController else {
-            assert(false, "View has to be a BaseViewController")
+        guard let view = self.view as? UIViewController else {
+            assert(false, "View has to be a UIViewController")
             return
         }
         self.router = LanguagesModuleDefaultRouter(viewController: view)

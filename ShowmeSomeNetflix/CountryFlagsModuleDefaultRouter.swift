@@ -14,10 +14,19 @@ class CountryFlagsModuleDefaultRouter: CountryFlagsModuleRouter {
     init(viewController: UIViewController) {
         self.viewController = viewController
     }
+    
+    fileprivate func languagesModuleBuilder()-> LanguagesModuleBuilder {
+        
+        return Container.shared.languagesModuleBuilder()
+    }
 
     // MARK - Navigation funcions
     func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>]) {
         
+        if let languagesViewController = self.languagesModuleBuilder().buildLanguagesModuleModule() {
+            
+            self.viewController?.navigationController?.pushViewController(languagesViewController, animated: true)
+        }
     }
 
 }

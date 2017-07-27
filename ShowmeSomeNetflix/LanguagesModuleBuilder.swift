@@ -6,8 +6,9 @@
 //  Copyright (c) 2016, Personal. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol LanguagesModuleBuilder {
-    func buildLanguagesModuleModule() -> BaseViewController?
+    
+    func buildLanguagesModuleModule() -> UIViewController?
 }
