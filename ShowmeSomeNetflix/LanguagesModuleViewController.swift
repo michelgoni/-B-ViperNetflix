@@ -16,6 +16,10 @@ class LanguagesModuleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.popUpView.layer.cornerRadius = 25
+        self.popUpView.layer.shadowOpacity = 0.8
+        self.popUpView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
 
     }
     
