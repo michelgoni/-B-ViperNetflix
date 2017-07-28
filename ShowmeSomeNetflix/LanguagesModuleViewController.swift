@@ -42,7 +42,8 @@ class LanguagesModuleViewController: UIViewController {
         });
     }
     
-    @IBAction func closePopUpView(_ sender: UIButton) {
+    @IBAction func closePopUp(_ sender: Any) {
+        
         UIView.animate(withDuration: 0.25, animations: {
             self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
@@ -52,6 +53,7 @@ class LanguagesModuleViewController: UIViewController {
             }
         });
     }
+    
 }
 
 // MARK: - LanguagesModuleView
