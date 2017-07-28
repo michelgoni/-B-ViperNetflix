@@ -10,4 +10,9 @@ import Foundation
 
 class LanguagesModuleDefaultInteractorManager: LanguagesModuleInteractorManager {
 
+    var flagsArray : [Array<Any>]
+    
+    init(flagsArray: [Array<Any>]) {
+        self.flagsArray = flagsArray
+    }
 }

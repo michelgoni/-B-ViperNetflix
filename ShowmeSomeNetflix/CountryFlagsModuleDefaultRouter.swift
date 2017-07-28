@@ -23,7 +23,7 @@ class CountryFlagsModuleDefaultRouter: CountryFlagsModuleRouter {
     // MARK - Navigation funcions
    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], andView view: UIView) {
         
-        if let languagesViewController = self.languagesModuleBuilder().buildLanguagesModuleModule() {
+        if let languagesViewController = self.languagesModuleBuilder().buildLanguagesModuleModule(with: arrayOfCountries) {
             
             languagesViewController.showInView(view, animated: true)
             

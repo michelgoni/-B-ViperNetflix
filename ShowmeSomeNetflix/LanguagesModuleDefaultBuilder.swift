@@ -15,10 +15,10 @@ class LanguagesModuleDefaultBuilder: LanguagesModuleBuilder {
     var view: LanguagesModuleView?
 
     // MARK: - LanguagesModuleBuilder protocol
-    func buildLanguagesModuleModule() -> LanguagesModuleViewController? {
+    func buildLanguagesModuleModule(with flagsArray: [Array<Any>]) -> LanguagesModuleViewController? {
         buildView()
         buildRouter()
-        buildInteractor()
+        buildInteractor(with: flagsArray)
         buildPresenter()
         buildCircularDependencies()
         return view as? LanguagesModuleViewController
@@ -37,8 +37,8 @@ class LanguagesModuleDefaultBuilder: LanguagesModuleBuilder {
         self.router = LanguagesModuleDefaultRouter(viewController: view)
     }
 
-    fileprivate func buildInteractor() {
-        self.interactorManager = LanguagesModuleDefaultInteractorManager() // TODO: set dependencies in init (use case/s, services...)
+    fileprivate func buildInteractor(with flagsArray: [Array<Any>]) {
+        self.interactorManager = LanguagesModuleDefaultInteractorManager(flagsArray: <#T##[Array<Any>]#>) // TODO: set dependencies in init (use case/s, services...)
     }
 
     fileprivate func buildPresenter() {
