@@ -9,7 +9,9 @@
 import Foundation
 
 struct LanguagesModuleViewModel {
-
+    
+    let languages: [Array<Any>]?
+    let subtitles: [Array<Any>]?
 }
 
 // MARK: - Main Class
@@ -27,12 +29,16 @@ class LanguagesModuleDefaultPresenter: LanguagesModulePresenter {
     }
 
     // MARK: - LanguagesModulePresenter
+    func loadLanguagesAndSubtitles() {
+        
+    
+    }
 
 }
 
 // MARK: - Model Builder
 class LanguagesModuleViewModelBuilder {
     func buildViewModel() -> LanguagesModuleViewModel {
-        return LanguagesModuleViewModel()
+        return LanguagesModuleViewModel(languages: nil, subtitles: nil)
     }
 }

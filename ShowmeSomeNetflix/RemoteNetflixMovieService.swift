@@ -64,16 +64,16 @@ class RemoteNetflixService {
     func searchCountry(byTerm: String, completionHandler:@escaping ([[String: AnyObject]]?) -> Void)  {
     
         let endPoint = "t=loadvideo&q=\(byTerm)"
-         //let finalUrl = urlBase+endPoint
+        let finalUrl = urlBase+endPoint
         var countriesArray = [AnyObject]()
         var languagesArray = [AnyObject]()
         var subtitilesArray = [AnyObject]()
         var flagNames = [AnyObject]()
         
-        var fixUrl = "https://gist.githubusercontent.com/michelgoni/de0ea41a0b98cae2e947ac1bf991d0c3/raw/a1dd73d0b2e740bcf1dfe6c84abf7ae6550fbc82/busqueda.json"
+        
         var result = [[String: AnyObject]]()
 
-        Alamofire.request(fixUrl, method: .get, headers: nil).validate().responseJSON() { response in
+        Alamofire.request(finalUrl, method: .get, headers: headers).validate().responseJSON() { response in
             
             switch response.result {
                 
@@ -86,7 +86,7 @@ class RemoteNetflixService {
                     self.movie["title"] = json["RESULT"]["nfinfo"][1].stringValue as AnyObject?
                     self.movie["summary"] = json["RESULT"]["nfinfo"][2].stringValue as AnyObject?
                     //TODO:-Replaced momentarely 
-                    self.movie["image"] = json["RESULT"]["nfinfo"][12].stringValue as AnyObject?
+                    self.movie["image"] = json["RESULT"]["nfinfo"][0].stringValue as AnyObject?
                     self.movie["imdbRating"] = json["RESULT"]["nfinfo"][5].stringValue as AnyObject?
                     self.movie["category"] = json["RESULT"]["nfinfo"][6].stringValue as AnyObject?
                     self.movie["country"] = json["RESULT"]["imdbinfo"][7].stringValue as AnyObject?

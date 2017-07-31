@@ -38,7 +38,7 @@ class LanguagesModuleDefaultBuilder: LanguagesModuleBuilder {
     }
 
     fileprivate func buildInteractor(with flagsArray: [Array<Any>]) {
-        self.interactorManager = LanguagesModuleDefaultInteractorManager(flagsArray: <#T##[Array<Any>]#>) // TODO: set dependencies in init (use case/s, services...)
+        self.interactorManager = LanguagesModuleDefaultInteractorManager(flagsArray: flagsArray) 
     }
 
     fileprivate func buildPresenter() {

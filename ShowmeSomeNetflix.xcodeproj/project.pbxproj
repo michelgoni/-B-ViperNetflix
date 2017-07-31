@@ -840,7 +840,6 @@
 			isa = PBXGroup;
 			children = (
 				2DED853A1F2A556B00C5AFCF /* LanguagesModulePresenter.swift */,
-				2DED853B1F2A556B00C5AFCF /* LanguagesModuleDefaultPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -860,6 +859,7 @@
 			isa = PBXGroup;
 			children = (
 				2DED85301F2A555A00C5AFCF /* LanguagesModuleRouter.swift */,
+				2DED853B1F2A556B00C5AFCF /* LanguagesModuleDefaultPresenter.swift */,
 				2DED85311F2A555A00C5AFCF /* LanguagesModuleDefaultRouter.swift */,
 			);
 			name = Router;
