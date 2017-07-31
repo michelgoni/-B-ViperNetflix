@@ -14,6 +14,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
     fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
     let heightForImage: CGFloat = 87

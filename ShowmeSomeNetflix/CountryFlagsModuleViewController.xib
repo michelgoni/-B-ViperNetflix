@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryFlagsModuleViewController" customModule="ShowmeSomeNetflix" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="xTl-Hj-BkE" id="5rH-xi-yIg"/>
+                <outlet property="searchBar" destination="Slx-6G-ctg" id="KH8-IB-G2A"/>
                 <outlet property="view" destination="OFU-Cl-lZ8" id="Eph-aC-Lj9"/>
             </connections>
         </placeholder>
@@ -24,7 +25,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xTl-Hj-BkE">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <rect key="frame" x="0.0" y="44" width="375" height="687"/>
                             <color key="backgroundColor" red="1" green="0.73489459180000005" blue="0.13652613499999999" alpha="1" colorSpace="calibratedRGB"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NJC-IQ-oAQ">
                                 <size key="itemSize" width="50" height="50"/>
@@ -33,13 +34,21 @@
                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </collectionViewFlowLayout>
                         </collectionView>
+                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Slx-6G-ctg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.73489459180000005" blue="0.13652613499999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="xTl-Hj-BkE" secondAttribute="bottom" id="3qE-7x-4u8"/>
+                        <constraint firstAttribute="bottom" secondItem="xTl-Hj-BkE" secondAttribute="bottom" constant="-64" id="3qE-7x-4u8"/>
                         <constraint firstItem="xTl-Hj-BkE" firstAttribute="leading" secondItem="hMx-I5-BCW" secondAttribute="leading" id="G0B-V3-3Gn"/>
                         <constraint firstAttribute="trailing" secondItem="xTl-Hj-BkE" secondAttribute="trailing" id="ID5-bg-Wcd"/>
-                        <constraint firstItem="xTl-Hj-BkE" firstAttribute="top" secondItem="hMx-I5-BCW" secondAttribute="top" id="N9u-fu-O68"/>
+                        <constraint firstItem="xTl-Hj-BkE" firstAttribute="top" secondItem="hMx-I5-BCW" secondAttribute="top" constant="44" id="N9u-fu-O68"/>
+                        <constraint firstItem="Slx-6G-ctg" firstAttribute="top" secondItem="hMx-I5-BCW" secondAttribute="top" id="OVe-sS-AMX"/>
+                        <constraint firstItem="Slx-6G-ctg" firstAttribute="leading" secondItem="hMx-I5-BCW" secondAttribute="leading" id="UMO-cW-52l"/>
+                        <constraint firstAttribute="trailing" secondItem="Slx-6G-ctg" secondAttribute="trailing" id="apF-tz-dfZ"/>
+                        <constraint firstItem="xTl-Hj-BkE" firstAttribute="top" secondItem="Slx-6G-ctg" secondAttribute="bottom" id="qtt-AY-qgc"/>
                     </constraints>
                 </view>
             </subviews>
