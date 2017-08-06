@@ -10,8 +10,6 @@ import UIKit
 
 class MainViewController: UITabBarController {
     
-    let selectedColor : UIColor = hexStringToUIColor(hex: "")
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

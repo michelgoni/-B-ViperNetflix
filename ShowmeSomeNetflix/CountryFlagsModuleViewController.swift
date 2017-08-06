@@ -8,13 +8,24 @@
 
 import UIKit
 
-class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     
     var presenter: CountryFlagsModulePresenter?
 
+    @IBOutlet weak var searchBarViewContainer: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var searchBar: UISearchBar!
+    lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.dimsBackgroundDuringPresentation = false
+        
+        return searchController
+    }()
+    
+    private var tapGesture : UIGestureRecognizer!
+    var filteredFlags = [String]()
+    var filteredAcronyms = [String]()
     fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
     let heightForImage: CGFloat = 87
@@ -40,7 +51,23 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CountryDetailCell", bundle: nil), forCellWithReuseIdentifier: "CountryCell")
         self.setUpCustomLayout()
+        self.setUpSearchController()
         self.title = "Countries"
+    }
+    
+    func setUpSearchController () {
+        
+        searchController.searchBar.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        searchBarViewContainer.addSubview(searchController.searchBar)
+        searchController.searchBar.sizeToFit()
+        searchController.searchBar.barTintColor = hexStringToUIColor(hex: Constants.Colors.TabBar.kTabBarYellowColor)
+        searchController.searchBar.textColor = .black
+        searchController.searchBar.setMagnifyingGlassColorTo(color: .black)
+        searchController.searchBar.setPlaceholderTextColor(color: .darkGray)
+        searchController.searchBar.setTextFieldClearButtonColor(color: .darkGray)
+        let cancelButtonAttributes: [String: AnyObject] = [NSForegroundColorAttributeName: UIColor.darkGray]
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).setTitleTextAttributes(cancelButtonAttributes, for: .normal)
+        definesPresentationContext = true
     }
     
     fileprivate func setUpCustomLayout () {
@@ -52,10 +79,26 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         layout.delegate = self
     }
     
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+        filteredFlags = (self.viewModel?.countriesArray.filter { flags in
+            return flags.lowercased().contains(searchText.lowercased())
+            })!
+        filteredAcronyms = (self.viewModel?.flagsAcronyms.filter { flags in
+            return flags.lowercased().contains(searchText.lowercased())
+            })!
+        
+        collectionView.reloadData()
+    }
+    
+    
+    
+    
     
     //MARK:--Collection view delegates
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+       
         return self.viewModel?.countriesArray.count ?? 0
     }
     
@@ -66,7 +109,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         if let countryName = self.viewModel?.countriesArray[indexPath.row], let countryAcronym = self.viewModel?.flagsAcronyms[indexPath.row] {
             self.configureCell(cell: cell, country: countryName, acronym: countryAcronym)
         }
-       
+        
         return cell
         
     }
@@ -80,6 +123,15 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         self.presenter?.presentLanguagesForSerie(withView: self.view)
+    }
+}
+
+extension CountryFlagsModuleViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        if let text = searchController.searchBar.text {
+            filterContentForSearchText(searchText: text)
+        }
     }
 }
 
