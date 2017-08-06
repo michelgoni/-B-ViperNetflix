@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
+class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     var presenter: CountryFlagsModulePresenter?
 
@@ -17,6 +17,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
+         searchController.searchResultsUpdater = self
         searchController.hidesNavigationBarDuringPresentation = true
         searchController.dimsBackgroundDuringPresentation = false
         
@@ -79,26 +80,35 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         layout.delegate = self
     }
     
-    func filterContentForSearchText(searchText: String, scope: String = "All") {
-        filteredFlags = (self.viewModel?.countriesArray.filter { flags in
-            return flags.lowercased().contains(searchText.lowercased())
-            })!
-        filteredAcronyms = (self.viewModel?.flagsAcronyms.filter { flags in
-            return flags.lowercased().contains(searchText.lowercased())
-            })!
+   
+    
+    func filterContentForSearchText(searchText: String) {
         
-        collectionView.reloadData()
+        let filteredCountriesArray = self.viewModel?.countriesArray.filter { $0.contains(searchText)}
+        print("Countries array is \(filteredCountriesArray!)")
+        
+        let filteredFlagAcronyms = self.viewModel?.flagsAcronyms.filter { $0.contains(searchText.lowercased())}
+        print("Acronyms array is \(filteredFlagAcronyms!)")
+        
+//        filteredFlags = (self.viewModel?.countriesArray.filter { flags in
+//            return flags.lowercased().contains(searchText.lowercased())
+//            })!
+//        
+//        filteredAcronyms = (self.viewModel?.flagsAcronyms.filter { flags in
+//            return flags.lowercased().contains(searchText.lowercased())
+//            })!
+        
+         collectionView.reloadData()
     }
-    
-    
-    
     
     
     //MARK:--Collection view delegates
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-       
+       if searchController.isActive {
+            return filteredFlags.count
+        }
         return self.viewModel?.countriesArray.count ?? 0
     }
     
@@ -106,10 +116,18 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CountryCell", for: indexPath) as! CountryCollectionViewCell
         
-        if let countryName = self.viewModel?.countriesArray[indexPath.row], let countryAcronym = self.viewModel?.flagsAcronyms[indexPath.row] {
-            self.configureCell(cell: cell, country: countryName, acronym: countryAcronym)
-        }
         
+        if searchController.isActive && searchController.searchBar.text != "" {
+        
+            let countryName = filteredFlags[indexPath.row]
+            let countryAcronym = filteredAcronyms[indexPath.row]
+            self.configureCell(cell: cell, country: countryName, acronym: countryAcronym)
+            
+        }else{
+            if let countryName = self.viewModel?.countriesArray[indexPath.row], let countryAcronym = self.viewModel?.flagsAcronyms[indexPath.row] {
+                self.configureCell(cell: cell, country: countryName, acronym: countryAcronym)
+            }
+        }
         return cell
         
     }
@@ -130,7 +148,7 @@ extension CountryFlagsModuleViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         
         if let text = searchController.searchBar.text {
-            filterContentForSearchText(searchText: text)
+          filterContentForSearchText(searchText: text)
         }
     }
 }
