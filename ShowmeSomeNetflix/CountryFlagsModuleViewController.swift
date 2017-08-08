@@ -27,6 +27,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     private var tapGesture : UIGestureRecognizer!
     var filteredFlags = [String]()
     var filteredAcronyms = [String]()
+    var flagsDictionary = [String : String]()
     fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
     let heightForImage: CGFloat = 87
@@ -172,6 +173,16 @@ extension CountryFlagsModuleViewController: CountryFlagsModuleView {
     
     func displayCountryFlags(withCountryFlagsModuleViewModel countryFlags: CountryFlagsModuleViewModel) {
         
+        
         self.viewModel = countryFlags
+        
+        
+        var i = 0
+        for country in (self.viewModel?.countriesArray)!  {
+            
+            flagsDictionary[country.trimmingCharacters(in: .whitespaces)] = self.viewModel?.flagsAcronyms[i]
+            i += 1
+            
+        }
     }
 }
