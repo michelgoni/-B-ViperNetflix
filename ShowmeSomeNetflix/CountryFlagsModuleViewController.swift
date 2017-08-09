@@ -85,16 +85,16 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func filterContentForSearchText(searchText: String) {
         
-        let filteredCountriesArray = self.viewModel?.countriesArray.filter { $0.contains(searchText)}
-        print("Countries array is \(filteredCountriesArray!)")
-        
-        let filteredFlagAcronyms = self.viewModel?.flagsAcronyms.filter { $0.contains(searchText.lowercased())}
-        print("Acronyms array is \(filteredFlagAcronyms!)")
-        
-//        filteredFlags = (self.viewModel?.countriesArray.filter { flags in
-//            return flags.lowercased().contains(searchText.lowercased())
-//            })!
+//        let filteredCountriesArray = self.viewModel?.countriesArray.filter { $0.contains(searchText)}
+//        print("Countries array is \(filteredCountriesArray!)")
 //        
+//        let filteredFlagAcronyms = self.viewModel?.flagsAcronyms.filter { $0.contains(searchText.lowercased())}
+//        print("Acronyms array is \(filteredFlagAcronyms!)")
+        
+        filteredFlags = (self.viewModel?.countriesArray.filter { flags in
+            return flags.lowercased().contains(searchText.lowercased())
+            })!
+//
 //        filteredAcronyms = (self.viewModel?.flagsAcronyms.filter { flags in
 //            return flags.lowercased().contains(searchText.lowercased())
 //            })!
@@ -121,8 +121,8 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         if searchController.isActive && searchController.searchBar.text != "" {
         
             let countryName = filteredFlags[indexPath.row]
-            let countryAcronym = filteredAcronyms[indexPath.row]
-            self.configureCell(cell: cell, country: countryName, acronym: countryAcronym)
+            let countryAcronym = flagsDictionary["\(countryName.trimmingCharacters(in: .whitespaces))"]
+            self.configureCell(cell: cell, country: countryName, acronym: countryAcronym!)
             
         }else{
             if let countryName = self.viewModel?.countriesArray[indexPath.row], let countryAcronym = self.viewModel?.flagsAcronyms[indexPath.row] {
