@@ -26,7 +26,6 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     private var tapGesture : UIGestureRecognizer!
     var filteredFlags = [String]()
-    var filteredAcronyms = [String]()
     var flagsDictionary = [String : String]()
     fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
@@ -85,19 +84,10 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func filterContentForSearchText(searchText: String) {
         
-//        let filteredCountriesArray = self.viewModel?.countriesArray.filter { $0.contains(searchText)}
-//        print("Countries array is \(filteredCountriesArray!)")
-//        
-//        let filteredFlagAcronyms = self.viewModel?.flagsAcronyms.filter { $0.contains(searchText.lowercased())}
-//        print("Acronyms array is \(filteredFlagAcronyms!)")
-        
         filteredFlags = (self.viewModel?.countriesArray.filter { flags in
             return flags.lowercased().contains(searchText.lowercased())
             })!
-//
-//        filteredAcronyms = (self.viewModel?.flagsAcronyms.filter { flags in
-//            return flags.lowercased().contains(searchText.lowercased())
-//            })!
+
         
          collectionView.reloadData()
     }
@@ -130,7 +120,6 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
             }
         }
         return cell
-        
     }
     
     private func configureCell(cell: CountryCollectionViewCell, country: String, acronym: String) {
@@ -144,7 +133,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         self.presenter?.presentLanguagesForSerie(withView: self.view)
     }
 }
-
+   
 extension CountryFlagsModuleViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         
@@ -164,7 +153,6 @@ extension CountryFlagsModuleViewController: RandomSizeCellsDelegate {
         
         return 23
     }
-    
 }
 
 
@@ -172,17 +160,13 @@ extension CountryFlagsModuleViewController: RandomSizeCellsDelegate {
 extension CountryFlagsModuleViewController: CountryFlagsModuleView {
     
     func displayCountryFlags(withCountryFlagsModuleViewModel countryFlags: CountryFlagsModuleViewModel) {
-        
-        
+
         self.viewModel = countryFlags
-        
-        
         var i = 0
         for country in (self.viewModel?.countriesArray)!  {
             
             flagsDictionary[country.trimmingCharacters(in: .whitespaces)] = self.viewModel?.flagsAcronyms[i]
             i += 1
-            
         }
     }
 }
