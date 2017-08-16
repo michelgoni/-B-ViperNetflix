@@ -7,96 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15051EC0BFFAB4A21F74BF08E4921FEC /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D121A162682437267B67F69DFAB3102A /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		090FB40868DB8D809EF279C92E13CBBF /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C871F2F2AE10ADCDED33B14A3A239FA /* PopupDialogOverlayView.swift */; };
+		184E642C79D68A3AA14AA61E7C61D0A4 /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F116EB67822E035D681F6DA5D58602 /* PopupDialogDefaultViewController.swift */; };
+		1FDE5A2B833228A99DFA8790B5B0A22A /* TZSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6841340B7D5FF3394A4C31E4D0A0FA /* TZSpacerView.swift */; };
+		22189EC33457538B3DA9201AD2F651D5 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34F524AAB7F6277AD812E1338AB136D /* PopupDialogButton.swift */; };
+		27321D614503D7543481918685EA8C3A /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7A8DB8061F416AF5E5F5956A0E2A4 /* UIView+Animations.swift */; };
+		2F8D429E90249C567632BCBA2AD93E64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		53B29E3518266632FC1ED265AC6DB900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3158DB6C59AF9288878CBC9E34A3CB61 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		561D13D29C6C5484183189C1127E844E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		6BC994817FA518BC08D7CA369EC3F514 /* Pods-ShowmeSomeNetflix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D69276C58692F59D9EA563AFF1A544 /* Pods-ShowmeSomeNetflix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7416F3841EEA29A61F692E74136F5961 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BE956DDFD9DDC95335438895F862F /* SwiftSpinner.swift */; };
-		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFFF3712BA5F195C586A97C13368D3E9 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C12C9A275EF74670D57F8C28454D943 /* Pods-ShowmeSomeNetflix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7640F93F41D6D72ABEE016C5E30505F /* Pods-ShowmeSomeNetflix-dummy.m */; };
-		9BBE0DF73660B188EACA6BD6ADEFB108 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = 04F35E5096A7BA6EE9B9D676D62B4A95 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3179DA29ED13A910DED818739422F63 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F3D85C25A5C2B8A3B06C3198CB843 /* SwiftSpinner-dummy.m */; };
-		AE66F3E16CBF6B1CDD85E040B6D4B872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 944D924A6A6E2004F290F552F4E6E07F /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = A0294B571BD828F691E81FB1B0348A74 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A665307FC7897EC4F60649FFD883D /* GoogleToolboxForMac-dummy.m */; };
+		3B50F99C99094E3809E6E19EC933E4B4 /* TZStackViewDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41BEC4F22BA358BFBA679B4D584404 /* TZStackViewDistribution.swift */; };
+		44475365CF0E410726A2EF73FDF61659 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A7AB413160632B47003D1F57F18099 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4493BFEB79E6C6E14D95486C299B027A /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2369CB7B1FF6D969992074AD3114F6C /* PresentationManager.swift */; };
+		48845BEAAFE3EF1F08F96ED0D098C320 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB4C6F15796C01EC8E80193463C39DD /* TransitionAnimator.swift */; };
+		4E92FE176EF9AE23634ABCA773ACE055 /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5D0D327817EC29F0014ED99E95A82 /* PopupDialogDefaultButtons.swift */; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 104D7273BF7FFF7A202D838DB3C3A8AF /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EE941BFC396447788BB3772602206D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		61C11DD16438CAE3EEF44664B4D9EA85 /* Pods-ShowmeSomeNetflix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7640F93F41D6D72ABEE016C5E30505F /* Pods-ShowmeSomeNetflix-dummy.m */; };
+		6789A50AA2E3F695C2743CD5ED8A4EBD /* UIImageView+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430850D9C7742224D1AFB849C3A68F89 /* UIImageView+Calculations.swift */; };
+		6A1987324401CF17F97E8FDCF72F8C76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		6DF20595EC062FDA2866590AB6B80D7A /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8206DFF7EDD5AC50DADD718716EB7458 /* InteractiveTransition.swift */; };
+		76F9850719A2BDE0907B6DC25AD17223 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7563F340AA68346D0FBFC92F5F62A94 /* FXBlurView.m */; };
+		79297850C83E560A37F51D05240AE16E /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD60CFA271C7A28C19E5053E1DA8A5B /* PopupDialog-dummy.m */; };
+		7B817331B743D9BAC275462F8749F4CB /* SwiftSpinner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0BC4EA6510FD0CC7948694C6267D45E /* SwiftSpinner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F7112B8190887C41145DE9561BF0B00 /* TZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C44B857C533FFA622EAD01A9FA7F330 /* TZStackView.swift */; };
+		814BDC160253735E43CFD527898DC6A5 /* SwiftSpinner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3F53D717D4470D3DBBD83AEB7A9765 /* SwiftSpinner-dummy.m */; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F947EFC385E6CDDE100807BC81123E /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8259C01D0C1FFCFFD7F3307997F6E432 /* SwiftSpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F52A7168F791A4FCF927991543D948 /* SwiftSpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91D0C8B055DB243799C028B347185B0B /* TZStackViewAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08998B288D12A37F121872519C85430B /* TZStackViewAlignment.swift */; };
+		93AD1BAD300FA9BAD5FEA64F3021FB05 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26290CAB7B5B0A67A793B21D6036E487 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AB513DA9BC87AB20694E38B7F368602 /* Pods-ShowmeSomeNetflix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D69276C58692F59D9EA563AFF1A544 /* Pods-ShowmeSomeNetflix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D1ED0E0E9FA33A736F1308160F87E56 /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E43D7A78898837B586B74715F343B2 /* UIViewController+Visibility.swift */; };
+		A2A8E5D46052974645749A965DDB0EE1 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F0B66666BAE157FFC97063917234A8 /* PresentationController.swift */; };
+		A982AF0DE8E289DF8C05854857F6005F /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D95B7351672C980E47ACC61D0760E8 /* TransitionAnimations.swift */; };
+		AE84F6529197BFD97B30750AAC8D67E9 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A7FE64942F1979CED1414155465E1 /* PopupDialog.swift */; };
+		C4071DDE8B6B9DEE6077E03A7BF5E903 /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5280E4C28C2D1165F78F13F889C78B /* PopupDialog+Keyboard.swift */; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F376466EE7E04101D8235BB0B55BF77 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA6F265516F87D84609854B172E0628 /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914B640B4C96BC062FF9F377A6A4308 /* PopupDialogDefaultView.swift */; };
+		EBA05724D06AFF26026BBA6DC7891598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		EE48A3D07DCCFBC4DF8119C6704BFF44 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324EF986ED4354FBB700A8559052CED4 /* SwiftSpinner.swift */; };
+		EE906705E6ADF292BBF1537FB4577C2A /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80046CDB9097D923D5F364FE1D0D9EC1 /* PopupDialogContainerView.swift */; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF66847A29FB312324A586AA3B7557A /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C886599238E7BBF24BBF1765A31D50 /* GoogleToolboxForMac-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		131F34BC9078459580C3673B9AFEAFA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0FD1DCCD10A77562ACCBE4BE0E82F13;
-			remoteInfo = SwiftSpinner;
-		};
-		5A29C3389C99710C229B742A9838459E /* PBXContainerItemProxy */ = {
+		0C9456F0D9D5EAAFBE512B3DFE2A36B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00103D6C821BE85971C563025527BA5D;
 			remoteInfo = GoogleToolboxForMac;
 		};
+		4490DB18060383590580C2DFF5CE03F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 022E1B4C81B91EBBADA6376CCDABB3F2;
+			remoteInfo = SwiftSpinner;
+		};
+		CC26D75C0EEB5C01EAB3235B3948C967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1260D633FF916F4E8662655F6EBC32;
+			remoteInfo = PopupDialog;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04F35E5096A7BA6EE9B9D676D62B4A95 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
-		091EA06D256CFC51D5C0E818700D7927 /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
-		175BE956DDFD9DDC95335438895F862F /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
+		00FA92D9A505C542F80F936AD1AEBD3C /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpinner.framework; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08998B288D12A37F121872519C85430B /* TZStackViewAlignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZStackViewAlignment.swift; path = PopupDialog/Classes/TZStackView/TZStackViewAlignment.swift; sourceTree = "<group>"; };
+		094252EC6080818222006B94A8C685FF /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
+		104D7273BF7FFF7A202D838DB3C3A8AF /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		154FA5C825C760EF73A498EEDC12C15A /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		178945E40D23C81E4204A3FDF0A7218B /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		1C6841340B7D5FF3394A4C31E4D0A0FA /* TZSpacerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZSpacerView.swift; path = PopupDialog/Classes/TZStackView/TZSpacerView.swift; sourceTree = "<group>"; };
 		1CEA3C39D80DE9846B5DFF20EF46E554 /* Pods-ShowmeSomeNetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowmeSomeNetflix.debug.xcconfig"; sourceTree = "<group>"; };
-		1DF49CFF2D87B94E9DC28C44CADFC828 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		2C6F3D85C25A5C2B8A3B06C3198CB843 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
-		2FB354FB5F4B9282B36473A0684844AF /* SwiftSpinner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftSpinner.modulemap; sourceTree = "<group>"; };
-		3158DB6C59AF9288878CBC9E34A3CB61 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		26290CAB7B5B0A67A793B21D6036E487 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = PopupDialog/Classes/FXBlurView.h; sourceTree = "<group>"; };
+		26E43D7A78898837B586B74715F343B2 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		2DFE9B455085FF36751BFC732617AADC /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		31C886599238E7BBF24BBF1765A31D50 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		324EF986ED4354FBB700A8559052CED4 /* SwiftSpinner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpinner.swift; path = SwiftSpinner/SwiftSpinner.swift; sourceTree = "<group>"; };
 		354C8A9693D845EBCD1005BB981F88DD /* Pods-ShowmeSomeNetflix-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowmeSomeNetflix-frameworks.sh"; sourceTree = "<group>"; };
-		406792C6B4EF74EEB27E88B6C9890FF8 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		4A0978582A20A5713D604AA0226DACA4 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E48DC4565C4C1066F8BE9C28E00B3ED /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		35A71BD9FCA3785FA210A90A28501672 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		3AA78CE8621B2EB1845904AE4FF1616D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F376466EE7E04101D8235BB0B55BF77 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		41EA85C55543D8F9689266A3A07EF4BC /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
+		430850D9C7742224D1AFB849C3A68F89 /* UIImageView+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Calculations.swift"; path = "PopupDialog/Classes/UIImageView+Calculations.swift"; sourceTree = "<group>"; };
+		52D5D0D327817EC29F0014ED99E95A82 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		54A7A8DB8061F416AF5E5F5956A0E2A4 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		5C44B857C533FFA622EAD01A9FA7F330 /* TZStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZStackView.swift; path = PopupDialog/Classes/TZStackView/TZStackView.swift; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		61AA19AC1C60DCE4263EF23F9D12010B /* SwiftSpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B2BB5F2DE3833B7625E078145709FB7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		61BF0C69524F753E063ED3E8E0BE7A46 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
 		6C688C40419F20D48E4C49B02FB34B76 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775A7FE64942F1979CED1414155465E1 /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		80046CDB9097D923D5F364FE1D0D9EC1 /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		8206DFF7EDD5AC50DADD718716EB7458 /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
 		8D296C51FCCF8EB5D7C9E7740E17F1B4 /* Pods-ShowmeSomeNetflix-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShowmeSomeNetflix-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F12BD4FFDBC044151FA5ADCADFA5C15 /* Pods_ShowmeSomeNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowmeSomeNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9137BDC9DB878B1862B0DD0441708614 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		944D924A6A6E2004F290F552F4E6E07F /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
-		9713C0BDFECBA039008E8E66C5406B9D /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AB4C6F15796C01EC8E80193463C39DD /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		9C871F2F2AE10ADCDED33B14A3A239FA /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
 		A0029D5CF0FBDF5AA6C4C69E5D4D416F /* Pods-ShowmeSomeNetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShowmeSomeNetflix.release.xcconfig"; sourceTree = "<group>"; };
-		A0294B571BD828F691E81FB1B0348A74 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
-		A3B97770F5BE6C6C519802053AB2CAF4 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		A4FAA52A16C0B8F96F772B779D1893B7 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		A5FE2B256DC07238FDB049DCCCEDE868 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		A6A7AB413160632B47003D1F57F18099 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
 		AC6C44D57D474E473D2BA3C209561CD3 /* Pods-ShowmeSomeNetflix-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShowmeSomeNetflix-resources.sh"; sourceTree = "<group>"; };
-		AD88E49E28B9E648E2B400F380CECDED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE8DA7F33C473D76195BEFA513490C70 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		ADD3E9019A25F0352084D6AC1F59EA3B /* SwiftSpinner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-prefix.pch"; sourceTree = "<group>"; };
+		ADF54DECB851C0758BDCFED2944081E0 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		B43D30B66C526E1A9CC1808CAA3C6B0C /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PopupDialog.modulemap; sourceTree = "<group>"; };
+		B7563F340AA68346D0FBFC92F5F62A94 /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = PopupDialog/Classes/FXBlurView.m; sourceTree = "<group>"; };
 		B7640F93F41D6D72ABEE016C5E30505F /* Pods-ShowmeSomeNetflix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShowmeSomeNetflix-dummy.m"; sourceTree = "<group>"; };
 		B8D69276C58692F59D9EA563AFF1A544 /* Pods-ShowmeSomeNetflix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShowmeSomeNetflix-umbrella.h"; sourceTree = "<group>"; };
-		D121A162682437267B67F69DFAB3102A /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
-		D4DD08D10BAA50D363AD075C177FB47F /* Pods-ShowmeSomeNetflix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ShowmeSomeNetflix.modulemap"; sourceTree = "<group>"; };
-		E44A665307FC7897EC4F60649FFD883D /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		C0BC4EA6510FD0CC7948694C6267D45E /* SwiftSpinner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpinner-umbrella.h"; sourceTree = "<group>"; };
+		C34F524AAB7F6277AD812E1338AB136D /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		C6F52A7168F791A4FCF927991543D948 /* SwiftSpinner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftSpinner.h; path = SwiftSpinner/SwiftSpinner.h; sourceTree = "<group>"; };
+		C73126A2C871C9F35D8105E83E818FA2 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		C8243B323C8224C9295C6989BEB61601 /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3F53D717D4470D3DBBD83AEB7A9765 /* SwiftSpinner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpinner-dummy.m"; sourceTree = "<group>"; };
+		CA41BEC4F22BA358BFBA679B4D584404 /* TZStackViewDistribution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TZStackViewDistribution.swift; path = PopupDialog/Classes/TZStackView/TZStackViewDistribution.swift; sourceTree = "<group>"; };
+		CBF66847A29FB312324A586AA3B7557A /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		CFC3B7F6896B9604282F559405734A7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24DE4267F4DCBAFB69B5F3730FD8611 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		D2F947EFC385E6CDDE100807BC81123E /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		D4DD08D10BAA50D363AD075C177FB47F /* Pods-ShowmeSomeNetflix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ShowmeSomeNetflix.modulemap"; sourceTree = "<group>"; };
+		D5D95B7351672C980E47ACC61D0760E8 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		D947434C676E4D9D221B9A676AB21DEF /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F0C9AABCEF3E226FC2F0B3BAD9390B /* Pods-ShowmeSomeNetflix-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShowmeSomeNetflix-acknowledgements.plist"; sourceTree = "<group>"; };
-		EFFF3712BA5F195C586A97C13368D3E9 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
-		F32CFCDA2D18D526716A8459517C5165 /* SwiftSpinner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpinner.xcconfig; sourceTree = "<group>"; };
+		E66C3F0E850426218B4E4374E95E7D0B /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
+		E770B6BE401BDEEEC9834959694160C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7893F2482A8FB2F58F5E1A15C6589BD /* Pods_ShowmeSomeNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ShowmeSomeNetflix.framework; path = "Pods-ShowmeSomeNetflix.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F0B66666BAE157FFC97063917234A8 /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
+		E914B640B4C96BC062FF9F377A6A4308 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
+		F2369CB7B1FF6D969992074AD3114F6C /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
+		F2F116EB67822E035D681F6DA5D58602 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
+		FCD60CFA271C7A28C19E5053E1DA8A5B /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
+		FE5280E4C28C2D1165F78F13F889C78B /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88A1CE8EAE69882EA3C60082A21E5D59 /* Frameworks */ = {
+		4FCCB535814B9CCDDAECC1F469D614B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561D13D29C6C5484183189C1127E844E /* Foundation.framework in Frameworks */,
-				AE66F3E16CBF6B1CDD85E040B6D4B872 /* UIKit.framework in Frameworks */,
+				2F8D429E90249C567632BCBA2AD93E64 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEB77C0F3F501F23C724566EC223BD4A /* Frameworks */ = {
+		577219FE4425A6B68DB21E20B1EB5FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B29E3518266632FC1ED265AC6DB900 /* Foundation.framework in Frameworks */,
+				5EE941BFC396447788BB3772602206D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FCA024A7D103405968F5BE23D3E3243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1987324401CF17F97E8FDCF72F8C76 /* Foundation.framework in Frameworks */,
+				EBA05724D06AFF26026BBA6DC7891598 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +180,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		159B91C2DDB0A31F6B7E8BC8AE8E0F07 /* Frameworks */ = {
+		0261CF69FB2B5829CAC10B574A94C088 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				AE8DA7F33C473D76195BEFA513490C70 /* GoogleMobileAds.framework */,
+				63CAB4438D19E9374E71326F0EF0223E /* Frameworks */,
 			);
-			name = Frameworks;
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		0AD35D9CDEC70C589FB0EA5BD0B28DAE /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				67CE0C349649AF5B2B9CFB3D5454D7A7 /* Frameworks */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
 		1BBBF874D00C1AFC03EDB8C2B577E679 /* Targets Support Files */ = {
@@ -127,6 +206,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		1CFD15A221630C04C719258BF2F8C100 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				59BACE9E6A5C4E7C83B72324E7CB2E5C /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		2EA18521583E70497A5E817D303E52A9 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				755AAE1D780C072C6161750815348B59 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		31636A0EFF4F0773DD8858C8736A9F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D947434C676E4D9D221B9A676AB21DEF /* GoogleToolboxForMac.framework */,
+				E7893F2482A8FB2F58F5E1A15C6589BD /* Pods_ShowmeSomeNetflix.framework */,
+				C8243B323C8224C9295C6989BEB61601 /* PopupDialog.framework */,
+				00FA92D9A505C542F80F936AD1AEBD3C /* SwiftSpinner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		340DEE8C8CDC56E30AABABC86AFD600E /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				450E5EBBB6D92550D00D844ED7AB044B /* Defines */,
+				E928625ED098E8BB4663D83E28606AC6 /* NSData+zlib */,
+				6353D72349958D622063B7325E21F6F2 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,20 +254,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		44D8401AA665F420ABB648C74FCEE83F /* Products */ = {
+		450E5EBBB6D92550D00D844ED7AB044B /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				4A0978582A20A5713D604AA0226DACA4 /* GoogleToolboxForMac.framework */,
-				8F12BD4FFDBC044151FA5ADCADFA5C15 /* Pods_ShowmeSomeNetflix.framework */,
-				61AA19AC1C60DCE4263EF23F9D12010B /* SwiftSpinner.framework */,
+				104D7273BF7FFF7A202D838DB3C3A8AF /* GTMDefines.h */,
 			);
-			name = Products;
+			name = Defines;
 			sourceTree = "<group>";
 		};
-		5A4CB164DD7E81D3B662994F81479422 /* Core */ = {
+		4BD531A88CFE24D989F1FABF2600A505 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A3B97770F5BE6C6C519802053AB2CAF4 /* Firebase.h */,
+				E770B6BE401BDEEEC9834959694160C3 /* Info.plist */,
+				B43D30B66C526E1A9CC1808CAA3C6B0C /* PopupDialog.modulemap */,
+				E66C3F0E850426218B4E4374E95E7D0B /* PopupDialog.xcconfig */,
+				FCD60CFA271C7A28C19E5053E1DA8A5B /* PopupDialog-dummy.m */,
+				41EA85C55543D8F9689266A3A07EF4BC /* PopupDialog-prefix.pch */,
+				A6A7AB413160632B47003D1F57F18099 /* PopupDialog-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PopupDialog";
+			sourceTree = "<group>";
+		};
+		59BACE9E6A5C4E7C83B72324E7CB2E5C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE9B455085FF36751BFC732617AADC /* Firebase.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -171,36 +302,42 @@
 			path = "Target Support Files/Pods-ShowmeSomeNetflix";
 			sourceTree = "<group>";
 		};
-		62F327B9550086F31CF6D68E36867D34 /* Defines */ = {
+		6353D72349958D622063B7325E21F6F2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3158DB6C59AF9288878CBC9E34A3CB61 /* GTMDefines.h */,
+				C73126A2C871C9F35D8105E83E818FA2 /* GoogleToolboxForMac.modulemap */,
+				61BF0C69524F753E063ED3E8E0BE7A46 /* GoogleToolboxForMac.xcconfig */,
+				31C886599238E7BBF24BBF1765A31D50 /* GoogleToolboxForMac-dummy.m */,
+				D24DE4267F4DCBAFB69B5F3730FD8611 /* GoogleToolboxForMac-prefix.pch */,
+				D2F947EFC385E6CDDE100807BC81123E /* GoogleToolboxForMac-umbrella.h */,
+				CFC3B7F6896B9604282F559405734A7E /* Info.plist */,
 			);
-			name = Defines;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
 			sourceTree = "<group>";
 		};
-		69B0C8FE3AE858BCBCE6565468478628 /* FirebaseInstanceID */ = {
+		63CAB4438D19E9374E71326F0EF0223E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				91E7144B900DFA1B3DE21A2A3492A8C8 /* Frameworks */,
+				178945E40D23C81E4204A3FDF0A7218B /* FirebaseInstanceID.framework */,
 			);
-			path = FirebaseInstanceID;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6A3B21A300A74224B3EB554251B19181 /* FirebaseCore */ = {
+		67CE0C349649AF5B2B9CFB3D5454D7A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8363E6F02E6A1F2A5624CC777F56FF7E /* Frameworks */,
+				A5FE2B256DC07238FDB049DCCCEDE868 /* GoogleMobileAds.framework */,
 			);
-			path = FirebaseCore;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		71505618BCF11567DCDB56623D8B69A3 /* Google-Mobile-Ads-SDK */ = {
+		755AAE1D780C072C6161750815348B59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				159B91C2DDB0A31F6B7E8BC8AE8E0F07 /* Frameworks */,
+				154FA5C825C760EF73A498EEDC12C15A /* FirebaseAnalytics.framework */,
 			);
-			path = "Google-Mobile-Ads-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -208,111 +345,96 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				DE4F70006D19DAA6B04518FD42C9C6A9 /* Pods */,
-				44D8401AA665F420ABB648C74FCEE83F /* Products */,
+				D091367B261D158A4EA628338A3CA110 /* Pods */,
+				31636A0EFF4F0773DD8858C8736A9F44 /* Products */,
 				1BBBF874D00C1AFC03EDB8C2B577E679 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8363E6F02E6A1F2A5624CC777F56FF7E /* Frameworks */ = {
+		8FF11C4FFD4AA763A4A2CE5489A60E32 /* SwiftSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				6B2BB5F2DE3833B7625E078145709FB7 /* FirebaseCore.framework */,
+				C6F52A7168F791A4FCF927991543D948 /* SwiftSpinner.h */,
+				324EF986ED4354FBB700A8559052CED4 /* SwiftSpinner.swift */,
+				B5F201883971BB77607ACC66F3B9BD59 /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		91E7144B900DFA1B3DE21A2A3492A8C8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A4FAA52A16C0B8F96F772B779D1893B7 /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ACC8EE2041D6DDB9B4AF080CCEF5BFE8 /* GoogleToolboxForMac */ = {
-			isa = PBXGroup;
-			children = (
-				62F327B9550086F31CF6D68E36867D34 /* Defines */,
-				B8C258E9BD10CA83C25E2F6C91CC3A10 /* NSData+zlib */,
-				B0BF89251E24DA5B11CEFC9863A8B84C /* Support Files */,
-			);
-			path = GoogleToolboxForMac;
-			sourceTree = "<group>";
-		};
-		B0BF89251E24DA5B11CEFC9863A8B84C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9713C0BDFECBA039008E8E66C5406B9D /* GoogleToolboxForMac.modulemap */,
-				1DF49CFF2D87B94E9DC28C44CADFC828 /* GoogleToolboxForMac.xcconfig */,
-				E44A665307FC7897EC4F60649FFD883D /* GoogleToolboxForMac-dummy.m */,
-				4E48DC4565C4C1066F8BE9C28E00B3ED /* GoogleToolboxForMac-prefix.pch */,
-				EFFF3712BA5F195C586A97C13368D3E9 /* GoogleToolboxForMac-umbrella.h */,
-				AD88E49E28B9E648E2B400F380CECDED /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
-			sourceTree = "<group>";
-		};
-		B8C258E9BD10CA83C25E2F6C91CC3A10 /* NSData+zlib */ = {
-			isa = PBXGroup;
-			children = (
-				944D924A6A6E2004F290F552F4E6E07F /* GTMNSData+zlib.h */,
-				A0294B571BD828F691E81FB1B0348A74 /* GTMNSData+zlib.m */,
-			);
-			name = "NSData+zlib";
-			sourceTree = "<group>";
-		};
-		BE526DFCB6F6D4926C579C116F9D7D9F /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				C32D04FA6331411CCC9A9A8FCF236A57 /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		C32D04FA6331411CCC9A9A8FCF236A57 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				406792C6B4EF74EEB27E88B6C9890FF8 /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D1EAB3B117C0DBCDF6B577577AAD98A3 /* SwiftSpinner */ = {
-			isa = PBXGroup;
-			children = (
-				04F35E5096A7BA6EE9B9D676D62B4A95 /* SwiftSpinner.h */,
-				175BE956DDFD9DDC95335438895F862F /* SwiftSpinner.swift */,
-				DD35DDCC41FB2244925D174F06402335 /* Support Files */,
-			);
+			name = SwiftSpinner;
 			path = SwiftSpinner;
 			sourceTree = "<group>";
 		};
-		DD35DDCC41FB2244925D174F06402335 /* Support Files */ = {
+		94B5F3EC62936907FE6308FE4D458119 /* PopupDialog */ = {
 			isa = PBXGroup;
 			children = (
-				9137BDC9DB878B1862B0DD0441708614 /* Info.plist */,
-				2FB354FB5F4B9282B36473A0684844AF /* SwiftSpinner.modulemap */,
-				F32CFCDA2D18D526716A8459517C5165 /* SwiftSpinner.xcconfig */,
-				2C6F3D85C25A5C2B8A3B06C3198CB843 /* SwiftSpinner-dummy.m */,
-				091EA06D256CFC51D5C0E818700D7927 /* SwiftSpinner-prefix.pch */,
-				D121A162682437267B67F69DFAB3102A /* SwiftSpinner-umbrella.h */,
+				26290CAB7B5B0A67A793B21D6036E487 /* FXBlurView.h */,
+				B7563F340AA68346D0FBFC92F5F62A94 /* FXBlurView.m */,
+				8206DFF7EDD5AC50DADD718716EB7458 /* InteractiveTransition.swift */,
+				775A7FE64942F1979CED1414155465E1 /* PopupDialog.swift */,
+				FE5280E4C28C2D1165F78F13F889C78B /* PopupDialog+Keyboard.swift */,
+				C34F524AAB7F6277AD812E1338AB136D /* PopupDialogButton.swift */,
+				80046CDB9097D923D5F364FE1D0D9EC1 /* PopupDialogContainerView.swift */,
+				52D5D0D327817EC29F0014ED99E95A82 /* PopupDialogDefaultButtons.swift */,
+				E914B640B4C96BC062FF9F377A6A4308 /* PopupDialogDefaultView.swift */,
+				F2F116EB67822E035D681F6DA5D58602 /* PopupDialogDefaultViewController.swift */,
+				9C871F2F2AE10ADCDED33B14A3A239FA /* PopupDialogOverlayView.swift */,
+				E8F0B66666BAE157FFC97063917234A8 /* PresentationController.swift */,
+				F2369CB7B1FF6D969992074AD3114F6C /* PresentationManager.swift */,
+				D5D95B7351672C980E47ACC61D0760E8 /* TransitionAnimations.swift */,
+				9AB4C6F15796C01EC8E80193463C39DD /* TransitionAnimator.swift */,
+				1C6841340B7D5FF3394A4C31E4D0A0FA /* TZSpacerView.swift */,
+				5C44B857C533FFA622EAD01A9FA7F330 /* TZStackView.swift */,
+				08998B288D12A37F121872519C85430B /* TZStackViewAlignment.swift */,
+				CA41BEC4F22BA358BFBA679B4D584404 /* TZStackViewDistribution.swift */,
+				430850D9C7742224D1AFB849C3A68F89 /* UIImageView+Calculations.swift */,
+				54A7A8DB8061F416AF5E5F5956A0E2A4 /* UIView+Animations.swift */,
+				26E43D7A78898837B586B74715F343B2 /* UIViewController+Visibility.swift */,
+				4BD531A88CFE24D989F1FABF2600A505 /* Support Files */,
+			);
+			name = PopupDialog;
+			path = PopupDialog;
+			sourceTree = "<group>";
+		};
+		9588BF371E21253AABE9FA5028C68188 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				AE95E11720ECA1177B95C87A1C40C36C /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		AE95E11720ECA1177B95C87A1C40C36C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35A71BD9FCA3785FA210A90A28501672 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5F201883971BB77607ACC66F3B9BD59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AA78CE8621B2EB1845904AE4FF1616D /* Info.plist */,
+				094252EC6080818222006B94A8C685FF /* SwiftSpinner.modulemap */,
+				ADF54DECB851C0758BDCFED2944081E0 /* SwiftSpinner.xcconfig */,
+				CA3F53D717D4470D3DBBD83AEB7A9765 /* SwiftSpinner-dummy.m */,
+				ADD3E9019A25F0352084D6AC1F59EA3B /* SwiftSpinner-prefix.pch */,
+				C0BC4EA6510FD0CC7948694C6267D45E /* SwiftSpinner-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftSpinner";
 			sourceTree = "<group>";
 		};
-		DE4F70006D19DAA6B04518FD42C9C6A9 /* Pods */ = {
+		D091367B261D158A4EA628338A3CA110 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F4EC72DF148688F1EE57D2DA29213E2F /* Firebase */,
-				BE526DFCB6F6D4926C579C116F9D7D9F /* FirebaseAnalytics */,
-				6A3B21A300A74224B3EB554251B19181 /* FirebaseCore */,
-				69B0C8FE3AE858BCBCE6565468478628 /* FirebaseInstanceID */,
-				71505618BCF11567DCDB56623D8B69A3 /* Google-Mobile-Ads-SDK */,
-				ACC8EE2041D6DDB9B4AF080CCEF5BFE8 /* GoogleToolboxForMac */,
-				D1EAB3B117C0DBCDF6B577577AAD98A3 /* SwiftSpinner */,
+				1CFD15A221630C04C719258BF2F8C100 /* Firebase */,
+				2EA18521583E70497A5E817D303E52A9 /* FirebaseAnalytics */,
+				9588BF371E21253AABE9FA5028C68188 /* FirebaseCore */,
+				0261CF69FB2B5829CAC10B574A94C088 /* FirebaseInstanceID */,
+				0AD35D9CDEC70C589FB0EA5BD0B28DAE /* Google-Mobile-Ads-SDK */,
+				340DEE8C8CDC56E30AABABC86AFD600E /* GoogleToolboxForMac */,
+				94B5F3EC62936907FE6308FE4D458119 /* PopupDialog */,
+				8FF11C4FFD4AA763A4A2CE5489A60E32 /* SwiftSpinner */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -326,31 +448,41 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F4EC72DF148688F1EE57D2DA29213E2F /* Firebase */ = {
+		E928625ED098E8BB4663D83E28606AC6 /* NSData+zlib */ = {
 			isa = PBXGroup;
 			children = (
-				5A4CB164DD7E81D3B662994F81479422 /* Core */,
+				3F376466EE7E04101D8235BB0B55BF77 /* GTMNSData+zlib.h */,
+				CBF66847A29FB312324A586AA3B7557A /* GTMNSData+zlib.m */,
 			);
-			path = Firebase;
+			name = "NSData+zlib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		38E2F569BADB735AE957E282B0068F69 /* Headers */ = {
+		100E76CAF292689CB99FF7A4F5450C41 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC994817FA518BC08D7CA369EC3F514 /* Pods-ShowmeSomeNetflix-umbrella.h in Headers */,
+				7B817331B743D9BAC275462F8749F4CB /* SwiftSpinner-umbrella.h in Headers */,
+				8259C01D0C1FFCFFD7F3307997F6E432 /* SwiftSpinner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E50F873A599906AD6180343EF553A5E9 /* Headers */ = {
+		20BD4F3318A96FFC30638B44A03C415A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15051EC0BFFAB4A21F74BF08E4921FEC /* SwiftSpinner-umbrella.h in Headers */,
-				9BBE0DF73660B188EACA6BD6ADEFB108 /* SwiftSpinner.h in Headers */,
+				93AD1BAD300FA9BAD5FEA64F3021FB05 /* FXBlurView.h in Headers */,
+				44475365CF0E410726A2EF73FDF61659 /* PopupDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310AAA3156D0C2916AC45939528B3207 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB513DA9BC87AB20694E38B7F368602 /* Pods-ShowmeSomeNetflix-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,35 +513,16 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 4A0978582A20A5713D604AA0226DACA4 /* GoogleToolboxForMac.framework */;
+			productReference = D947434C676E4D9D221B9A676AB21DEF /* GoogleToolboxForMac.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7103BA812B842F5E80E0D6133BC130E2 /* Pods-ShowmeSomeNetflix */ = {
+		022E1B4C81B91EBBADA6376CCDABB3F2 /* SwiftSpinner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95D05CEA42816F4C082CAEDCB1D6D2FA /* Build configuration list for PBXNativeTarget "Pods-ShowmeSomeNetflix" */;
+			buildConfigurationList = F8D18C25E6D8009368A25C3AFBEF3F4E /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
 			buildPhases = (
-				DE4A41A7CF613C34743275703416966B /* Sources */,
-				AEB77C0F3F501F23C724566EC223BD4A /* Frameworks */,
-				38E2F569BADB735AE957E282B0068F69 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F8C0E2884084C53DE47DCAE64D83D381 /* PBXTargetDependency */,
-				849E614290FD022D1A4221348B3F2838 /* PBXTargetDependency */,
-			);
-			name = "Pods-ShowmeSomeNetflix";
-			productName = "Pods-ShowmeSomeNetflix";
-			productReference = 8F12BD4FFDBC044151FA5ADCADFA5C15 /* Pods_ShowmeSomeNetflix.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E0FD1DCCD10A77562ACCBE4BE0E82F13 /* SwiftSpinner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7E7BBDBC719B8291D15B85A7F33F41E /* Build configuration list for PBXNativeTarget "SwiftSpinner" */;
-			buildPhases = (
-				AC36163AC8256F18E486E5FCBF933084 /* Sources */,
-				88A1CE8EAE69882EA3C60082A21E5D59 /* Frameworks */,
-				E50F873A599906AD6180343EF553A5E9 /* Headers */,
+				28D90D0DA1186FF4A11C6C94405227BF /* Sources */,
+				6FCA024A7D103405968F5BE23D3E3243 /* Frameworks */,
+				100E76CAF292689CB99FF7A4F5450C41 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -417,7 +530,44 @@
 			);
 			name = SwiftSpinner;
 			productName = SwiftSpinner;
-			productReference = 61AA19AC1C60DCE4263EF23F9D12010B /* SwiftSpinner.framework */;
+			productReference = 00FA92D9A505C542F80F936AD1AEBD3C /* SwiftSpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		10D106539DCEFD2F7D6D9C5E899A513E /* Pods-ShowmeSomeNetflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B08ADA8D370CBE4755C1B547A142A1 /* Build configuration list for PBXNativeTarget "Pods-ShowmeSomeNetflix" */;
+			buildPhases = (
+				6EE9B37A6E35CC09783B16FF4CBEB165 /* Sources */,
+				577219FE4425A6B68DB21E20B1EB5FF1 /* Frameworks */,
+				310AAA3156D0C2916AC45939528B3207 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF740C53F6071AE8A247FC28B2845032 /* PBXTargetDependency */,
+				CE686A27E60C1DF897CBCAAEB8562908 /* PBXTargetDependency */,
+				2E3B87E743A0DC47B1333D0B58946B54 /* PBXTargetDependency */,
+			);
+			name = "Pods-ShowmeSomeNetflix";
+			productName = "Pods-ShowmeSomeNetflix";
+			productReference = E7893F2482A8FB2F58F5E1A15C6589BD /* Pods_ShowmeSomeNetflix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD1260D633FF916F4E8662655F6EBC32 /* PopupDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8A9557C1107F77046BA19574646AF9 /* Build configuration list for PBXNativeTarget "PopupDialog" */;
+			buildPhases = (
+				8463A3A50931B1C1C9FA3B5D15D9E1A7 /* Sources */,
+				4FCCB535814B9CCDDAECC1F469D614B4 /* Frameworks */,
+				20BD4F3318A96FFC30638B44A03C415A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopupDialog;
+			productName = PopupDialog;
+			productReference = C8243B323C8224C9295C6989BEB61601 /* PopupDialog.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -428,11 +578,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					E0FD1DCCD10A77562ACCBE4BE0E82F13 = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -442,18 +587,28 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 44D8401AA665F420ABB648C74FCEE83F /* Products */;
+			productRefGroup = 31636A0EFF4F0773DD8858C8736A9F44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
-				7103BA812B842F5E80E0D6133BC130E2 /* Pods-ShowmeSomeNetflix */,
-				E0FD1DCCD10A77562ACCBE4BE0E82F13 /* SwiftSpinner */,
+				10D106539DCEFD2F7D6D9C5E899A513E /* Pods-ShowmeSomeNetflix */,
+				AD1260D633FF916F4E8662655F6EBC32 /* PopupDialog */,
+				022E1B4C81B91EBBADA6376CCDABB3F2 /* SwiftSpinner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		28D90D0DA1186FF4A11C6C94405227BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814BDC160253735E43CFD527898DC6A5 /* SwiftSpinner-dummy.m in Sources */,
+				EE48A3D07DCCFBC4DF8119C6704BFF44 /* SwiftSpinner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63D7DA997053F6B5D01DE8CB5817CB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,71 +618,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC36163AC8256F18E486E5FCBF933084 /* Sources */ = {
+		6EE9B37A6E35CC09783B16FF4CBEB165 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3179DA29ED13A910DED818739422F63 /* SwiftSpinner-dummy.m in Sources */,
-				7416F3841EEA29A61F692E74136F5961 /* SwiftSpinner.swift in Sources */,
+				61C11DD16438CAE3EEF44664B4D9EA85 /* Pods-ShowmeSomeNetflix-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE4A41A7CF613C34743275703416966B /* Sources */ = {
+		8463A3A50931B1C1C9FA3B5D15D9E1A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C12C9A275EF74670D57F8C28454D943 /* Pods-ShowmeSomeNetflix-dummy.m in Sources */,
+				76F9850719A2BDE0907B6DC25AD17223 /* FXBlurView.m in Sources */,
+				6DF20595EC062FDA2866590AB6B80D7A /* InteractiveTransition.swift in Sources */,
+				C4071DDE8B6B9DEE6077E03A7BF5E903 /* PopupDialog+Keyboard.swift in Sources */,
+				79297850C83E560A37F51D05240AE16E /* PopupDialog-dummy.m in Sources */,
+				AE84F6529197BFD97B30750AAC8D67E9 /* PopupDialog.swift in Sources */,
+				22189EC33457538B3DA9201AD2F651D5 /* PopupDialogButton.swift in Sources */,
+				EE906705E6ADF292BBF1537FB4577C2A /* PopupDialogContainerView.swift in Sources */,
+				4E92FE176EF9AE23634ABCA773ACE055 /* PopupDialogDefaultButtons.swift in Sources */,
+				DDA6F265516F87D84609854B172E0628 /* PopupDialogDefaultView.swift in Sources */,
+				184E642C79D68A3AA14AA61E7C61D0A4 /* PopupDialogDefaultViewController.swift in Sources */,
+				090FB40868DB8D809EF279C92E13CBBF /* PopupDialogOverlayView.swift in Sources */,
+				A2A8E5D46052974645749A965DDB0EE1 /* PresentationController.swift in Sources */,
+				4493BFEB79E6C6E14D95486C299B027A /* PresentationManager.swift in Sources */,
+				A982AF0DE8E289DF8C05854857F6005F /* TransitionAnimations.swift in Sources */,
+				48845BEAAFE3EF1F08F96ED0D098C320 /* TransitionAnimator.swift in Sources */,
+				1FDE5A2B833228A99DFA8790B5B0A22A /* TZSpacerView.swift in Sources */,
+				7F7112B8190887C41145DE9561BF0B00 /* TZStackView.swift in Sources */,
+				91D0C8B055DB243799C028B347185B0B /* TZStackViewAlignment.swift in Sources */,
+				3B50F99C99094E3809E6E19EC933E4B4 /* TZStackViewDistribution.swift in Sources */,
+				6789A50AA2E3F695C2743CD5ED8A4EBD /* UIImageView+Calculations.swift in Sources */,
+				27321D614503D7543481918685EA8C3A /* UIView+Animations.swift in Sources */,
+				9D1ED0E0E9FA33A736F1308160F87E56 /* UIViewController+Visibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		849E614290FD022D1A4221348B3F2838 /* PBXTargetDependency */ = {
+		2E3B87E743A0DC47B1333D0B58946B54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftSpinner;
-			target = E0FD1DCCD10A77562ACCBE4BE0E82F13 /* SwiftSpinner */;
-			targetProxy = 131F34BC9078459580C3673B9AFEAFA4 /* PBXContainerItemProxy */;
+			target = 022E1B4C81B91EBBADA6376CCDABB3F2 /* SwiftSpinner */;
+			targetProxy = 4490DB18060383590580C2DFF5CE03F5 /* PBXContainerItemProxy */;
 		};
-		F8C0E2884084C53DE47DCAE64D83D381 /* PBXTargetDependency */ = {
+		BF740C53F6071AE8A247FC28B2845032 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
 			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
-			targetProxy = 5A29C3389C99710C229B742A9838459E /* PBXContainerItemProxy */;
+			targetProxy = 0C9456F0D9D5EAAFBE512B3DFE2A36B8 /* PBXContainerItemProxy */;
+		};
+		CE686A27E60C1DF897CBCAAEB8562908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PopupDialog;
+			target = AD1260D633FF916F4E8662655F6EBC32 /* PopupDialog */;
+			targetProxy = CC26D75C0EEB5C01EAB3235B3948C967 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3774A303CC256A6132E04F5EDD247FFC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F32CFCDA2D18D526716A8459517C5165 /* SwiftSpinner.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftSpinner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -566,71 +717,9 @@
 			};
 			name = Release;
 		};
-		73978D02F2B54EAACD90397497777BE8 /* Release */ = {
+		42993E553CB19E184BC53CF32CBBF7D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DF49CFF2D87B94E9DC28C44CADFC828 /* GoogleToolboxForMac.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = GoogleToolboxForMac;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78E94D6087551487D3A449B1304F3359 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0029D5CF0FBDF5AA6C4C69E5D4D416F /* Pods-ShowmeSomeNetflix.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ShowmeSomeNetflix;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		79020C13FDEFEE5935628DA84DC31514 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DF49CFF2D87B94E9DC28C44CADFC828 /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 61BF0C69524F753E063ED3E8E0BE7A46 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -651,15 +740,111 @@
 				PRODUCT_NAME = GoogleToolboxForMac;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8EFF746EB9EB90AF4D885795BA9C87C6 /* Debug */ = {
+		45C180C1FCA5EDAAE8C5A461A9944679 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F32CFCDA2D18D526716A8459517C5165 /* SwiftSpinner.xcconfig */;
+			baseConfigurationReference = E66C3F0E850426218B4E4374E95E7D0B /* PopupDialog.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D357D8168EC6D97F87B43440ACAA96A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CEA3C39D80DE9846B5DFF20EF46E554 /* Pods-ShowmeSomeNetflix.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ShowmeSomeNetflix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D1A1A34BC59E37FCC89084F0D15E952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF54DECB851C0758BDCFED2944081E0 /* SwiftSpinner.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpinner/SwiftSpinner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpinner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSpinner/SwiftSpinner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSpinner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86E640B8E2501F00F83B49B5ABA1FB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF54DECB851C0758BDCFED2944081E0 /* SwiftSpinner.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -688,9 +873,9 @@
 			};
 			name = Debug;
 		};
-		A9013A94E30A53AE5C0038848645ABCD /* Debug */ = {
+		8ECB3A76477F703228582E76EF9B0C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CEA3C39D80DE9846B5DFF20EF46E554 /* Pods-ShowmeSomeNetflix.debug.xcconfig */;
+			baseConfigurationReference = E66C3F0E850426218B4E4374E95E7D0B /* PopupDialog.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -701,21 +886,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix.modulemap";
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ShowmeSomeNetflix;
+				PRODUCT_NAME = PopupDialog;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -764,6 +946,70 @@
 			};
 			name = Debug;
 		};
+		DBBE4D19B12997A8AC4F86DA96B3434C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0029D5CF0FBDF5AA6C4C69E5D4D416F /* Pods-ShowmeSomeNetflix.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ShowmeSomeNetflix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD5851E1E07FD51FAD810E1497773D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BF0C69524F753E063ED3E8E0BE7A46 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -776,29 +1022,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95D05CEA42816F4C082CAEDCB1D6D2FA /* Build configuration list for PBXNativeTarget "Pods-ShowmeSomeNetflix" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9013A94E30A53AE5C0038848645ABCD /* Debug */,
-				78E94D6087551487D3A449B1304F3359 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C43D9CA5106C6CCEF973B7EDF833947B /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79020C13FDEFEE5935628DA84DC31514 /* Debug */,
-				73978D02F2B54EAACD90397497777BE8 /* Release */,
+				42993E553CB19E184BC53CF32CBBF7D5 /* Debug */,
+				FD5851E1E07FD51FAD810E1497773D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7E7BBDBC719B8291D15B85A7F33F41E /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+		EA8A9557C1107F77046BA19574646AF9 /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EFF746EB9EB90AF4D885795BA9C87C6 /* Debug */,
-				3774A303CC256A6132E04F5EDD247FFC /* Release */,
+				8ECB3A76477F703228582E76EF9B0C6A /* Debug */,
+				45C180C1FCA5EDAAE8C5A461A9944679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B08ADA8D370CBE4755C1B547A142A1 /* Build configuration list for PBXNativeTarget "Pods-ShowmeSomeNetflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D357D8168EC6D97F87B43440ACAA96A /* Debug */,
+				DBBE4D19B12997A8AC4F86DA96B3434C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D18C25E6D8009368A25C3AFBEF3F4E /* Build configuration list for PBXNativeTarget "SwiftSpinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86E640B8E2501F00F83B49B5ABA1FB19 /* Debug */,
+				7D1A1A34BC59E37FCC89084F0D15E952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

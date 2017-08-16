@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
@@ -130,7 +131,31 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        self.presenter?.presentLanguagesForSerie(withView: self.view)
+        // Prepare the popup assets
+        let title = "LANGUAGES & SUBTITLES"
+        let message = "Here goes languages and subtitles"
+        let image = UIImage(named: "ad.png")
+        
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image)
+        
+        // Create button
+       
+        
+        let buttonOne = DefaultButton(title: "Ok") {
+            print("Ok pressed!")
+        }
+        
+        // Add buttons to dialog
+        // Alternatively, you can use popup.addButton(buttonOne)
+        // to add a single button
+        popup.addButtons([buttonOne])
+        
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+        
+        
+        //self.presenter?.presentLanguagesForSerie(withView: self.view)
     }
 }
    

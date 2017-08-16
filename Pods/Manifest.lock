@@ -16,11 +16,13 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - PopupDialog (0.5.4)
   - SwiftSpinner (1.2.0)
 
 DEPENDENCIES:
   - Firebase/AdMob
   - Firebase/Core
+  - PopupDialog
   - SwiftSpinner
 
 SPEC CHECKSUMS:
@@ -30,8 +32,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
   Google-Mobile-Ads-SDK: d1bcdbd8347a105a687345b8511701172a5074e9
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  PopupDialog: 75cf955693590b0cb2fdde00223fb65d99c57247
   SwiftSpinner: 6892642232471da581ecb020a9150e07d17a954b
 
-PODFILE CHECKSUM: bc61d01a7ee396b4831ccb3fb1718c1d3e4bba38
+PODFILE CHECKSUM: 88da5594a978033ed517ce42bd8e7807b3747841
 
 COCOAPODS: 1.0.0

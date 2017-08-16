@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7103BA812B842F5E80E0D6133BC130E2"
+               BlueprintIdentifier = "10D106539DCEFD2F7D6D9C5E899A513E"
                BuildableName = "Pods_ShowmeSomeNetflix.framework"
                BlueprintName = "Pods-ShowmeSomeNetflix"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7103BA812B842F5E80E0D6133BC130E2"
+            BlueprintIdentifier = "10D106539DCEFD2F7D6D9C5E899A513E"
             BuildableName = "Pods_ShowmeSomeNetflix.framework"
             BlueprintName = "Pods-ShowmeSomeNetflix"
             ReferencedContainer = "container:Pods.xcodeproj">

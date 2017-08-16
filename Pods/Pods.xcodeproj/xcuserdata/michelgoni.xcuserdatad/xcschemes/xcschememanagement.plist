@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PopupDialog.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftSpinner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7103BA812B842F5E80E0D6133BC130E2</key>
+		<key>022E1B4C81B91EBBADA6376CCDABB3F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0FD1DCCD10A77562ACCBE4BE0E82F13</key>
+		<key>10D106539DCEFD2F7D6D9C5E899A513E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD1260D633FF916F4E8662655F6EBC32</key>
 		<dict>
 			<key>primary</key>
 			<true/>
