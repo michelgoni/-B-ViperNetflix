@@ -131,10 +131,18 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        // Prepare the popup assets
-        let title = "LANGUAGES & SUBTITLES"
+        
+        guard let title = self.viewModel?.countriesArray[indexPath.row] else {
+            return
+        }
+        
+        guard let imageName = self.viewModel?.flagsAcronyms[indexPath.row] else {
+            return
+        }
+        
+        let image = UIImage(named: imageName + ".png")
+        
         let message = "Here goes languages and subtitles"
-        let image = UIImage(named: "ad.png")
         
         // Create the dialog
         let popup = PopupDialog(title: title, message: message, image: image)
