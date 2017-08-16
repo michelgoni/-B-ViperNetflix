@@ -130,42 +130,63 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if searchController.isActive && searchController.searchBar.text != "" {
         
-        guard let title = self.viewModel?.countriesArray[indexPath.row] else {
-            return
-        }
-        
-        guard let imageName = self.viewModel?.flagsAcronyms[indexPath.row] else {
-            return
-        }
-        
-        let image = UIImage(named: imageName + ".png")
-        
-        let languages : [String] = self.viewModel?.languages[indexPath.row] as! [String]
-        let finalLanguages = languages.joined(separator: ", ")
-        
-        let subtitles :[String] = self.viewModel?.subtitles[indexPath.row] as! [String]
-        let finalSubtitles = subtitles.joined(separator: ", ")
-        
-    
-        let message = "Languages: \(finalLanguages) \n Subtitles: \(finalSubtitles) "
-       
-       
-        
-        // Create the dialog
-        let popup = PopupDialog(title: title, message: message, image: image)
-        
-        // Create button
-        let buttonOne = DefaultButton(title: "Ok") {
-            print("Ok pressed!")
-        }
-        
-        // Add buttons to dialog
-        popup.addButtons([buttonOne])
-        
-        // Present dialog
-        self.present(popup, animated: true, completion: nil)
+            let title = filteredFlags[indexPath.row]
+            let image = UIImage(named: flagsDictionary["\(title.trimmingCharacters(in: .whitespaces))"]! + ".png")
+             let message = "Languages:  \n Subtitles:  "
+            // Create the dialog
+            let popup = PopupDialog(title: title, message: message, image: image)
+            
+            // Create button
+            let buttonOne = DefaultButton(title: "Ok") {
+                print("Ok pressed!")
+            }
+            
+            // Add buttons to dialog
+            popup.addButtons([buttonOne])
+            
+            // Present dialog
+            self.present(popup, animated: true, completion: nil)
+        }else{
+            guard let title = self.viewModel?.countriesArray[indexPath.row] else {
+                return
+            }
+            
+            guard let imageName = self.viewModel?.flagsAcronyms[indexPath.row] else {
+                return
+            }
+            
+            let image = UIImage(named: imageName + ".png")
+            
+            let languages : [String] = self.viewModel?.languages[indexPath.row] as! [String]
+            let finalLanguages = languages.joined(separator: ", ")
+            
+            let subtitles :[String] = self.viewModel?.subtitles[indexPath.row] as! [String]
+            let finalSubtitles = subtitles.joined(separator: ", ")
+            
+            
+            let message = "Languages: \(finalLanguages) \n Subtitles: \(finalSubtitles) "
+            
+            
+            
+            // Create the dialog
+            let popup = PopupDialog(title: title, message: message, image: image)
+            
+            // Create button
+            let buttonOne = DefaultButton(title: "Ok") {
+                print("Ok pressed!")
+            }
+            
+            // Add buttons to dialog
+            popup.addButtons([buttonOne])
+            
+            // Present dialog
+            self.present(popup, animated: true, completion: nil)
 
+        }
+        
+      
     }
 }
    
