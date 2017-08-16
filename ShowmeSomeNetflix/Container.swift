@@ -27,9 +27,5 @@ class Container {
         return CountryFlagsModuleDefaultBuilder()
     }
     
-    func languagesModuleBuilder() -> LanguagesModuleBuilder {
-        
-        return LanguagesModuleDefaultBuilder()
-    }
 }
 

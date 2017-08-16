@@ -10,5 +10,5 @@ import UIKit
 
 protocol CountryFlagsModuleRouter {
     
-    func navigateToCountriesForSerie(withArrayofCountries arrayOfCountries: [Array<Any>], andView view: UIView)
+    
 }

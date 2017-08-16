@@ -42,8 +42,8 @@ class CountryFlagsModuleDefaultPresenter: CountryFlagsModulePresenter {
     }
     
     func presentLanguagesForSerie(withView view: UIView) {
-        
-       self.router.navigateToCountriesForSerie(withArrayofCountries: self.languagesAndSubtitlesArray, andView: view)
+       
+        //MARK: Router here is not needed anymore
     }
 }
 

@@ -140,22 +140,16 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         let popup = PopupDialog(title: title, message: message, image: image)
         
         // Create button
-       
-        
         let buttonOne = DefaultButton(title: "Ok") {
             print("Ok pressed!")
         }
         
         // Add buttons to dialog
-        // Alternatively, you can use popup.addButton(buttonOne)
-        // to add a single button
         popup.addButtons([buttonOne])
         
         // Present dialog
         self.present(popup, animated: true, completion: nil)
-        
-        
-        //self.presenter?.presentLanguagesForSerie(withView: self.view)
+
     }
 }
    
