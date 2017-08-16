@@ -88,7 +88,6 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         filteredFlags = (self.viewModel?.countriesArray.filter { flags in
             return flags.lowercased().contains(searchText.lowercased())
             })!
-
         
          collectionView.reloadData()
     }
@@ -142,7 +141,16 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
         
         let image = UIImage(named: imageName + ".png")
         
-        let message = "Here goes languages and subtitles"
+        let languages : [String] = self.viewModel?.languages[indexPath.row] as! [String]
+        let finalLanguages = languages.joined(separator: ", ")
+        
+        let subtitles :[String] = self.viewModel?.subtitles[indexPath.row] as! [String]
+        let finalSubtitles = subtitles.joined(separator: ", ")
+        
+    
+        let message = "Languages: \(finalLanguages) \n Subtitles: \(finalSubtitles) "
+       
+       
         
         // Create the dialog
         let popup = PopupDialog(title: title, message: message, image: image)
