@@ -27,7 +27,9 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     private var tapGesture : UIGestureRecognizer!
     var filteredFlags = [String]()
+    var filteredLanguages = [[String]]()
     var flagsDictionary = [String : String]()
+    var countriesIndexDict = [String : Int] ()
     fileprivate var viewModel: CountryFlagsModuleViewModel?
     var collectionViewPadding : CGFloat = 0
     let heightForImage: CGFloat = 87
@@ -89,6 +91,7 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
             return flags.lowercased().contains(searchText.lowercased())
             })!
         
+        
          collectionView.reloadData()
     }
     
@@ -130,26 +133,33 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        //TODO: This part needs to be refactored. Showing the popUp should be responsability of the router
+        
         if searchController.isActive && searchController.searchBar.text != "" {
         
-            let title = filteredFlags[indexPath.row]
+            let title = filteredFlags[indexPath.row].trimmingCharacters(in: .whitespaces)
             let image = UIImage(named: flagsDictionary["\(title.trimmingCharacters(in: .whitespaces))"]! + ".png")
-             let message = "Languages:  \n Subtitles:  "
-            // Create the dialog
-            let popup = PopupDialog(title: title, message: message, image: image)
             
-            // Create button
+            guard let index = countriesIndexDict[title] else {
+                return
+            }
+        
+            let languages = self.viewModel!.languages[index].joined(separator: ", ")
+            let subtitles = self.viewModel!.subtitles[index].joined(separator: ", ")
+            
+            let message = "Languages: \(languages) \n Subtitles: \(subtitles)  "
+            
+           
             let buttonOne = DefaultButton(title: "Ok") {
                 print("Ok pressed!")
             }
             
-            // Add buttons to dialog
+            let popup = PopupDialog(title: title, message: message, image: image)
             popup.addButtons([buttonOne])
             
-            // Present dialog
             self.present(popup, animated: true, completion: nil)
         }else{
-            guard let title = self.viewModel?.countriesArray[indexPath.row] else {
+            guard let title = self.viewModel?.countriesArray[indexPath.row].trimmingCharacters(in: .whitespaces) else {
                 return
             }
             
@@ -158,30 +168,18 @@ class CountryFlagsModuleViewController: UIViewController, UICollectionViewDelega
             }
             
             let image = UIImage(named: imageName + ".png")
-            
-            let languages : [String] = self.viewModel?.languages[indexPath.row] as! [String]
+            let languages : [String] = self.viewModel!.languages[indexPath.row]
             let finalLanguages = languages.joined(separator: ", ")
-            
-            let subtitles :[String] = self.viewModel?.subtitles[indexPath.row] as! [String]
+            let subtitles :[String] = self.viewModel!.subtitles[indexPath.row]
             let finalSubtitles = subtitles.joined(separator: ", ")
-            
-            
             let message = "Languages: \(finalLanguages) \n Subtitles: \(finalSubtitles) "
-            
-            
-            
-            // Create the dialog
             let popup = PopupDialog(title: title, message: message, image: image)
-            
-            // Create button
             let buttonOne = DefaultButton(title: "Ok") {
                 print("Ok pressed!")
             }
             
-            // Add buttons to dialog
             popup.addButtons([buttonOne])
             
-            // Present dialog
             self.present(popup, animated: true, completion: nil)
 
         }
@@ -222,6 +220,7 @@ extension CountryFlagsModuleViewController: CountryFlagsModuleView {
         for country in (self.viewModel?.countriesArray)!  {
             
             flagsDictionary[country.trimmingCharacters(in: .whitespaces)] = self.viewModel?.flagsAcronyms[i]
+            countriesIndexDict[country.trimmingCharacters(in: .whitespaces)] = i
             i += 1
         }
     }

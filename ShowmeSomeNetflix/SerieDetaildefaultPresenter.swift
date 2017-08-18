@@ -15,7 +15,7 @@ struct SerieDetailViewModel {
     let image: String
     let imdbRating: String
     let country: String
-    let arrayCountries: [[Any]]
+    let arrayCountries: [Any]
     
     fileprivate let serieDetailModelBuilder = SerieDetailViewModelBuilder()
     
@@ -65,18 +65,11 @@ fileprivate class SerieDetailViewModelBuilder {
         
         let emission = [NSKeyedUnarchiver.unarchiveObject(with: serieDetail.emisionCountries!) as! [String],
                         NSKeyedUnarchiver.unarchiveObject(with: serieDetail.flagCountries!) as! [String],
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.subtitles!)!,
-                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!)!]
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.subtitles!) as! [Array<String>],
+                        NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!) as! [Array<String>]] as [Any]
        
         
-        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: [emission])
+        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: emission)
 
-        
-        
-        
-       
-        
-       
-    
     }
 }

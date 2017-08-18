@@ -45,9 +45,9 @@ class SerieDetailDefaultViewController: UIViewController {
     
     @IBAction func showCountries(_ sender: Any) {
         
-        //TODO: Evaluate at some point if srrayCountries is available. App crashes sometime here if this value is not present
+        //TODO: Evaluate at some point if arrayCountries is available in order to make button active. App crashes sometime here if this value is not present
         
-      self.presenter?.presentCountryFlagsForSerie(array: (self.serieDetailModel?.arrayCountries)!)
+      self.presenter?.presentCountryFlagsForSerie(array: [(self.serieDetailModel?.arrayCountries)!])
     }
 }
 
