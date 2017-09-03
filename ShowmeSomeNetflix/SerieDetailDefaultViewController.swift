@@ -52,6 +52,10 @@ class SerieDetailDefaultViewController: UIViewController {
          })
     }
     
+    @IBAction func favoritePressed(_ sender: Any) {
+    }
+    
+    
     @IBAction func showCountries(_ sender: Any) {
         
         guard let arrayCountries = self.serieDetailModel?.arrayCountries else {
