@@ -11,6 +11,7 @@ import UIKit
 protocol SerieDetailPresenter {
     
     func loadData()
+    func configureButton(completionHandler: @escaping (Bool?) -> Void)
     
     func presentCountryFlagsForSerie(array flagsArray: [Array<Any>])
 }

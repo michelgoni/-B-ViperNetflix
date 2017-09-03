@@ -20,6 +20,7 @@ class SerieDetailDefaultViewController: UIViewController {
     @IBOutlet weak var serieImage: UIImageView!
     @IBOutlet weak var btnFavorite: RoundButton!
     
+    var serieId: String!
     var presenter: SerieDetailPresenter?
     var serieDetailModel : SerieDetailViewModel?
  
@@ -39,15 +40,24 @@ class SerieDetailDefaultViewController: UIViewController {
     //MARK: Private
     func configureButton() {
         
-        //TODO: -- button config should be in some kind of factory
-
+         self.presenter?.configureButton(completionHandler: { isFavorite in
+            
+            if isFavorite! {
+                self.btnFavorite.backgroundColor = hexStringToUIColor(hex: "E85F0C")
+                self.btnFavorite.setTitle("I wanna watch it", for: .normal)
+            }else{
+                self.btnFavorite.backgroundColor = hexStringToUIColor(hex: "FF8C0D")
+                self.btnFavorite.setTitle("Not interested", for: .normal)
+            }
+         })
     }
     
     @IBAction func showCountries(_ sender: Any) {
         
-        //TODO: Evaluate at some point if arrayCountries is available in order to make button active. App crashes sometime here if this value is not present
-        
-      self.presenter?.presentCountryFlagsForSerie(array: [(self.serieDetailModel?.arrayCountries)!])
+        guard let arrayCountries = self.serieDetailModel?.arrayCountries else {
+            return
+        }
+      self.presenter?.presentCountryFlagsForSerie(array: [arrayCountries])
     }
 }
 
@@ -56,6 +66,7 @@ extension SerieDetailDefaultViewController: SerieDetailView {
     func displaySerieDetail(withSerieDetailViewmodel serieDetail: SerieDetailViewModel) {
         
         self.serieDetailModel = serieDetail
+        self.serieId = serieDetail.movieId
         self.serieTitleLabel.text = serieDetail.title
         self.imdbLabel.text = serieDetail.imdbRating
         self.countryLabel.text = serieDetail.country

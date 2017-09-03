@@ -27,4 +27,10 @@ class SerieDetailDefaultInteractorManager: SerieDetailInteractorManager {
         }
         
     }
+    
+    func configureButtonWithSerieId(completionHandler: @escaping (Bool?) -> Void) {
+        
+        completionHandler(dataProvider.isMovieFavorite(movie: self.serieId))
+        
+    }
 }

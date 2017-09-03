@@ -10,6 +10,7 @@ import UIKit
 
 struct SerieDetailViewModel {
     
+    let movieId: String
     let title: String
     let summary: String
     let image: String
@@ -53,6 +54,13 @@ class SeriedetailDefaultPresenter: SerieDetailPresenter {
         }
     }
     
+    func configureButton(completionHandler: @escaping (Bool?) -> Void) {
+        self.interactorManager.configureButtonWithSerieId { isFavorite in
+            
+           completionHandler(isFavorite)
+        }
+    }
+    
     func presentCountryFlagsForSerie(array flagsArray: [Array<Any>]){
         
         self.router.navigateToCountriesForSerie(withArrayofCountries: flagsArray)
@@ -69,7 +77,7 @@ fileprivate class SerieDetailViewModelBuilder {
                         NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!) as! [Array<String>]] as [Any]
        
         
-        return SerieDetailViewModel(title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: emission)
+        return SerieDetailViewModel(movieId: serieDetail.id! ,title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: emission)
 
     }
 }

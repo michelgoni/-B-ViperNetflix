@@ -83,7 +83,7 @@ class MovieViewController: UIViewController {
     func configureFavoriteButton() {
         
         if let movie = self.movie {
-            if dataProvider.isMovieFavorite(movie: movie) {
+            if dataProvider.isMovieFavorite(movie: movie.id!) {
                 btnFavorite.backgroundColor = hexStringToUIColor(hex: "E85F0C")
                 btnFavorite.setTitle("I wanna watch it", for: .normal)
                 

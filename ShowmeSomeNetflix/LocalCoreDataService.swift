@@ -303,9 +303,9 @@ class LocalCoreDataService {
         }
     }
     
-    func isMovieFavorite (movie: Movie) ->Bool {
+    func isMovieFavorite (movie: String) ->Bool {
         
-        if let _ = getMovieById(id: movie.id!, favorite: true) {
+        if let _ = getMovieById(id: movie, favorite: true) {
             
             return true
         }else{

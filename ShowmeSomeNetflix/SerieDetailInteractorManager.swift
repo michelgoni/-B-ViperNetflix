@@ -11,4 +11,5 @@ import Foundation
 protocol SerieDetailInteractorManager {
     
     func getSerieDetailModel(completionHandler: @escaping (Movie?) -> Void)
+    func configureButtonWithSerieId(completionHandler: @escaping (Bool?) -> Void)
 }
