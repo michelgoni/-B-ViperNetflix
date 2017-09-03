@@ -56,6 +56,7 @@ class SerieDetailDefaultViewController: UIViewController {
     
     @IBAction func favoritePressed(_ sender: Any) {
         
+        //TODO: -- This task should be sent from the presenter-->Interactor manager
         dataProvider.markUnmarkfavorite(movie: self.serieDetailModel!)
         self.configureButton()
     }
