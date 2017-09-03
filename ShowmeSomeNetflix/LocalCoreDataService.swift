@@ -314,11 +314,11 @@ class LocalCoreDataService {
     }
     
     
-    func markUnmarkfavorite(movie: Movie) {
+    func markUnmarkfavorite(movie: SerieDetailViewModel) {
         
         let context = stack.persistentContainer.viewContext
         
-        if let exist = getMovieById(id: movie.id!, favorite: true){
+        if let exist = getMovieById(id: movie.movieId, favorite: true){
             
             context.delete(exist)
             
@@ -326,7 +326,7 @@ class LocalCoreDataService {
             
             let favorite = MovieManaged(context: context)
             
-            favorite.id = movie.id
+            favorite.id = movie.movieId
             favorite.title = movie.title
             favorite.imdbRating = movie.imdbRating
             favorite.summary = movie.summary

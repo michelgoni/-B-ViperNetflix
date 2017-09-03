@@ -98,10 +98,10 @@ class MovieViewController: UIViewController {
     
     @IBAction func favoritePressed(_ sender: Any) {
         
-        if let movie = movie {
-            dataProvider.markUnmarkfavorite(movie: movie)
-            configureFavoriteButton()
-        }
+//        if let movie = movie {
+//            dataProvider.markUnmarkfavorite(movie: movie)
+//            configureFavoriteButton()
+//        }
     }
     
     override func viewWillLayoutSubviews() {

@@ -17,6 +17,7 @@ struct SerieDetailViewModel {
     let imdbRating: String
     let country: String
     let arrayCountries: [Any]
+    let favorite: Bool
     
     fileprivate let serieDetailModelBuilder = SerieDetailViewModelBuilder()
     
@@ -77,7 +78,7 @@ fileprivate class SerieDetailViewModelBuilder {
                         NSKeyedUnarchiver.unarchiveObject(with: serieDetail.languages!) as! [Array<String>]] as [Any]
        
         
-        return SerieDetailViewModel(movieId: serieDetail.id! ,title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: emission)
+        return SerieDetailViewModel(movieId: serieDetail.id! ,title: serieDetail.title!, summary: serieDetail.summary!, image: serieDetail.image!,imdbRating: serieDetail.imdbRating!, country: serieDetail.country!, arrayCountries: emission, favorite: false)
 
     }
 }

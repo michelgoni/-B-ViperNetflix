@@ -23,6 +23,8 @@ class SerieDetailDefaultViewController: UIViewController {
     var serieId: String!
     var presenter: SerieDetailPresenter?
     var serieDetailModel : SerieDetailViewModel?
+    
+    let dataProvider = LocalCoreDataService()
  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -53,6 +55,9 @@ class SerieDetailDefaultViewController: UIViewController {
     }
     
     @IBAction func favoritePressed(_ sender: Any) {
+        
+        dataProvider.markUnmarkfavorite(movie: self.serieDetailModel!)
+        self.configureButton()
     }
     
     
