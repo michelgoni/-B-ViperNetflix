@@ -50,10 +50,9 @@ extension SeriesListDefaultPresenter: SeriesListPresenter {
     func loadSeries() {
         self.interactorManager.getSeriesList { movie in
             
-            if let weatherViewModelToBuild = movie {
+            if let serieModelToBuild = movie {
             
-                let serieViewModel = self.serieModelBuilder.buildSerieListViewModel(withModel: weatherViewModelToBuild)
-                self.view?.displaySeriesList(withSeriesListViewModel: serieViewModel)
+                 self.buildAndDisplayModel(serieViewModel: serieModelToBuild)
             }else{
                 self.view?.displayError()
             }
@@ -66,8 +65,8 @@ extension SeriesListDefaultPresenter: SeriesListPresenter {
         self.interactorManager.getSeries(withTerm: term) { movie in
             
             if let serieModelToBuild = movie {
-                let serieViewModel = self.serieModelBuilder.buildSerieListViewModel(withModel: serieModelToBuild)
-                self.view?.displaySeriesList(withSeriesListViewModel: serieViewModel)
+                self.buildAndDisplayModel(serieViewModel: serieModelToBuild)
+                
             }else{
                 self.view?.displayError()
             }
@@ -77,6 +76,12 @@ extension SeriesListDefaultPresenter: SeriesListPresenter {
     func presentSerieDetail(withSerieId: String) {
         
         self.router.navigateToSerieDetail(withSerieId: withSerieId)
+    }
+    
+    private func buildAndDisplayModel(serieViewModel: [Movie]) {
+        
+        let serieViewModel = self.serieModelBuilder.buildSerieListViewModel(withModel: serieViewModel)
+        self.view?.displaySeriesList(withSeriesListViewModel: serieViewModel)
     }
 }
 

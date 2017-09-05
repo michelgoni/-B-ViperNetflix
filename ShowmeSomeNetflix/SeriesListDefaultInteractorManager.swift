@@ -15,11 +15,7 @@ class SeriesListDefaultInteractorManager {
       let dataProvider = LocalCoreDataService()
     
     let parameters = "q=%7Bquery%7D-!1900,2017-!4,5-!8,10-!0-!Series-!Any-!Any-!gt100-!%7Bdownloadable%7D&t=ns&cl=all&st=adv&ob=Rating&p=1"
-    
 
-
-   
-    
 }
 
 extension SeriesListDefaultInteractorManager: SeriesListInteractorManager {
