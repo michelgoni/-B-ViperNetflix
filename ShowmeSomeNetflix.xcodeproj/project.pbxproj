@@ -19,6 +19,7 @@
 		2D198B4C1F5F19A600A16D05 /* MovieListDefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D198B4A1F5F19A600A16D05 /* MovieListDefaultPresenter.swift */; };
 		2D198B4F1F5F19B300A16D05 /* MovieListInteractorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D198B4D1F5F19B300A16D05 /* MovieListInteractorManager.swift */; };
 		2D198B501F5F19B300A16D05 /* MovieListDefaultInteractorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D198B4E1F5F19B300A16D05 /* MovieListDefaultInteractorManager.swift */; };
+		2D198B521F5F242E00A16D05 /* MoviesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D198B511F5F242E00A16D05 /* MoviesListView.xib */; };
 		2D254D6E1E6C7462001407A6 /* CountriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D254D6D1E6C7462001407A6 /* CountriesVC.swift */; };
 		2D2CF1171E915DBE00CDE89D /* SearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CF1161E915DBE00CDE89D /* SearchBarExtension.swift */; };
 		2D2CF1321E9161BB00CDE89D /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2CF1311E9161BB00CDE89D /* UIImageExtension.swift */; };
@@ -83,7 +84,6 @@
 		2DA2BAB81ECF461900B6ADC4 /* SerieListDefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2BAB71ECF461900B6ADC4 /* SerieListDefaultRouter.swift */; };
 		2DA2BABA1ECF47C700B6ADC4 /* SeriesListInteractorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2BAB91ECF47C700B6ADC4 /* SeriesListInteractorManager.swift */; };
 		2DA2BABD1ECF48DA00B6ADC4 /* SeriesListDefaultInteractorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2BABC1ECF48DA00B6ADC4 /* SeriesListDefaultInteractorManager.swift */; };
-		2DA2BAC11ECF5DBC00B6ADC4 /* MoviesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2BAC01ECF5DBC00B6ADC4 /* MoviesListView.xib */; };
 		2DB7B7671ED9D5B5006DA9C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7B7661ED9D5B5006DA9C0 /* MainViewController.swift */; };
 		2DB7B76D1ED9DD73006DA9C0 /* SeriesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB7B76C1ED9DD73006DA9C0 /* SeriesListView.xib */; };
 		2DB7B7701ED9EBBA006DA9C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB7B76F1ED9EBBA006DA9C0 /* Constants.swift */; };
@@ -323,6 +323,7 @@
 		2D198B4A1F5F19A600A16D05 /* MovieListDefaultPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListDefaultPresenter.swift; sourceTree = "<group>"; };
 		2D198B4D1F5F19B300A16D05 /* MovieListInteractorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListInteractorManager.swift; sourceTree = "<group>"; };
 		2D198B4E1F5F19B300A16D05 /* MovieListDefaultInteractorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListDefaultInteractorManager.swift; sourceTree = "<group>"; };
+		2D198B511F5F242E00A16D05 /* MoviesListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesListView.xib; sourceTree = "<group>"; };
 		2D254D6D1E6C7462001407A6 /* CountriesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesVC.swift; sourceTree = "<group>"; };
 		2D2CF1161E915DBE00CDE89D /* SearchBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarExtension.swift; sourceTree = "<group>"; };
 		2D2CF1311E9161BB00CDE89D /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -386,7 +387,6 @@
 		2DA2BAB71ECF461900B6ADC4 /* SerieListDefaultRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieListDefaultRouter.swift; sourceTree = "<group>"; };
 		2DA2BAB91ECF47C700B6ADC4 /* SeriesListInteractorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListInteractorManager.swift; sourceTree = "<group>"; };
 		2DA2BABC1ECF48DA00B6ADC4 /* SeriesListDefaultInteractorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesListDefaultInteractorManager.swift; sourceTree = "<group>"; };
-		2DA2BAC01ECF5DBC00B6ADC4 /* MoviesListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesListView.xib; sourceTree = "<group>"; };
 		2DB7B7661ED9D5B5006DA9C0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2DB7B76C1ED9DD73006DA9C0 /* SeriesListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeriesListView.xib; sourceTree = "<group>"; };
 		2DB7B76F1ED9EBBA006DA9C0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -459,9 +459,9 @@
 		2D198B421F5F190F00A16D05 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D198B511F5F242E00A16D05 /* MoviesListView.xib */,
 				2D198B431F5F192F00A16D05 /* MovieListViewController.swift */,
 				2D198B441F5F192F00A16D05 /* MovieListView.swift */,
-				2DA2BAC01ECF5DBC00B6ADC4 /* MoviesListView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1166,10 +1166,10 @@
 			files = (
 				2D545B0E1E351E2C007BAC95 /* LaunchScreen.storyboard in Resources */,
 				2D64A5871F1E79FA00F1F18E /* CountryFlagsModuleViewController.xib in Resources */,
-				2DA2BAC11ECF5DBC00B6ADC4 /* MoviesListView.xib in Resources */,
 				2D545B0B1E351E2C007BAC95 /* Assets.xcassets in Resources */,
 				2D545B091E351E2C007BAC95 /* Main.storyboard in Resources */,
 				2DD94EC01F0EB25300F44A45 /* SerieDetailDefaultViewController.xib in Resources */,
+				2D198B521F5F242E00A16D05 /* MoviesListView.xib in Resources */,
 				2DB7B76D1ED9DD73006DA9C0 /* SeriesListView.xib in Resources */,
 				2D701F561F01880A007115C2 /* SerieListCollectionViewCell.xib in Resources */,
 				2D55F1121F17DEBB005458AC /* CountryDetailCell.xib in Resources */,

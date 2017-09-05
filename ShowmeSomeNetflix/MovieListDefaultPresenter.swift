@@ -30,7 +30,7 @@ class MovieListDefaultPresenter {
     fileprivate let router: MovieListRouter
     fileprivate weak var view: MovieListView?
 
-    fileprivate let viewModelBuilder = MovieListViewModelBuilder()
+    fileprivate let movieModelBuilder = MovieListViewModelBuilder()
 
     init(interactorManager: MovieListInteractorManager, router: MovieListRouter, view: MovieListView) {
         self.interactorManager = interactorManager
@@ -46,16 +46,39 @@ class MovieListDefaultPresenter {
 
 extension MovieListDefaultPresenter: MovieListPresenter {
     
-    func loadSeries() {
+     func loadMovies() {
+        
+        self.interactorManager.getMoviesList { movie in
+            
+             if let movieViewModelToBuild = movie {
+                self.buildAndDisplayModel(movieViewModel: movieViewModelToBuild)
+             }else{
+                self.view?.displayError()
+            }
+        }
+    }
+    
+    func searchMovies(withTerm term: String) {
+        
+        self.interactorManager.getMovies(withTerm: term) { movie  in
+            
+            if let movieViewModelToBuild = movie {
+                self.buildAndDisplayModel(movieViewModel: movieViewModelToBuild)
+                
+            }else{
+                self.view?.displayError()
+            }
+        }
+    }
+    
+    func presentMoviesDetail(withMoviesId: String) {
         
     }
     
-    func searchSeries(withTerm term: String) {
+    private func buildAndDisplayModel(movieViewModel: [Movie]) {
         
-    }
-    
-    func presentSerieDetail(withSerieId: String) {
-        
+        let movieViewModel = self.movieModelBuilder.buildMovieListViewModel(withModel: movieViewModel)
+        self.view?.displayMoviesList(withMovieListViewModel: movieViewModel)
     }
 }
 

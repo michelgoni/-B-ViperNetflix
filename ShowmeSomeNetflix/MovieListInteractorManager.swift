@@ -10,7 +10,7 @@ import Foundation
 
 protocol MovieListInteractorManager {
     
-    func getMoviesListList(completionHandler: @escaping ([Movie]?) -> Void)
+    func getMoviesList(completionHandler: @escaping ([Movie]?) -> Void)
     
     func getMovies(withTerm term: String, completionHandler: @escaping ([Movie]?) -> Void)
 
