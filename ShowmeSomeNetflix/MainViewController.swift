@@ -25,7 +25,7 @@ class MainViewController: UITabBarController {
        
         
           // MARK: Movie list
-        let movieListViewcontroller = Container.shared.seriesListBuilder().buildSeriesListModule()
+        let movieListViewcontroller = Container.shared.movieListBuilder().buildMovieListModule()
         movieListViewcontroller?.tabBarItem = UITabBarItem(title: "Movies",image: UIImage(named: "film-icon"),tag: 2)
         let movieListNavigationController = UINavigationController(rootViewController: movieListViewcontroller!)
         self.configureNavigationController(navigationController: movieListNavigationController)

@@ -17,6 +17,11 @@ class Container {
         return SeriesListDefaultBuilder()
     }
     
+    func movieListBuilder() ->MovieListBuilder {
+        
+        return MovieListDefaultBuilder()
+    }
+    
     func serieDetailBuilder() -> SerieDetailBuilder {
         
         return SerieDetailDefaultBuilder()
