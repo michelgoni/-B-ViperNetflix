@@ -10,4 +10,6 @@ import Foundation
 
 protocol MovieListView: class {
 
+    func displaySeriesList(withSeriesListViewModel serieListViewModel: MovieListViewModel)
+    func displayError()
 }

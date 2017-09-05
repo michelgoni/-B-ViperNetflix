@@ -19,5 +19,13 @@ class MovieListViewController: UIViewController {
 
 // MARK: - MovieListView
 extension MovieListViewController: MovieListView {
+    
+    func displaySeriesList(withSeriesListViewModel serieListViewModel: MovieListViewModel) {
+        
+    }
+    
+    func displayError() {
+        
+    }
 
 }

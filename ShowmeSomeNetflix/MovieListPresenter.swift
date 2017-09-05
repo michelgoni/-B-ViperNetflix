@@ -9,5 +9,9 @@
 import Foundation
 
 protocol MovieListPresenter {
+    
+    func loadSeries()
+    func searchSeries(withTerm term: String)
+    func presentSerieDetail(withSerieId: String)
 
 }

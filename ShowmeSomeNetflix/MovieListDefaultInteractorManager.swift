@@ -10,4 +10,12 @@ import Foundation
 
 class MovieListDefaultInteractorManager: MovieListInteractorManager {
 
+    
+    func getMoviesListList(completionHandler: @escaping ([Movie]?) -> Void) {
+        
+    }
+    
+    func getMovies(withTerm term: String, completionHandler: @escaping ([Movie]?) -> Void) {
+        
+    }
 }

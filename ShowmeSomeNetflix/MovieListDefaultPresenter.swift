@@ -9,11 +9,23 @@
 import Foundation
 
 struct MovieListViewModel {
+    
+    let movieListViewModel : [MoviesList]
+}
 
+struct MoviesList {
+    
+    let image: String?
+    let id: String?
+    
+    init(id: String?, image: String?) {
+        self.id = id
+        self.image = image
+    }
 }
 
 // MARK: - Main Class
-class MovieListDefaultPresenter: MovieListPresenter {
+class MovieListDefaultPresenter {
     fileprivate let interactorManager: MovieListInteractorManager
     fileprivate let router: MovieListRouter
     fileprivate weak var view: MovieListView?
@@ -26,13 +38,40 @@ class MovieListDefaultPresenter: MovieListPresenter {
         self.view = view
     }
 
+    
     // MARK: - MovieListPresenter
+    
 
+}
+
+extension MovieListDefaultPresenter: MovieListPresenter {
+    
+    func loadSeries() {
+        
+    }
+    
+    func searchSeries(withTerm term: String) {
+        
+    }
+    
+    func presentSerieDetail(withSerieId: String) {
+        
+    }
 }
 
 // MARK: - Model Builder
 class MovieListViewModelBuilder {
-    func buildViewModel() -> MovieListViewModel {
-        return MovieListViewModel()
+    
+    func buildMovieListViewModel(withModel serieModel: [Movie]) -> MovieListViewModel {
+        
+        var movieListViewModel: [MoviesList] = []
+        
+        for serieObject in serieModel {
+            
+            let serieModel = MoviesList(id: serieObject.id, image: serieObject.image)
+            movieListViewModel.append(serieModel)
+        }
+        
+        return MovieListViewModel(movieListViewModel: movieListViewModel)
     }
 }
