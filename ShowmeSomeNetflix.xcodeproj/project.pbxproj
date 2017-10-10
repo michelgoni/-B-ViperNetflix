@@ -30,8 +30,6 @@
 		2D4C89521E43B43E001BE6A1 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C89511E43B43E001BE6A1 /* DataExtension.swift */; };
 		2D4D0CC31E3689C1005E569E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4D0CB61E368950005E569E /* Alamofire.framework */; };
 		2D4D0CC41E3689C1005E569E /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4D0CB61E368950005E569E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D4D0CE11E368BF9005E569E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4D0CD41E368BE7005E569E /* SwiftyJSON.framework */; };
-		2D4D0CE21E368BF9005E569E /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4D0CD41E368BE7005E569E /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D4F14FE1F0913A800D66714 /* SerieDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F14FD1F0913A800D66714 /* SerieDetailBuilder.swift */; };
 		2D4F15001F0914FB00D66714 /* SerieDetailDefaultBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4F14FF1F0914FB00D66714 /* SerieDetailDefaultBuilder.swift */; };
 		2D51FF5C1E7C6C97001A4C89 /* TransitionFromFirstToSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D51FF5B1E7C6C97001A4C89 /* TransitionFromFirstToSecond.swift */; };
@@ -201,13 +199,6 @@
 			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
-		2D4D0CE31E368BF9005E569E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2D4D0CC91E368BE7005E569E /* SwiftyJSON.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
 		2D7ABB511E3BB18000755EC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2D7ABB3B1E3BB18000755EC4 /* Kingfisher.xcodeproj */;
@@ -302,7 +293,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2D4929ED1E7DBC3F00CB9F96 /* Kingfisher.framework in Copy Frameworks */,
-				2D4D0CE21E368BF9005E569E /* SwiftyJSON.framework in Copy Frameworks */,
 				2D4D0CC41E3689C1005E569E /* Alamofire.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -406,7 +396,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7ABB6F1E3BB1BE00755EC4 /* Kingfisher.framework in Frameworks */,
-				2D4D0CE11E368BF9005E569E /* SwiftyJSON.framework in Frameworks */,
 				2D4D0CC31E3689C1005E569E /* Alamofire.framework in Frameworks */,
 				262910260079E5BB37C88A86 /* Pods_ShowmeSomeNetflix.framework in Frameworks */,
 			);
@@ -906,19 +895,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D545B121E351E2C007BAC95 /* Build configuration list for PBXNativeTarget "ShowmeSomeNetflix" */;
 			buildPhases = (
-				7F2343CCB69986D131719DAE /* 📦 Check Pods Manifest.lock */,
+				7F2343CCB69986D131719DAE /* [CP] Check Pods Manifest.lock */,
 				2D545AFC1E351E2C007BAC95 /* Sources */,
 				2D545AFD1E351E2C007BAC95 /* Frameworks */,
 				2D545AFE1E351E2C007BAC95 /* Resources */,
 				2D545B6D1E352143007BAC95 /* Copy Frameworks */,
-				ECFBF30ABBFE2B3333D3DF64 /* 📦 Embed Pods Frameworks */,
-				36FECF598BE0FDCCA16E1953 /* 📦 Copy Pods Resources */,
+				ECFBF30ABBFE2B3333D3DF64 /* [CP] Embed Pods Frameworks */,
+				36FECF598BE0FDCCA16E1953 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2D4D0CC61E3689C1005E569E /* PBXTargetDependency */,
-				2D4D0CE41E368BF9005E569E /* PBXTargetDependency */,
 			);
 			name = ShowmeSomeNetflix;
 			productName = ShowmeSomeNetflix;
@@ -932,7 +920,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Michel Goñi";
 				TargetAttributes = {
 					2D545AFF1E351E2C007BAC95 = {
@@ -1179,14 +1167,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36FECF598BE0FDCCA16E1953 /* 📦 Copy Pods Resources */ = {
+		36FECF598BE0FDCCA16E1953 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1194,30 +1182,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F2343CCB69986D131719DAE /* 📦 Check Pods Manifest.lock */ = {
+		7F2343CCB69986D131719DAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowmeSomeNetflix-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ECFBF30ABBFE2B3333D3DF64 /* 📦 Embed Pods Frameworks */ = {
+		ECFBF30ABBFE2B3333D3DF64 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShowmeSomeNetflix/Pods-ShowmeSomeNetflix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1312,11 +1314,6 @@
 			name = "Alamofire iOS";
 			targetProxy = 2D4D0CC51E3689C1005E569E /* PBXContainerItemProxy */;
 		};
-		2D4D0CE41E368BF9005E569E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftyJSON iOS";
-			targetProxy = 2D4D0CE31E368BF9005E569E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1348,7 +1345,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1356,7 +1355,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -1398,7 +1401,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1406,7 +1411,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
